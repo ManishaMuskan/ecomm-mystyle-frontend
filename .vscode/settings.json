@@ -1,0 +1,8 @@
+{
+    "prettier.requireConfig": false,
+    "editor.formatOnSave": true,
+    "cSpell.words": [
+        "ecomm",
+        "mystyle"
+    ]
+}
