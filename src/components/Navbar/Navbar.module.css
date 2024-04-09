@@ -1,0 +1,82 @@
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-brand img {
+  height: 60px;
+}
+
+.navbar-links {
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+.nav-link {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #282c3f;
+  padding: 0 17px;
+  border-bottom: none;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-action {
+  text-decoration: none;
+  color: #333333;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.navbar-action-label {
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  padding-top: 10px;
+  line-height: 6px;
+}
+
+.myntraweb-sprite {
+  background: url(./../../assets/imgs/MyntraWebSprite_27_01_2021.png);
+  background-size: 1404px 105px;
+}
+
+.sprites-headerBag {
+  width: 16px;
+  height: 16px;
+  background-position: -344px -58px;
+}
