@@ -1,3 +1,5 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { Outlet } from 'react-router-dom';
 import Navbar from './Navbar/Navbar';
 
 const Layout = () => {
@@ -7,7 +9,7 @@ const Layout = () => {
         <Navbar />
       </header>
       <main style={{ height: '100vh' }}>
-        <p>Different layouts</p>
+        <Outlet />
       </main>
     </>
   );
