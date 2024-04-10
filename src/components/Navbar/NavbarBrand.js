@@ -1,12 +1,13 @@
-import classes from './Navbar.module.css';
+import { NavLink } from 'react-router-dom';
 import logo from '../../assets/imgs/logo-without-brand-name.png';
+import classes from './Navbar.module.css';
 
-const NavbarBrand = ({ link }) => {
+const NavbarBrand = () => {
   return (
     <div className={classes['navbar-brand']}>
-      <a href={link} className={classes['navbar-logo']}>
+      <NavLink to="/" className={classes['navbar-logo']}>
         <img src={logo} alt="MyStyle" />
-      </a>
+      </NavLink>
     </div>
   );
 };

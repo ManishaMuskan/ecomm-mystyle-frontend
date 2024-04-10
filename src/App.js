@@ -1,13 +1,18 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import BeautyAndPersonalCare from './pages/BeautyAndPersonalCare';
 import Cart from './pages/Cart';
 import ErrorPage from './pages/ErrorPage';
 import Home from './pages/Home';
-import RootLayout from './pages/RootLayout';
-import Wishlist from './pages/Wishlist';
-import MenShop from './pages/MenShop';
-import WomenShop from './pages/WomenShop';
+import HomeDecor from './pages/HomeDecor';
 import KidsShop from './pages/KidsShop';
+import MenShop from './pages/MenShop';
+import Products from './pages/Products';
+import RootLayout from './pages/RootLayout';
+import ShopRootLayout from './pages/ShopRootLayout';
+import Wishlist from './pages/Wishlist';
+import WomenShop from './pages/WomenShop';
+import Discover from './pages/Discover';
 
 const router = createBrowserRouter([
   {
@@ -17,16 +22,13 @@ const router = createBrowserRouter([
     children: [
       { element: <Home />, index: true },
       {
-        path: 'wishlist',
-        element: <Wishlist />,
-      },
-      {
-        path: 'cart',
-        element: <Cart />,
-      },
-      {
         path: 'shop',
+        element: <ShopRootLayout />,
         children: [
+          {
+            index: true,
+            element: <Products />,
+          },
           {
             path: 'men',
             element: <MenShop />,
@@ -42,8 +44,20 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: 'cart',
-        element: <Cart />,
+        path: 'beauty-and-personal-care',
+        element: <BeautyAndPersonalCare />,
+      },
+      {
+        path: 'home-decor',
+        element: <HomeDecor />,
+      },
+      {
+        path: 'discover',
+        element: <Discover />,
+      },
+      {
+        path: 'wishlist',
+        element: <Wishlist />,
       },
       {
         path: 'cart',

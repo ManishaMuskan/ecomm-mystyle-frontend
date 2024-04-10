@@ -11,11 +11,12 @@ const NavbarActions = ({ link }) => {
         <span className={classes['navbar-action-label']}>Profile</span>
       </a>
 
-      <NavLink to="/wishlist" className={classes['navbar-action']}>
+      <NavLink to="wishlist" className={classes['navbar-action']}>
         <FontAwesomeIcon icon={faHeart} />
         <span className={classes['navbar-action-label']}>Wishlist</span>
       </NavLink>
-      <NavLink to="/cart" className={classes['navbar-action']}>
+
+      <NavLink to="cart" className={classes['navbar-action']}>
         {/* Included just to get an idea about how image sprites work */}
         <span
           className={`${classes['myntraweb-sprite']} ${classes['sprites-headerBag']}`}
