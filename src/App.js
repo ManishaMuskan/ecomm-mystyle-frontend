@@ -1,25 +1,53 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
-import ErrorPage from './components/ErrorPage';
-import Layout from './components/Layout';
-import HomePage from './pages/HomePage';
+import Cart from './pages/Cart';
+import ErrorPage from './pages/ErrorPage';
+import Home from './pages/Home';
+import RootLayout from './pages/RootLayout';
+import Wishlist from './pages/Wishlist';
+import MenShop from './pages/MenShop';
+import WomenShop from './pages/WomenShop';
+import KidsShop from './pages/KidsShop';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Layout />,
+    element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
-      { element: <HomePage />, index: true },
+      { element: <Home />, index: true },
       {
         path: 'wishlist',
-        element: (
-          <p>
-            Wishlist page here
-            <br />
-          </p>
-        ),
+        element: <Wishlist />,
+      },
+      {
+        path: 'cart',
+        element: <Cart />,
+      },
+      {
+        path: 'shop',
+        children: [
+          {
+            path: 'men',
+            element: <MenShop />,
+          },
+          {
+            path: 'women',
+            element: <WomenShop />,
+          },
+          {
+            path: 'kids',
+            element: <KidsShop />,
+          },
+        ],
+      },
+      {
+        path: 'cart',
+        element: <Cart />,
+      },
+      {
+        path: 'cart',
+        element: <Cart />,
       },
     ],
   },

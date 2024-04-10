@@ -1,7 +1,8 @@
 .search-bar {
-  flex-grow: 1;
+  flex: 0 0 30%; /*This is a shorthand property that sets flex-grow, flex-shrink, and flex-basis.*/
   display: flex;
   flex-direction: row-reverse;
+  min-width: 100px;
 }
 
 .search-bar-input {
@@ -16,7 +17,7 @@
   border-radius: 0 4px 4px 0;
   border-left: 0;
   flex-grow: 1;
-  /* background: #f5f5f6; */
+  background: #f5f5f6;
 }
 
 .search-bar-icon {

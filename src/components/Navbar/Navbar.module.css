@@ -8,9 +8,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* max-width: 1200px; */
+  max-width: 95%;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.navbar-brand {
+  flex: 0 0 5%;
 }
 
 .navbar-brand img {
@@ -18,7 +22,7 @@
 }
 
 .navbar-links {
-  flex-grow: 1;
+  flex: 0 0 55%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -47,6 +51,7 @@
 }
 
 .navbar-actions {
+  flex: 0 0 10%;
   display: flex;
   align-items: center;
 }
@@ -54,12 +59,12 @@
 .navbar-action {
   text-decoration: none;
   color: #333333;
-  margin-left: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 40px;
+  padding: 15px;
 }
 
 .navbar-action-label {
