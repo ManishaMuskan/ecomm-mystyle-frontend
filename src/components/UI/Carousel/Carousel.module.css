@@ -1,0 +1,100 @@
+.carousel {
+  display: flex;
+  width: 100%;
+  /* max-width: 1500px; */
+  height: 500px;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-card {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  /* transform: scale(0.9); */
+  transform: translateX(-20px);
+  transition: 0.2s ease-in-out;
+}
+
+.carousel-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  padding: 40px 30px;
+  align-items: self-end;
+  justify-content: center;
+}
+
+.card-title {
+  color: white;
+  font-size: 30px;
+}
+
+.carousel-card-active {
+  opacity: 1;
+  /* transform: scale(1); */
+  transform: translateX(0px);
+  pointer-events: visible;
+}
+
+.indicators {
+  font-size: 10px;
+  color: grey;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  display: flex;
+  gap: 5px;
+}
+
+.indicator-active {
+  color: white;
+}
+
+.indicator:hover {
+  transform: scale(1.2);
+}
+
+.carousel-slide-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-slide-actions .carousel-arrow-left,
+.carousel-slide-actions .carousel-arrow-right {
+  position: absolute;
+  top: 50%;
+  font-size: 25px;
+  background: rgb(255 255 255 / 60%);
+  width: 30px;
+  height: 30px;
+  line-height: 15px;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-arrow-left {
+  left: 1rem;
+}
+
+.carousel-arrow-right {
+  right: 1rem;
+}

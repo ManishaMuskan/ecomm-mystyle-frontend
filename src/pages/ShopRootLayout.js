@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 const ShopRootLayout = () => {
   return (
     <div>
-      <h1>Common offers</h1>
+      <div>Festive offers</div>
       <Outlet />
     </div>
   );

@@ -1,5 +1,12 @@
+import Products from './Products';
+
 const WomenShop = () => {
-  return <div>WomenShop</div>;
+  return (
+    <div>
+      <h5>Women shopping</h5>
+      <Products />
+    </div>
+  );
 };
 
 export default WomenShop;

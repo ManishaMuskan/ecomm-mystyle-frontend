@@ -8,9 +8,17 @@ const Layout = () => {
       <header>
         <Navbar />
       </header>
-      <main style={{ height: '100vh' }}>
+      <main>
         <Outlet />
       </main>
+      <footer>
+        <ul>
+          <li>pages links</li>
+          <li>Social links</li>
+          <li>customer care support info</li>
+          <li>Since when this business is in</li>
+        </ul>
+      </footer>
     </>
   );
 };
