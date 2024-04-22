@@ -14,9 +14,9 @@
     url(./assets/fonts/Assistant-Bold.ttf) format('truetype');
 }
 
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 body {
   margin: 0;

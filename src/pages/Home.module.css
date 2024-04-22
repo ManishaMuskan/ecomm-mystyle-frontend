@@ -1,4 +1,5 @@
 .home {
+  /* position: relative; */
 }
 
 .coupons {
@@ -11,7 +12,43 @@
   width: 100%;
 }
 
-.banner-container img {
-  min-width: 100%;
-  height: 100px;
+.sales-ads {
+  width: 100%;
+  padding: 16px;
+  position: relative;
+}
+
+.sales-ads-container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+  position: absolute;
+  top: -100px;
+}
+
+.br-4px {
+  border-radius: 4px;
+}
+
+.sales-ads-category-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto;
+}
+
+.sales-category-img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 5px;
+}
+
+.sales-category-img img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
