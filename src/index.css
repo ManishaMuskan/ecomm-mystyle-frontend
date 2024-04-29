@@ -1,3 +1,50 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f5f6;
+
+  --primary-txt-color: #3e4152;
+  --primary-txt-color-light: #696e79;
+  --primary-txt-color-lighter: #94969f;
+
+  --secondary-txt-color: #282c3f;
+  --secondary-txt-color-light: #535766;
+
+  --accent-blue-txt-color: #526cd0;
+
+  --primary-border-clr: #eaeaec;
+
+  --border-radius-circle: 50%;
+  --border-radius-sm: 4px;
+  --border-radius-lg: 14px;
+
+  --font-size: 16px;
+  --font-size-15: 15px;
+  --font-size-xs: 10px;
+  --font-size-sm: 12px;
+  --font-size-md: 14px;
+  --font-size-lg: 18px;
+  --font-size-xl: 25px;
+  --font-size-xxl: 30px;
+
+  --letter-spacing-sm: 0.3px;
+  --letter-spacing-lg: 2.4px;
+
+  --margin-center: 0 auto;
+
+  --spacer-0: 0px;
+  --spacer-xxs: 3px;
+  --spacer-xs: 5px;
+  --spacer-sm: 10px;
+  --spacer-md: 16px;
+  --spacer-lg: 32px;
+  --spacer-xl: 50px;
+}
+
 @font-face {
   font-family: 'Assistant';
   src:
@@ -14,12 +61,16 @@
     url(./assets/fonts/Assistant-Bold.ttf) format('truetype');
 }
 
-/* * {
-  box-sizing: border-box;
-} */
+*,
+:after,
+:before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
 
 body {
-  margin: 0;
+  /* color: var(--primary-txt-color); */
+  margin: var(--spacer-0);
   font-family:
     Assistant,
     -apple-system,
@@ -37,7 +88,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   width: 100%;
-  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 code {
@@ -45,9 +96,50 @@ code {
     monospace;
 }
 
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+hr {
+  border-color: var(--primary-border-clr);
+  border-style: solid;
+}
+
+section {
+  padding: var(--spacer-0) var(--spacer-md) var(--spacer-md) var(--spacer-md);
+}
+
+section h2 {
+  margin-bottom: var(--spacer-sm);
+}
+
 ul {
-  margin: 0;
-  padding: 0;
+  margin: var(--spacer-0);
+  padding: var(--spacer-0);
   list-style: none;
 }
 
@@ -62,5 +154,16 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin: var(--spacer-0);
+}
+
+[type='button'],
+[type='reset'],
+[type='submit'],
+button {
+  cursor: pointer;
+}
+
+[disabled] {
+  cursor: default;
 }

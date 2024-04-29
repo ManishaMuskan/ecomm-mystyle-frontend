@@ -1,0 +1,125 @@
+.footer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer-section {
+  margin: var(--spacer-lg) auto;
+}
+
+.footer-section h5 {
+  text-transform: uppercase;
+  margin: var(--spacer-md) 0;
+  color: var(--secondary-txt-color);
+}
+
+.footer-section p,
+.footer-section a {
+  color: var(--primary-txt-color-light);
+  font-size: var(--font-size-15);
+}
+
+.footer-section-links {
+  display: grid;
+  grid-template: repeat(1, 1fr) / repeat(4, 1fr);
+  gap: var(--spacer-lg);
+}
+
+.footer-column-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column-links a {
+  text-transform: capitalize;
+  padding-top: var(--spacer-xs);
+}
+
+.footer-column-links a:last-child {
+  padding-bottom: var(--spacer-xs);
+}
+
+.footer-column-social-links {
+  display: flex;
+  gap: var(--spacer-md);
+}
+
+.footer-column-social-links a {
+  font-size: var(--font-size-xxl);
+}
+
+.footer-column .assurance {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--spacer-md);
+  margin-top: var(--spacer-md);
+  margin-bottom: var(--spacer-xl);
+}
+
+.footer-column .assurance strong {
+  color: var(--black);
+}
+
+.footer-column .assurance img {
+  width: 48px;
+  height: 40px;
+}
+
+.footer-section-popular-searches h5 {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-section-popular-searches h5:after {
+  content: ' ';
+  width: 100%;
+  position: absolute;
+  top: 8px;
+  left: 125px;
+  border: 1px solid var(--primary-border-clr);
+}
+
+.searches-links a {
+  line-height: 25px;
+}
+
+.searches-links a:after {
+  content: '|';
+  margin: var(--spacer-xxs);
+}
+
+.company-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-info a {
+  color: var(--accent-blue-txt-color);
+  font-weight: 600;
+}
+
+.company-info p:last-child {
+  color: var(--primary-txt-color-lighter);
+}
+
+.company-address strong {
+  color: var(--accent-blue-txt-color);
+}
+
+.more-info h5,
+.more-info strong {
+  color: var(--secondary-txt-color-light);
+}
+
+.more-info li {
+  list-style-type: decimal;
+  margin: var(--spacer-md) 0;
+  color: var(--primary-txt-color-lighter);
+}
+
+.more-info p {
+  line-height: 18px;
+  color: var(--primary-txt-color-lighter);
+  font-size: var(--font-size-md);
+}

@@ -1,7 +1,7 @@
 .navbar {
-  background-color: #ffffff;
-  border-bottom: 1px solid #e0e0e0;
-  padding: 10px 0;
+  background-color: var(--primary-bg-color);
+  border-bottom: 1px solid var(--primary-border-clr);
+  padding: var(--spacer-sm) 0;
 }
 
 .container {
@@ -9,8 +9,8 @@
   justify-content: space-between;
   align-items: center;
   max-width: 95%;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: var(--spacer-0) auto;
+  padding: 0 var(--spacer-md);
 }
 
 .navbar-brand {
@@ -22,9 +22,9 @@
 }
 
 .navbar-links {
-  flex: 0 0 55%;
-  margin: 0;
-  padding: 0;
+  flex: 0 0 50%;
+  margin: var(--spacer-0);
+  padding: var(--spacer-0);
   list-style: none;
   display: flex;
 }
@@ -35,18 +35,18 @@
 }
 
 .nav-item {
-  margin-right: 15px;
+  margin-right: var(--spacer-md);
 }
 
 .nav-link {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: var(--font-size-md);
   font-weight: 700;
-  letter-spacing: 0.3px;
-  color: #282c3f;
-  padding: 0 17px;
+  letter-spacing: var(--letter-spacing-sm);
+  color: var(--secondary-txt-color);
+  padding: 0 var(--spacer-md);
   border-bottom: none;
 }
 
@@ -58,20 +58,21 @@
 
 .navbar-action {
   text-decoration: none;
-  color: #333333;
+  color: var(--primary-txt-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 40px;
-  padding: 15px;
+  padding: var(--spacer-md);
+  box-sizing: content-box;
 }
 
 .navbar-action-label {
-  color: #000;
-  font-size: 12px;
+  color: var(--secondary-txt-color);
+  font-size: var(--font-size-sm);
   font-weight: 700;
-  padding-top: 10px;
+  padding-top: var(--spacer-sm);
   line-height: 6px;
 }
 
