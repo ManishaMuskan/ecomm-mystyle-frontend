@@ -1,34 +1,35 @@
-.home {
-  /* position: relative; */
-}
-
-.coupons {
+.home section h2 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  color: var(--primary-txt-color);
+  letter-spacing: var(--letter-spacing-lg);
+  font-size: var(--font-size-xxl);
+  margin: var(--spacer-xl) auto;
+  max-height: 5em;
+  font-weight: 700;
 }
 
 .home-special-offers {
+  padding: var(--spacer-0);
 }
 
 .banner-container {
   width: 100%;
 }
 
-.sales-ads {
-  width: 100%;
-  padding: 16px;
-  position: relative;
-}
-
 .sales-ads-container {
   display: flex;
-  align-items: start;
+  align-items: stretch;
   justify-content: space-between;
   gap: 1rem;
-  position: absolute;
-  top: -100px;
 }
 
 .br-4px {
-  border-radius: 4px;
+  border-radius: var(--border-radius-sm);
+  flex: 1 0 0;
+  position: relative;
 }
 
 .sales-ads-category-container {
@@ -38,17 +39,68 @@
   gap: 1rem;
   align-items: center;
   justify-content: center;
-  margin: 15px auto;
+  margin: var(--spacer-md) auto var(--spacer-lg) auto;
+}
+
+.sales-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sales-category small {
+  align-self: flex-start;
 }
 
 .sales-category-img {
-  width: 120px;
-  height: 120px;
-  margin-bottom: 5px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: var(--spacer-xs);
 }
 
 .sales-category-img img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.coupons-and-sign-in {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.coupons {
+  flex-grow: 3;
+}
+
+.coupons-and-sign-in button {
+  display: block;
+  width: 100%;
+  padding: var(--spacer-sm);
+  margin: var(--spacer-md) auto;
+  border: 0;
+  border-radius: var(--border-radius-sm);
+  background: darkkhaki;
+}
+
+.coupons-corner-img {
+  width: 330px;
+  margin-top: var(--spacer-sm);
+}
+
+.coupons-corner-img img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.see-more {
+  margin-bottom: var(--spacer-md);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }

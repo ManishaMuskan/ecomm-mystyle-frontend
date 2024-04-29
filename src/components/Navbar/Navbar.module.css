@@ -1,7 +1,6 @@
 .navbar {
-  background-color: #ffffff;
-  border-bottom: 1px solid #e0e0e0;
-  padding: 10px 0;
+  background-color: var(--primary-bg-color);
+  border-bottom: 1px solid var(--primary-border-clr);
 }
 
 .container {
@@ -9,74 +8,74 @@
   justify-content: space-between;
   align-items: center;
   max-width: 95%;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: var(--spacer-0) auto;
+  padding: var(--spacer-sm) var(--spacer-md);
 }
 
 .navbar-brand {
-  flex: 0 0 5%;
+  flex: 0 0 4%;
 }
 
 .navbar-brand img {
-  height: 60px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 .navbar-links {
-  flex: 0 0 55%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
+  flex: 0 0 50%;
 }
 
-.navbar-nav {
-  list-style: none;
+.navbar-links-container {
   display: flex;
-}
-
-.nav-item {
-  margin-right: 15px;
 }
 
 .nav-link {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: var(--font-size-md);
   font-weight: 700;
-  letter-spacing: 0.3px;
-  color: #282c3f;
-  padding: 0 17px;
+  letter-spacing: var(--letter-spacing-sm);
+  color: var(--secondary-txt-color);
+  padding: 0 var(--spacer-md);
   border-bottom: none;
+}
+
+.navbar-search {
+  flex: 0 0 30%; /*This is a shorthand property that sets flex-grow, flex-shrink, and flex-basis.*/
 }
 
 .navbar-actions {
   flex: 0 0 10%;
+}
+
+.navbar-actions-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navbar-action {
   text-decoration: none;
-  color: #333333;
+  color: var(--primary-txt-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40px;
-  padding: 15px;
+  box-sizing: content-box;
 }
 
 .navbar-action-label {
-  color: #000;
-  font-size: 12px;
+  color: var(--secondary-txt-color);
+  font-size: var(--font-size-sm);
   font-weight: 700;
-  padding-top: 10px;
+  padding-top: var(--spacer-sm);
   line-height: 6px;
 }
 
-.myntraweb-sprite {
-  background: url(./../../assets/imgs/MyntraWebSprite_27_01_2021.png);
+.mystyle-icons-sprite {
+  background: url(./../../assets/imgs/MyStyleIconsSprite.png);
   background-size: 1404px 105px;
 }
 
