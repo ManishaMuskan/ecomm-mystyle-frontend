@@ -9,6 +9,8 @@
   align-items: center;
   max-width: 95%;
   margin: var(--spacer-0) auto;
+  padding: 0 var(--spacer-md);
+  margin: var(--spacer-0) auto;
   padding: var(--spacer-sm) var(--spacer-md);
 }
 
@@ -24,10 +26,19 @@
 
 .navbar-links {
   flex: 0 0 50%;
+  margin: var(--spacer-0);
+  padding: var(--spacer-0);
+  list-style: none;
+  display: flex;
+  flex: 0 0 50%;
 }
 
 .navbar-links-container {
   display: flex;
+}
+
+.nav-item {
+  margin-right: var(--spacer-md);
 }
 
 .nav-link {
@@ -35,7 +46,11 @@
   text-decoration: none;
   text-transform: uppercase;
   font-size: var(--font-size-md);
+  font-size: var(--font-size-md);
   font-weight: 700;
+  letter-spacing: var(--letter-spacing-sm);
+  color: var(--secondary-txt-color);
+  padding: 0 var(--spacer-md);
   letter-spacing: var(--letter-spacing-sm);
   color: var(--secondary-txt-color);
   padding: 0 var(--spacer-md);
@@ -59,17 +74,24 @@
 .navbar-action {
   text-decoration: none;
   color: var(--primary-txt-color);
+  color: var(--primary-txt-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 40px;
+  padding: var(--spacer-md);
+  box-sizing: content-box;
   box-sizing: content-box;
 }
 
 .navbar-action-label {
   color: var(--secondary-txt-color);
   font-size: var(--font-size-sm);
+  color: var(--secondary-txt-color);
+  font-size: var(--font-size-sm);
   font-weight: 700;
+  padding-top: var(--spacer-sm);
   padding-top: var(--spacer-sm);
   line-height: 6px;
 }
