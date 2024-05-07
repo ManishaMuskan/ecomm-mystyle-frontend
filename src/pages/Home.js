@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Card from '../components/UI/Card/Card';
 import Carousel from '../components/UI/Carousel/Carousel';
 import classes from './Home.module.css';
@@ -47,6 +47,155 @@ const bannerImgs = [
   },
 ];
 
+const shopByCategoriesImages = [
+  {
+    imageSrc: 'images/shop-by-categories-offers/Shop-By-Category_HP_02.webp',
+    alt: 'Shop by category 1',
+  },
+  {
+    imageSrc: 'images/shop-by-categories-offers/Shop-By-Category_HP_03.webp',
+    alt: 'Shop by category 2',
+  },
+  {
+    imageSrc: 'images/shop-by-categories-offers/Shop-By-Category_HP_04.webp',
+    alt: 'Shop by category 3',
+  },
+  {
+    imageSrc: 'images/shop-by-categories-offers/Shop-By-Category_HP_05.jpg',
+    alt: 'Shop by category 4',
+  },
+  {
+    imageSrc: 'images/shop-by-categories-offers/Shop-By-Category_HP_06.webp',
+    alt: 'Shop by category 5',
+  },
+  {
+    imageSrc: 'images/shop-by-categories-offers/Shop-By-Category_HP_07.webp',
+    alt: 'Shop by category 6',
+  },
+  {
+    imageSrc: 'images/shop-by-categories-offers/Shop-By-Category_HP_14.webp',
+    alt: 'Shop by category 7',
+  },
+  {
+    imageSrc: 'images/shop-by-categories-offers/Shop-By-Category_HP_15.jpg',
+    alt: 'Shop by category 8',
+  },
+  {
+    imageSrc: 'images/shop-by-categories-offers/Shop-By-Category_HP_16.webp',
+    alt: 'Shop by category 9',
+  },
+  {
+    imageSrc: 'images/shop-by-categories-offers/Shop-By-Category_HP_17.jpg',
+    alt: 'Shop by category 10',
+  },
+  {
+    imageSrc: 'images/shop-by-categories-offers/Shop-By-Category_HP_18.webp',
+    alt: 'Shop by category 11',
+  },
+  {
+    imageSrc: 'images/shop-by-categories-offers/Shop-By-Category_HP_19.webp',
+    alt: 'Shop by category 12',
+  },
+  {
+    imageSrc: 'images/shop-by-categories-offers/Shop-By-Category_HP_20.webp',
+    alt: 'Shop by category 13',
+  },
+  {
+    imageSrc: 'images/shop-by-categories-offers/Shop-By-Category_HP_21.webp',
+    alt: 'Shop by category 14',
+  },
+];
+
+const salesAds = [
+  {
+    heading: 'Upto 60% off | Styles for men',
+    ads: [
+      {
+        title: 'Clothing',
+        imageSrc: menClothing,
+        alt: "Men's Clothing",
+        path: '/#',
+      },
+      {
+        title: 'Footwear',
+        imageSrc: menFootwear,
+        alt: "Men's Footwear",
+        path: '/#',
+      },
+      {
+        title: 'Bags & Wallets',
+        imageSrc: menWallets,
+        alt: "Men's Bags & Wallets",
+        path: '/#',
+      },
+      {
+        title: 'Watches',
+        imageSrc: menWatches,
+        alt: "Men's Watches",
+        path: '/#',
+      },
+    ],
+  },
+  {
+    heading: 'Upto 40% off | Styles for women',
+    ads: [
+      {
+        title: 'Clothing',
+        imageSrc: womenClothing,
+        alt: "Women's Clothing",
+        path: '/#',
+      },
+      {
+        title: 'Footwear',
+        imageSrc: womenFootwear,
+        alt: "Women's Footwear",
+        path: '/#',
+      },
+      {
+        title: 'Bags',
+        imageSrc: womenBags,
+        alt: "Women's Bags",
+        path: '/#',
+      },
+      {
+        title: 'Watches',
+        imageSrc: womenWatches,
+        alt: "Women's Watches",
+        path: '/#',
+      },
+    ],
+  },
+  {
+    heading: 'Revamp your home | discounted price',
+    ads: [
+      {
+        title: 'Decorative items',
+        imageSrc: homeDecorItem,
+        alt: 'Home Decors',
+        path: '/#',
+      },
+      {
+        title: 'Handicrafts',
+        imageSrc: homeDecorHandiCrafts,
+        alt: 'Handicrafts',
+        path: '/#',
+      },
+      {
+        title: 'Scented candles',
+        imageSrc: homeDecorCandles,
+        alt: 'Candles',
+        path: '/#',
+      },
+      {
+        title: 'Covers & Bedsheets',
+        imageSrc: homeDecorSofaCovers,
+        alt: 'Covers & Bedsheets',
+        path: '/#',
+      },
+    ],
+  },
+];
+
 const HomePage = () => {
   return (
     <div className={classes.home}>
@@ -55,113 +204,26 @@ const HomePage = () => {
       </section>
 
       <section className={classes['sales-ads-container']}>
-        <Card className={classes['br-4px']}>
-          <h3>Upto 60% off | Styles for men</h3>
-          <div className={classes['sales-ads-category-container']}>
-            <div className={classes['sales-category']}>
-              <div className={classes['sales-category-img']}>
-                <img src={menClothing} alt="Men's Clothing" />
-              </div>
-              <small>Clothing</small>
+        {salesAds.map((salesAd) => (
+          <Card key={salesAd.heading} className={classes['card-br-small']}>
+            <h3>{salesAd.heading}</h3>
+            <div className={classes['sales-ads-category-box']}>
+              {salesAd.ads.map((ad) => (
+                <Link to="/#" key={ad.title}>
+                  <div className={classes['sales-category']}>
+                    <div className={classes['sales-category-image-box']}>
+                      <img src={ad.imageSrc} alt={ad.alt} />
+                    </div>
+                    <small>{ad.title}</small>
+                  </div>
+                </Link>
+              ))}
             </div>
-
-            <div className={classes['sales-category']}>
-              <div className={classes['sales-category-img']}>
-                <img src={menFootwear} alt="Men's footwear" />
-              </div>
-              <small>Footwear</small>
-            </div>
-
-            <div className={classes['sales-category']}>
-              <div className={classes['sales-category-img']}>
-                <img src={menWallets} alt="Men's Bags & Wallets" />
-              </div>
-              <small>Bags & Wallets</small>
-            </div>
-
-            <div className={classes['sales-category']}>
-              <div className={classes['sales-category-img']}>
-                <img src={menWatches} alt="Men's Watches" />
-              </div>
-              <small>Watches</small>
-            </div>
-          </div>
-          <NavLink to="/products" className={classes['see-more']}>
-            See more
-          </NavLink>
-        </Card>
-
-        <Card className={classes['br-4px']}>
-          <h3>Upto 40% off | Styles for women</h3>
-          <div className={classes['sales-ads-category-container']}>
-            <div className={classes['sales-category']}>
-              <div className={classes['sales-category-img']}>
-                <img src={womenClothing} alt="Women's Clothing" />
-              </div>
-              <small>Clothing</small>
-            </div>
-
-            <div className={classes['sales-category']}>
-              <div className={classes['sales-category-img']}>
-                <img src={womenFootwear} alt="Women's footwear" />
-              </div>
-              <small>Footwear</small>
-            </div>
-
-            <div className={classes['sales-category']}>
-              <div className={classes['sales-category-img']}>
-                <img src={womenBags} alt="Women's Bags" />
-              </div>
-              <small>Bags</small>
-            </div>
-
-            <div className={classes['sales-category']}>
-              <div className={classes['sales-category-img']}>
-                <img src={womenWatches} alt="women's Watches" />
-              </div>
-              <small>Watches</small>
-            </div>
-          </div>
-          <NavLink to="/products" className={classes['see-more']}>
-            See more
-          </NavLink>
-        </Card>
-
-        <Card className={classes['br-4px']}>
-          <h3>Revamp your home | discounted price</h3>
-          <div className={classes['sales-ads-category-container']}>
-            <div className={classes['sales-category']}>
-              <div className={classes['sales-category-img']}>
-                <img src={homeDecorItem} alt="Home Decors" />
-              </div>
-              <small>Decorative items</small>
-            </div>
-
-            <div className={classes['sales-category']}>
-              <div className={classes['sales-category-img']}>
-                <img src={homeDecorHandiCrafts} alt="Handicrafts" />
-              </div>
-              <small>Handicrafts</small>
-            </div>
-
-            <div className={classes['sales-category']}>
-              <div className={classes['sales-category-img']}>
-                <img src={homeDecorCandles} alt="Candles" />
-              </div>
-              <small>Scented candles</small>
-            </div>
-
-            <div className={classes['sales-category']}>
-              <div className={classes['sales-category-img']}>
-                <img src={homeDecorSofaCovers} alt="Covers & Bedsheets" />
-              </div>
-              <small>Covers & Bedsheets</small>
-            </div>
-          </div>
-          <NavLink to="/products" className={classes['see-more']}>
-            See more
-          </NavLink>
-        </Card>
+            <NavLink to="/products" className={classes['see-more']}>
+              See more
+            </NavLink>
+          </Card>
+        ))}
 
         <div className={classes['coupons-and-sign-in']}>
           <Card className={classes['br-4px']}>
@@ -201,6 +263,23 @@ const HomePage = () => {
       <section>
         <h2>Shop by top brands</h2>
         <MultiItemCarousel />
+      </section>
+
+      <section>
+        <h2>Shop by category</h2>
+        <div className={classes['shop-by-category-container']}>
+          {shopByCategoriesImages.map(({ imageSrc, alt }) => (
+            <div key={alt} className={classes['shop-by-category-box']}>
+              <Link to="/#">
+                <div className={classes['shop-by-category-aspect-ratio-box']}>
+                  <div className={classes['shop-by-category-image-box']}>
+                    <img src={imageSrc} alt={alt} />
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
       </section>
     </div>
   );

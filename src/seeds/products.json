@@ -1,0 +1,1159 @@
+[
+  {
+    "index": 0,
+    "preLaunch": true,
+    "xceleratorTag": {
+      "imageTag": {},
+      "titleTag": {}
+    },
+    "cardIndex": 0,
+    "activeCardId": null,
+    "url": "tshirts/bullmer/bullmer-graphic-printed-round-neck-oversized-cotton-t-shirt/24014326/buy",
+    "brand": "BULLMER",
+    "title": "BULLMER Graphic Printed Round Neck Oversized Cotton T-shirt",
+    "additionalInfo": "Oversized Cotton T-shirt",
+    "originalPrice": 1499,
+    "discountedPrice": 389,
+    "discountPercentage": "(74% OFF)",
+    "styleId": 24014326,
+    "sellerPartnerId": 10916,
+    "allSkuForSizes": {
+      "S": 76826758
+    },
+    "inventoryInfo": [
+      {
+        "skuId": 76826758,
+        "label": "S",
+        "inventory": 1070,
+        "available": true,
+        "brandSizeLabel": "S"
+      }
+    ],
+    "isPreOrderItem": false,
+    "searchImage": "http://assets.myntassets.com/assets/images/24014326/2023/7/14/c3bb4dd9-b557-4602-a885-f77b445645bc1689274870298BULLMERMenBlackTypographyPrintedPocketsT-shirt1.jpg",
+    "product": "BULLMER Graphic Printed Round Neck Oversized Cotton T-shirt",
+    "discount": 1110,
+    "loyalty": {
+      "enabled": false,
+      "discount": 351,
+      "points": 38
+    },
+    "images": [
+      {
+        "src": "http://assets.myntassets.com/assets/images/24014326/2023/7/14/c3bb4dd9-b557-4602-a885-f77b445645bc1689274870298BULLMERMenBlackTypographyPrintedPocketsT-shirt1.jpg",
+        "view": "default"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/24014326/2023/7/14/c3bb4dd9-b557-4602-a885-f77b445645bc1689274870298BULLMERMenBlackTypographyPrintedPocketsT-shirt1.jpg",
+        "view": "search"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/24014326/2023/7/14/2c99ef38-94f3-4c21-b748-e253803cee041689274870256BULLMERMenBlackTypographyPrintedPocketsT-shirt5.jpg",
+        "view": "left"
+      },
+      {
+        "src": "",
+        "view": "size_representation"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/24014326/2023/7/14/0495dbda-afd3-4f3c-a473-75b6dcf3f36f1689274870246BULLMERMenBlackTypographyPrintedPocketsT-shirt4.jpg",
+        "view": "right"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/24014326/2023/7/14/557b876a-5e4b-4ebc-bd9f-21f32c243d371689274870271BULLMERMenBlackTypographyPrintedPocketsT-shirt2.jpg",
+        "view": "front"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/24014326/2023/7/14/27b943b9-b98f-48aa-867c-7f535e2e9b6f1689274870286BULLMERMenBlackTypographyPrintedPocketsT-shirt3.jpg",
+        "view": "back"
+      }
+    ],
+    "rating": 3.709214925765991,
+    "isFastFashion": true,
+    "personalizedCoupon": "",
+    "ratingCount": 2930,
+    "systemAttributes": [
+      {
+        "attribute": "SA_XT_PICWORTHY",
+        "value": "PIC-WORTHY",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "SA_XT_BESTSELLER",
+        "value": "BESTSELLER",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "VTR_Available",
+        "value": "Yes",
+        "metaInfo": ""
+      }
+    ],
+    "deliveryPromise": "",
+    "preferredDeliveryTag": "",
+    "inPriceRevealMode": false,
+    "srcSetImg": "http://assets.myntassets.com/assets/images/24014326/2023/7/14/c3bb4dd9-b557-4602-a885-f77b445645bc1689274870298BULLMERMenBlackTypographyPrintedPocketsT-shirt1.jpg",
+    "sizes": ["S"],
+    "inWishlist": false,
+    "wishlistEnabled": true,
+    "isHoverDisabled": false,
+    "isProductScrollerEnabled": true,
+    "isPreLaunch": false,
+    "prelaunchAttr": [],
+    "isSimilarProduct": false
+  },
+  {
+    "index": 1,
+    "preLaunch": false,
+    "xceleratorTag": {
+      "imageTag": {
+        "type": "SA_XT_NEW",
+        "data": "NEW"
+      },
+      "titleTag": {}
+    },
+    "cardIndex": 1,
+    "activeCardId": null,
+    "url": "tshirts/clafoutis/clafoutis-men-v-neck-pu-coated-pocket-t-shirt/28083484/buy",
+    "brand": "CLAFOUTIS",
+    "title": "CLAFOUTIS Men V-Neck PU Coated Pocket T-shirt",
+    "additionalInfo": "Men V-Neck PU Coated T-shirt",
+    "originalPrice": 2499,
+    "discountedPrice": 799,
+    "discountPercentage": "(Rs. 1700 OFF)",
+    "styleId": 28083484,
+    "sellerPartnerId": 17362,
+    "allSkuForSizes": {
+      "S": 90365900
+    },
+    "inventoryInfo": [
+      {
+        "skuId": 90365900,
+        "label": "S",
+        "inventory": 9747,
+        "available": true,
+        "brandSizeLabel": "S"
+      }
+    ],
+    "isPreOrderItem": false,
+    "searchImage": "http://assets.myntassets.com/assets/images/28083484/2024/3/7/2f30745d-1292-4b06-a05e-145c45bdf1eb1709781903155CLAFOUTISMenV-NeckPolyesterPUCoatedPocketsT-shirt1.jpg",
+    "product": "CLAFOUTIS Men V-Neck PU Coated Pocket T-shirt",
+    "discount": 1700,
+    "loyalty": {
+      "enabled": false,
+      "discount": 720,
+      "points": 79
+    },
+    "images": [
+      {
+        "src": "http://assets.myntassets.com/assets/images/28083484/2024/3/7/2f30745d-1292-4b06-a05e-145c45bdf1eb1709781903155CLAFOUTISMenV-NeckPolyesterPUCoatedPocketsT-shirt1.jpg",
+        "view": "default"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/28083484/2024/3/7/cf1b9035-6fde-4c7f-a154-ce50b3cafa3c1709781903160CLAFOUTISMenV-NeckPolyesterPUCoatedPocketsT-shirt4.jpg",
+        "view": "right"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/28083484/2024/3/7/a4bd53f1-cf96-44d6-b4c2-bb63dc639f181709781903149CLAFOUTISMenV-NeckPolyesterPUCoatedPocketsT-shirt3.jpg",
+        "view": "back"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/28083484/2024/3/7/7f5d7707-572b-41cc-bb16-4262180ef2331709781903143CLAFOUTISMenV-NeckPolyesterPUCoatedPocketsT-shirt2.jpg",
+        "view": "front"
+      },
+      {
+        "src": "",
+        "view": "size_representation"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/28083484/2024/3/7/2f30745d-1292-4b06-a05e-145c45bdf1eb1709781903155CLAFOUTISMenV-NeckPolyesterPUCoatedPocketsT-shirt1.jpg",
+        "view": "search"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/28083484/2024/3/7/22d07438-2547-49b4-8b3e-8d5baacf0a9a1709781903166CLAFOUTISMenV-NeckPolyesterPUCoatedPocketsT-shirt5.jpg",
+        "view": "left"
+      }
+    ],
+    "rating": 3.487603187561035,
+    "isFastFashion": true,
+    "personalizedCoupon": "",
+    "ratingCount": 121,
+    "systemAttributes": [
+      {
+        "attribute": "SA_XT_New",
+        "value": "NEW",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "SA_XT_NEW",
+        "value": "NEW",
+        "metaInfo": ""
+      }
+    ],
+    "deliveryPromise": "",
+    "preferredDeliveryTag": "",
+    "inPriceRevealMode": false,
+    "srcSetImg": "http://assets.myntassets.com/assets/images/28083484/2024/3/7/2f30745d-1292-4b06-a05e-145c45bdf1eb1709781903155CLAFOUTISMenV-NeckPolyesterPUCoatedPocketsT-shirt1.jpg",
+    "sizes": ["S"],
+    "inWishlist": false,
+    "wishlistEnabled": true,
+    "isHoverDisabled": false,
+    "isProductScrollerEnabled": true,
+    "isPreLaunch": false,
+    "prelaunchAttr": [],
+    "isSimilarProduct": false
+  },
+  {
+    "index": 2,
+    "preLaunch": false,
+    "xceleratorTag": {
+      "imageTag": {},
+      "titleTag": {}
+    },
+    "cardIndex": 2,
+    "activeCardId": null,
+    "url": "tshirts/maniac/maniac-colourblocked-raglan-sleeves-pure-cotton-t-shirt/24426576/buy",
+    "brand": "Maniac",
+    "title": "Maniac Colourblocked Raglan Sleeves Pure Cotton T-Shirt",
+    "additionalInfo": "Colourblocked Cotton T-Shirt",
+    "originalPrice": 1659,
+    "discountedPrice": 547,
+    "discountPercentage": "(67% OFF)",
+    "styleId": 24426576,
+    "sellerPartnerId": 22763,
+    "allSkuForSizes": {
+      "S": 78386606
+    },
+    "inventoryInfo": [
+      {
+        "skuId": 78386606,
+        "label": "S",
+        "inventory": 37,
+        "available": true,
+        "brandSizeLabel": "S"
+      }
+    ],
+    "isPreOrderItem": false,
+    "searchImage": "http://assets.myntassets.com/assets/images/24426576/2023/8/10/d19e726d-b2b9-442d-bdf6-a82a7778f0bf1691607589917ManiacMenWhiteTypographyDrop-ShoulderSleevesT-shirt1.jpg",
+    "product": "Maniac Colourblocked Raglan Sleeves Pure Cotton T-Shirt",
+    "discount": 1112,
+    "loyalty": {
+      "enabled": false,
+      "discount": 493,
+      "points": 54
+    },
+    "images": [
+      {
+        "src": "http://assets.myntassets.com/assets/images/24426576/2023/8/10/d19e726d-b2b9-442d-bdf6-a82a7778f0bf1691607589917ManiacMenWhiteTypographyDrop-ShoulderSleevesT-shirt1.jpg",
+        "view": "default"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/24426576/2023/8/10/d19e726d-b2b9-442d-bdf6-a82a7778f0bf1691607589917ManiacMenWhiteTypographyDrop-ShoulderSleevesT-shirt1.jpg",
+        "view": "search"
+      },
+      {
+        "src": "",
+        "view": "size_representation"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/24426576/2023/8/10/dd3f2b7c-441c-409a-9d24-4b336695c3041691607589951ManiacMenWhiteTypographyDrop-ShoulderSleevesT-shirt2.jpg",
+        "view": "front"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/24426576/2023/8/10/7395f84f-c8cd-46d8-8e92-86130c792ed51691607589885ManiacMenWhiteTypographyDrop-ShoulderSleevesT-shirt4.jpg",
+        "view": "right"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/24426576/2023/8/10/c67a327b-6478-4b46-bdf2-088781964aea1691607589934ManiacMenWhiteTypographyDrop-ShoulderSleevesT-shirt3.jpg",
+        "view": "back"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/24426576/2023/8/10/089777df-7e1b-43cc-8878-3f5101581f6e1691607589901ManiacMenWhiteTypographyDrop-ShoulderSleevesT-shirt5.jpg",
+        "view": "left"
+      }
+    ],
+    "rating": 4.178089141845703,
+    "isFastFashion": true,
+    "personalizedCoupon": "",
+    "ratingCount": 3925,
+    "systemAttributes": [
+      {
+        "attribute": "SA_XT_PICWORTHY",
+        "value": "PIC-WORTHY",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "SA_XT_New_Season",
+        "value": "NEW SEASON",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "SA_XT_CURTAINRAISER",
+        "value": "Curtain Raiser",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "SA_XT_Best_Price",
+        "value": "Price may go up",
+        "metaInfo": ""
+      }
+    ],
+    "deliveryPromise": "",
+    "preferredDeliveryTag": "",
+    "inPriceRevealMode": false,
+    "srcSetImg": "http://assets.myntassets.com/assets/images/24426576/2023/8/10/d19e726d-b2b9-442d-bdf6-a82a7778f0bf1691607589917ManiacMenWhiteTypographyDrop-ShoulderSleevesT-shirt1.jpg",
+    "sizes": ["S"],
+    "inWishlist": false,
+    "wishlistEnabled": true,
+    "isHoverDisabled": false,
+    "isProductScrollerEnabled": true,
+    "isPreLaunch": false,
+    "prelaunchAttr": [],
+    "isSimilarProduct": false
+  },
+  {
+    "index": 3,
+    "preLaunch": false,
+    "xceleratorTag": {
+      "imageTag": {},
+      "titleTag": {}
+    },
+    "cardIndex": 3,
+    "activeCardId": null,
+    "url": "tshirts/here%26now/herenow-men-typography-printed-pure-cotton-t-shirt/25026824/buy",
+    "brand": "HERE&NOW",
+    "title": "HERE&NOW Men Typography Printed Pure Cotton T-shirt",
+    "additionalInfo": "Men Typography Printed T-shirt",
+    "originalPrice": 1099,
+    "discountedPrice": 219,
+    "discountPercentage": "(80% OFF)",
+    "styleId": 25026824,
+    "sellerPartnerId": 4027,
+    "allSkuForSizes": {
+      "L": 80526890
+    },
+    "inventoryInfo": [
+      {
+        "skuId": 80526890,
+        "label": "L",
+        "inventory": 16,
+        "available": true,
+        "brandSizeLabel": "L"
+      }
+    ],
+    "isPreOrderItem": false,
+    "searchImage": "http://assets.myntassets.com/assets/images/25026824/2023/10/19/b6aabed4-ce33-4ccf-bd77-25185a5abffa1697712092452-HERENOW-Men-Tshirts-5881697712092171-1.jpg",
+    "product": "HERE&NOW Men Typography Printed Pure Cotton T-shirt",
+    "discount": 880,
+    "loyalty": {
+      "enabled": false,
+      "discount": 198,
+      "points": 21
+    },
+    "images": [
+      {
+        "src": "http://assets.myntassets.com/assets/images/25026824/2023/10/19/b6aabed4-ce33-4ccf-bd77-25185a5abffa1697712092452-HERENOW-Men-Tshirts-5881697712092171-1.jpg",
+        "view": "default"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/25026824/2023/10/19/701ddc9a-c15d-49f6-9b43-dc59015c38a41697712092446-HERENOW-Men-Tshirts-5881697712092171-2.jpg",
+        "view": "front"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/25026824/2023/10/19/b6aabed4-ce33-4ccf-bd77-25185a5abffa1697712092452-HERENOW-Men-Tshirts-5881697712092171-1.jpg",
+        "view": "search"
+      },
+      {
+        "src": "",
+        "view": "size_representation"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/25026824/2023/10/19/7225a25f-b0ad-47e1-a4f8-1b77320945e61697712092425-HERENOW-Men-Tshirts-5881697712092171-5.jpg",
+        "view": "left"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/25026824/2023/10/19/96d20774-5c89-4fb0-b71c-f67567419ce81697712092433-HERENOW-Men-Tshirts-5881697712092171-4.jpg",
+        "view": "right"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/25026824/2023/10/19/cc48ef2f-d40b-4aee-9e20-8155cfea846e1697712092439-HERENOW-Men-Tshirts-5881697712092171-3.jpg",
+        "view": "back"
+      }
+    ],
+    "rating": 2.971428632736206,
+    "isFastFashion": true,
+    "personalizedCoupon": "",
+    "ratingCount": 35,
+    "systemAttributes": [
+      {
+        "attribute": "SA_XT_New_Season",
+        "value": "NEW SEASON",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "SA_XT_MyntraUnique",
+        "value": "Myntra Unique",
+        "metaInfo": ""
+      }
+    ],
+    "deliveryPromise": "Delivery by 9 May",
+    "preferredDeliveryTag": "",
+    "inPriceRevealMode": false,
+    "srcSetImg": "http://assets.myntassets.com/assets/images/25026824/2023/10/19/b6aabed4-ce33-4ccf-bd77-25185a5abffa1697712092452-HERENOW-Men-Tshirts-5881697712092171-1.jpg",
+    "sizes": ["L"],
+    "inWishlist": false,
+    "wishlistEnabled": true,
+    "isHoverDisabled": false,
+    "isProductScrollerEnabled": true,
+    "isPreLaunch": false,
+    "prelaunchAttr": [],
+    "isSimilarProduct": false
+  },
+  {
+    "index": 4,
+    "preLaunch": false,
+    "xceleratorTag": {
+      "imageTag": {},
+      "titleTag": {}
+    },
+    "cardIndex": 4,
+    "activeCardId": null,
+    "url": "tshirts/bullmer/bullmer-tribal-printed-oversized-cotton-t-shirt/27226100/buy",
+    "brand": "BULLMER",
+    "title": "BULLMER Tribal Printed Oversized Cotton T-shirt",
+    "additionalInfo": "Print Oversized Cotton T-shirt",
+    "originalPrice": 1499,
+    "discountedPrice": 389,
+    "discountPercentage": "(74% OFF)",
+    "styleId": 27226100,
+    "sellerPartnerId": 10916,
+    "allSkuForSizes": {
+      "M": 87720796
+    },
+    "inventoryInfo": [
+      {
+        "skuId": 87720796,
+        "label": "M",
+        "inventory": 1135,
+        "available": true,
+        "brandSizeLabel": "M"
+      }
+    ],
+    "isPreOrderItem": false,
+    "searchImage": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/0d63dbfd-673d-49d0-be10-751fa0d54c0f1706543722864BULLMERMenTribalPrintedAppliqueT-shirt1.jpg",
+    "product": "BULLMER Tribal Printed Oversized Cotton T-shirt",
+    "discount": 1110,
+    "loyalty": {
+      "enabled": false,
+      "discount": 351,
+      "points": 38
+    },
+    "images": [
+      {
+        "src": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/0d63dbfd-673d-49d0-be10-751fa0d54c0f1706543722864BULLMERMenTribalPrintedAppliqueT-shirt1.jpg",
+        "view": "default"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/0d63dbfd-673d-49d0-be10-751fa0d54c0f1706543722864BULLMERMenTribalPrintedAppliqueT-shirt1.jpg",
+        "view": "search"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/19cb4732-f2d8-4cac-a9d5-a7b90a6e37df1706543722846BULLMERMenTribalPrintedAppliqueT-shirt2.jpg",
+        "view": "front"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/48d91740-35f5-4eb4-897b-40a17a3a085a1706543722858BULLMERMenTribalPrintedAppliqueT-shirt3.jpg",
+        "view": "back"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/b3b98bdc-1344-4cdf-bbc3-fe43e1c7a0aa1706543722875BULLMERMenTribalPrintedAppliqueT-shirt4.jpg",
+        "view": "right"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/cb3b576f-8e7e-43d6-888b-503c3857e0ad1706543722852BULLMERMenTribalPrintedAppliqueT-shirt6.jpg",
+        "view": "top"
+      },
+      {
+        "src": "",
+        "view": "size_representation"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/3787b25f-bd53-4e9d-836c-2c2017baf54a1706543722869BULLMERMenTribalPrintedAppliqueT-shirt5.jpg",
+        "view": "left"
+      }
+    ],
+    "rating": 3.5911664962768555,
+    "isFastFashion": true,
+    "personalizedCoupon": "",
+    "ratingCount": 883,
+    "systemAttributes": [
+      {
+        "attribute": "SA_XT_SALEPRICE",
+        "value": "Crazy Deal",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "SA_XT_BESTSELLER",
+        "value": "BESTSELLER",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "VTR_Available",
+        "value": "Yes",
+        "metaInfo": ""
+      }
+    ],
+    "deliveryPromise": "",
+    "preferredDeliveryTag": "",
+    "inPriceRevealMode": false,
+    "srcSetImg": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/0d63dbfd-673d-49d0-be10-751fa0d54c0f1706543722864BULLMERMenTribalPrintedAppliqueT-shirt1.jpg",
+    "sizes": ["M"],
+    "inWishlist": false,
+    "wishlistEnabled": true,
+    "isHoverDisabled": false,
+    "isProductScrollerEnabled": true,
+    "isPreLaunch": false,
+    "prelaunchAttr": [],
+    "isSimilarProduct": false
+  },
+  {
+    "index": 5,
+    "preLaunch": false,
+    "xceleratorTag": {
+      "imageTag": {},
+      "titleTag": {}
+    },
+    "cardIndex": 5,
+    "activeCardId": null,
+    "url": "tshirts/people/people-men-slim-fit-round-neck-cotton-t-shirt/21727656/buy",
+    "brand": "People",
+    "title": "People Men Slim Fit Round Neck Cotton T-shirt",
+    "additionalInfo": "Men Slim Fit Cotton T-shirt",
+    "originalPrice": 499,
+    "discountedPrice": 424,
+    "discountPercentage": "(15% OFF)",
+    "styleId": 21727656,
+    "sellerPartnerId": 10226,
+    "allSkuForSizes": {
+      "S": 68508158
+    },
+    "inventoryInfo": [
+      {
+        "skuId": 68508158,
+        "label": "S",
+        "inventory": 257,
+        "available": true,
+        "brandSizeLabel": "S"
+      }
+    ],
+    "isPreOrderItem": false,
+    "searchImage": "http://assets.myntassets.com/assets/images/21727656/2023/1/27/6aa1f6c4-1832-4490-983a-c6a689d083151674828923808Tshirts1.jpg",
+    "product": "People Men Slim Fit Round Neck Cotton T-shirt",
+    "discount": 75,
+    "loyalty": {
+      "enabled": false,
+      "discount": 382,
+      "points": 42
+    },
+    "images": [
+      {
+        "src": "http://assets.myntassets.com/assets/images/21727656/2023/1/27/6aa1f6c4-1832-4490-983a-c6a689d083151674828923808Tshirts1.jpg",
+        "view": "default"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/21727656/2023/1/27/33fae139-b76b-4c05-b6ea-8ab7c04e0f421674828923846Tshirts6.jpg",
+        "view": "top"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/21727656/2023/1/27/6aa1f6c4-1832-4490-983a-c6a689d083151674828923808Tshirts1.jpg",
+        "view": "search"
+      },
+      {
+        "src": "",
+        "view": "size_representation"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/21727656/2023/1/27/632b8bb6-d6b1-4fca-98b3-0d8ec01f24851674828923796Tshirts2.jpg",
+        "view": "front"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/21727656/2023/1/27/08477434-2c53-46d5-b482-8f5cb057c07f1674828923834Tshirts4.jpg",
+        "view": "right"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/21727656/2023/1/27/d0b23b8e-c177-4ca2-85d2-5753cccff9321674828923822Tshirts3.jpg",
+        "view": "back"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/21727656/2023/1/27/5293671c-09ed-4742-96f7-155d517b9b101674828923856Tshirts5.jpg",
+        "view": "left"
+      }
+    ],
+    "rating": 3.9629628658294678,
+    "isFastFashion": true,
+    "personalizedCoupon": "",
+    "ratingCount": 54,
+    "systemAttributes": [
+      {
+        "attribute": "SA_XT_MyntraUnique",
+        "value": "Myntra Unique",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "VTR_Available",
+        "value": "Yes",
+        "metaInfo": ""
+      }
+    ],
+    "deliveryPromise": "",
+    "preferredDeliveryTag": "",
+    "inPriceRevealMode": false,
+    "srcSetImg": "http://assets.myntassets.com/assets/images/21727656/2023/1/27/6aa1f6c4-1832-4490-983a-c6a689d083151674828923808Tshirts1.jpg",
+    "sizes": ["S"],
+    "inWishlist": false,
+    "wishlistEnabled": true,
+    "isHoverDisabled": false,
+    "isProductScrollerEnabled": true,
+    "isPreLaunch": false,
+    "prelaunchAttr": [],
+    "isSimilarProduct": false
+  },
+  {
+    "index": 6,
+    "preLaunch": false,
+    "xceleratorTag": {
+      "imageTag": {},
+      "titleTag": {}
+    },
+    "cardIndex": 6,
+    "activeCardId": null,
+    "url": "tshirts/puma/puma-ess-polo-t-shirt/24171078/buy",
+    "brand": "Puma",
+    "title": "Puma Ess Polo T-shirt",
+    "additionalInfo": "Ess Polo T-shirt",
+    "originalPrice": 1699,
+    "discountedPrice": 849,
+    "discountPercentage": "(50% OFF)",
+    "styleId": 24171078,
+    "sellerPartnerId": 6206,
+    "allSkuForSizes": {
+      "XS": 77421182
+    },
+    "inventoryInfo": [
+      {
+        "skuId": 77421182,
+        "label": "XS",
+        "inventory": 420,
+        "available": true,
+        "brandSizeLabel": "XS"
+      }
+    ],
+    "isPreOrderItem": false,
+    "searchImage": "http://assets.myntassets.com/assets/images/24171078/2023/7/25/0a8d7c76-3c62-49be-93c6-97e34f7990a81690226533629PumaEssMensPoloCottonSlim-FitT-shirt1.jpg",
+    "product": "Puma Ess Polo T-shirt",
+    "discount": 850,
+    "loyalty": {
+      "enabled": false,
+      "discount": 765,
+      "points": 84
+    },
+    "images": [
+      {
+        "src": "http://assets.myntassets.com/assets/images/24171078/2023/7/25/0a8d7c76-3c62-49be-93c6-97e34f7990a81690226533629PumaEssMensPoloCottonSlim-FitT-shirt1.jpg",
+        "view": "default"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/24171078/2023/7/25/0a8d7c76-3c62-49be-93c6-97e34f7990a81690226533629PumaEssMensPoloCottonSlim-FitT-shirt1.jpg",
+        "view": "search"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/24171078/2023/7/25/147ea30b-74e7-4ada-8274-fadb10ba6e621690226533595PumaEssMensPoloCottonSlim-FitT-shirt2.jpg",
+        "view": "front"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/24171078/2023/7/25/6b3513a9-8aa6-4e1a-a039-4e4c8f19ecf41690226533650PumaEssMensPoloCottonSlim-FitT-shirt6.jpg",
+        "view": "top"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/24171078/2023/7/25/70a50e2d-6853-47d3-9a20-f54d82d8f7eb1690226533607PumaEssMensPoloCottonSlim-FitT-shirt5.jpg",
+        "view": "left"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/24171078/2023/7/25/01c3b036-8470-4f74-930f-4c1ebc0c94501690226533617PumaEssMensPoloCottonSlim-FitT-shirt3.jpg",
+        "view": "back"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/24171078/2023/7/25/ac174724-51b4-45d6-b082-7d1e4d1239621690226533637PumaEssMensPoloCottonSlim-FitT-shirt4.jpg",
+        "view": "right"
+      },
+      {
+        "src": "",
+        "view": "size_representation"
+      }
+    ],
+    "rating": 4.387900352478027,
+    "isFastFashion": true,
+    "personalizedCoupon": "",
+    "ratingCount": 1967,
+    "systemAttributes": [
+      {
+        "attribute": "SA_XT_PICWORTHY",
+        "value": "PIC-WORTHY",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "SA_XT_STYLEBOOST",
+        "value": "NA",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "SA_XT_New_Season",
+        "value": "NEW SEASON",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "SA_XT_CURTAINRAISER",
+        "value": "Curtain Raiser",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "SA_XT_TOPDEALS",
+        "value": "Top Deals",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "SA_XT_Best_Price",
+        "value": "Price may go up",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "SA_XT_BESTSELLER",
+        "value": "BESTSELLER",
+        "metaInfo": ""
+      }
+    ],
+    "deliveryPromise": "",
+    "preferredDeliveryTag": "",
+    "inPriceRevealMode": false,
+    "srcSetImg": "http://assets.myntassets.com/assets/images/24171078/2023/7/25/0a8d7c76-3c62-49be-93c6-97e34f7990a81690226533629PumaEssMensPoloCottonSlim-FitT-shirt1.jpg",
+    "sizes": ["XS"],
+    "inWishlist": false,
+    "wishlistEnabled": true,
+    "isHoverDisabled": false,
+    "isProductScrollerEnabled": true,
+    "isPreLaunch": false,
+    "prelaunchAttr": [],
+    "isSimilarProduct": false
+  },
+  {
+    "index": 7,
+    "preLaunch": false,
+    "xceleratorTag": {
+      "imageTag": {},
+      "titleTag": {}
+    },
+    "cardIndex": 7,
+    "activeCardId": null,
+    "url": "tshirts/h%26m/hm-men-slim-fit-polo-shirt/27427470/buy",
+    "brand": "H&M",
+    "title": "H&M Men Slim Fit Polo Shirt",
+    "additionalInfo": "Men Slim Fit Polo Shirt",
+    "originalPrice": 799,
+    "discountedPrice": 599,
+    "discountPercentage": "(25% OFF)",
+    "styleId": 27427470,
+    "sellerPartnerId": 6771,
+    "allSkuForSizes": {
+      "XS": 88374052
+    },
+    "inventoryInfo": [
+      {
+        "skuId": 88374052,
+        "label": "XS",
+        "inventory": 90,
+        "available": true,
+        "brandSizeLabel": "XS"
+      }
+    ],
+    "isPreOrderItem": false,
+    "searchImage": "http://assets.myntassets.com/assets/images/27427470/2024/2/7/053a37de-6cc0-4b75-83d5-78d27abc18d51707329173694SlimFitPoloshirt1.jpg",
+    "product": "H&M Men Slim Fit Polo Shirt",
+    "discount": 200,
+    "loyalty": {
+      "enabled": false,
+      "discount": 540,
+      "points": 59
+    },
+    "images": [
+      {
+        "src": "http://assets.myntassets.com/assets/images/27427470/2024/2/7/053a37de-6cc0-4b75-83d5-78d27abc18d51707329173694SlimFitPoloshirt1.jpg",
+        "view": "default"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/27427470/2024/2/7/11a11b10-8363-4fd7-91dc-762343bb51061707329173701SlimFitPoloshirt2.jpg",
+        "view": "front"
+      },
+      {
+        "src": "",
+        "view": "size_representation"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/27427470/2024/2/7/053a37de-6cc0-4b75-83d5-78d27abc18d51707329173694SlimFitPoloshirt1.jpg",
+        "view": "search"
+      }
+    ],
+    "rating": 3.8125,
+    "isFastFashion": true,
+    "personalizedCoupon": "",
+    "ratingCount": 16,
+    "systemAttributes": [
+      {
+        "attribute": "SA_XT_MyntraUnique",
+        "value": "Myntra Unique",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "SA_XT_New_Season",
+        "value": "NEW SEASON",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "SA_XT_New",
+        "value": "NEW",
+        "metaInfo": ""
+      }
+    ],
+    "deliveryPromise": "",
+    "preferredDeliveryTag": "",
+    "inPriceRevealMode": false,
+    "srcSetImg": "http://assets.myntassets.com/assets/images/27427470/2024/2/7/053a37de-6cc0-4b75-83d5-78d27abc18d51707329173694SlimFitPoloshirt1.jpg",
+    "sizes": ["XS"],
+    "inWishlist": false,
+    "wishlistEnabled": true,
+    "isHoverDisabled": false,
+    "isProductScrollerEnabled": true,
+    "isPreLaunch": false,
+    "prelaunchAttr": [],
+    "isSimilarProduct": false
+  },
+  {
+    "index": 8,
+    "preLaunch": false,
+    "xceleratorTag": {
+      "imageTag": {
+        "type": "SA_XT_NEW",
+        "data": "NEW"
+      },
+      "titleTag": {}
+    },
+    "cardIndex": 8,
+    "activeCardId": null,
+    "url": "tshirts/clafoutis/clafoutis-men-cuban-collar-pu-coated-shirt/28083480/buy",
+    "brand": "CLAFOUTIS",
+    "title": "CLAFOUTIS Men Cuban Collar PU Coated Shirt",
+    "additionalInfo": "Men Cuban Collar Shirt",
+    "originalPrice": 2499,
+    "discountedPrice": 799,
+    "discountPercentage": "(Rs. 1700 OFF)",
+    "styleId": 28083480,
+    "sellerPartnerId": 17362,
+    "allSkuForSizes": {
+      "M": 90365880
+    },
+    "inventoryInfo": [
+      {
+        "skuId": 90365880,
+        "label": "M",
+        "inventory": 9830,
+        "available": true,
+        "brandSizeLabel": "M"
+      }
+    ],
+    "isPreOrderItem": false,
+    "searchImage": "http://assets.myntassets.com/assets/images/28083480/2024/3/7/1dd7b5a1-c014-496f-92c6-85f95db512741709781896106CLAFOUTISMenV-NeckPolyesterPUCoatedPocketsT-shirt1.jpg",
+    "product": "CLAFOUTIS Men Cuban Collar PU Coated Shirt",
+    "discount": 1700,
+    "loyalty": {
+      "enabled": false,
+      "discount": 720,
+      "points": 79
+    },
+    "images": [
+      {
+        "src": "http://assets.myntassets.com/assets/images/28083480/2024/3/7/1dd7b5a1-c014-496f-92c6-85f95db512741709781896106CLAFOUTISMenV-NeckPolyesterPUCoatedPocketsT-shirt1.jpg",
+        "view": "default"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/28083480/2024/3/7/c5847dfa-9869-4811-a492-4ef7fb2db0511709781896094CLAFOUTISMenV-NeckPolyesterPUCoatedPocketsT-shirt2.jpg",
+        "view": "front"
+      },
+      {
+        "src": "",
+        "view": "size_representation"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/28083480/2024/3/7/5e082b80-99af-4b65-b77e-ac8de09d93671709781896111CLAFOUTISMenV-NeckPolyesterPUCoatedPocketsT-shirt4.jpg",
+        "view": "right"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/28083480/2024/3/7/b69b8ece-7515-447e-99c0-f76c383f5bd01709781896100CLAFOUTISMenV-NeckPolyesterPUCoatedPocketsT-shirt3.jpg",
+        "view": "back"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/28083480/2024/3/7/f155740a-cf43-44be-a0cd-67e7b77efc651709781896116CLAFOUTISMenV-NeckPolyesterPUCoatedPocketsT-shirt5.jpg",
+        "view": "left"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/28083480/2024/3/7/1dd7b5a1-c014-496f-92c6-85f95db512741709781896106CLAFOUTISMenV-NeckPolyesterPUCoatedPocketsT-shirt1.jpg",
+        "view": "search"
+      }
+    ],
+    "rating": 3.240000009536743,
+    "isFastFashion": true,
+    "personalizedCoupon": "",
+    "ratingCount": 25,
+    "systemAttributes": [
+      {
+        "attribute": "SA_XT_New",
+        "value": "NEW",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "VTR_Available",
+        "value": "Yes",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "SA_XT_NEW",
+        "value": "NEW",
+        "metaInfo": ""
+      }
+    ],
+    "deliveryPromise": "",
+    "preferredDeliveryTag": "",
+    "inPriceRevealMode": false,
+    "srcSetImg": "http://assets.myntassets.com/assets/images/28083480/2024/3/7/1dd7b5a1-c014-496f-92c6-85f95db512741709781896106CLAFOUTISMenV-NeckPolyesterPUCoatedPocketsT-shirt1.jpg",
+    "sizes": ["M"],
+    "inWishlist": false,
+    "wishlistEnabled": true,
+    "isHoverDisabled": false,
+    "isProductScrollerEnabled": true,
+    "isPreLaunch": false,
+    "prelaunchAttr": [],
+    "isSimilarProduct": false
+  },
+  {
+    "index": 9,
+    "preLaunch": false,
+    "xceleratorTag": {
+      "imageTag": {},
+      "titleTag": {}
+    },
+    "cardIndex": 9,
+    "activeCardId": null,
+    "url": "tshirts/bullmer/bullmer-tribal-printed-oversized-cotton-t-shirt/27226100/buy",
+    "brand": "BULLMER",
+    "title": "BULLMER Tribal Printed Oversized Cotton T-shirt",
+    "additionalInfo": "Print Oversized Cotton T-shirt",
+    "originalPrice": 1499,
+    "discountedPrice": 389,
+    "discountPercentage": "(74% OFF)",
+    "styleId": 27226100,
+    "sellerPartnerId": 10916,
+    "allSkuForSizes": {
+      "S": 87720794
+    },
+    "inventoryInfo": [
+      {
+        "skuId": 87720794,
+        "label": "S",
+        "inventory": 1152,
+        "available": true,
+        "brandSizeLabel": "S"
+      }
+    ],
+    "isPreOrderItem": false,
+    "searchImage": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/0d63dbfd-673d-49d0-be10-751fa0d54c0f1706543722864BULLMERMenTribalPrintedAppliqueT-shirt1.jpg",
+    "product": "BULLMER Tribal Printed Oversized Cotton T-shirt",
+    "discount": 1110,
+    "loyalty": {
+      "enabled": false,
+      "discount": 351,
+      "points": 38
+    },
+    "images": [
+      {
+        "src": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/0d63dbfd-673d-49d0-be10-751fa0d54c0f1706543722864BULLMERMenTribalPrintedAppliqueT-shirt1.jpg",
+        "view": "default"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/b3b98bdc-1344-4cdf-bbc3-fe43e1c7a0aa1706543722875BULLMERMenTribalPrintedAppliqueT-shirt4.jpg",
+        "view": "right"
+      },
+      {
+        "src": "",
+        "view": "size_representation"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/48d91740-35f5-4eb4-897b-40a17a3a085a1706543722858BULLMERMenTribalPrintedAppliqueT-shirt3.jpg",
+        "view": "back"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/cb3b576f-8e7e-43d6-888b-503c3857e0ad1706543722852BULLMERMenTribalPrintedAppliqueT-shirt6.jpg",
+        "view": "top"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/3787b25f-bd53-4e9d-836c-2c2017baf54a1706543722869BULLMERMenTribalPrintedAppliqueT-shirt5.jpg",
+        "view": "left"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/0d63dbfd-673d-49d0-be10-751fa0d54c0f1706543722864BULLMERMenTribalPrintedAppliqueT-shirt1.jpg",
+        "view": "search"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/19cb4732-f2d8-4cac-a9d5-a7b90a6e37df1706543722846BULLMERMenTribalPrintedAppliqueT-shirt2.jpg",
+        "view": "front"
+      }
+    ],
+    "rating": 3.5911664962768555,
+    "isFastFashion": true,
+    "personalizedCoupon": "",
+    "ratingCount": 883,
+    "systemAttributes": [
+      {
+        "attribute": "SA_XT_SALEPRICE",
+        "value": "Crazy Deal",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "SA_XT_BESTSELLER",
+        "value": "BESTSELLER",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "VTR_Available",
+        "value": "Yes",
+        "metaInfo": ""
+      }
+    ],
+    "deliveryPromise": "",
+    "preferredDeliveryTag": "",
+    "inPriceRevealMode": false,
+    "srcSetImg": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/0d63dbfd-673d-49d0-be10-751fa0d54c0f1706543722864BULLMERMenTribalPrintedAppliqueT-shirt1.jpg",
+    "sizes": ["S"],
+    "inWishlist": false,
+    "wishlistEnabled": true,
+    "isHoverDisabled": false,
+    "isProductScrollerEnabled": true,
+    "isPreLaunch": false,
+    "prelaunchAttr": [],
+    "isSimilarProduct": false
+  },
+  {
+    "index": 9,
+    "preLaunch": false,
+    "xceleratorTag": {
+      "imageTag": {},
+      "titleTag": {}
+    },
+    "cardIndex": 9,
+    "activeCardId": null,
+    "url": "tshirts/bullmer/bullmer-tribal-printed-oversized-cotton-t-shirt/27226100/buy",
+    "brand": "BULLMER",
+    "title": "BULLMER Tribal Printed Oversized Cotton T-shirt",
+    "additionalInfo": "Print Oversized Cotton T-shirt",
+    "originalPrice": 1499,
+    "discountedPrice": 389,
+    "discountPercentage": "(74% OFF)",
+    "styleId": 27226100,
+    "sellerPartnerId": 10916,
+    "allSkuForSizes": {
+      "S": 87720794
+    },
+    "inventoryInfo": [
+      {
+        "skuId": 87720794,
+        "label": "S",
+        "inventory": 1152,
+        "available": true,
+        "brandSizeLabel": "S"
+      }
+    ],
+    "isPreOrderItem": false,
+    "searchImage": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/0d63dbfd-673d-49d0-be10-751fa0d54c0f1706543722864BULLMERMenTribalPrintedAppliqueT-shirt1.jpg",
+    "product": "BULLMER Tribal Printed Oversized Cotton T-shirt",
+    "discount": 1110,
+    "loyalty": {
+      "enabled": false,
+      "discount": 351,
+      "points": 38
+    },
+    "images": [
+      {
+        "src": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/0d63dbfd-673d-49d0-be10-751fa0d54c0f1706543722864BULLMERMenTribalPrintedAppliqueT-shirt1.jpg",
+        "view": "default"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/b3b98bdc-1344-4cdf-bbc3-fe43e1c7a0aa1706543722875BULLMERMenTribalPrintedAppliqueT-shirt4.jpg",
+        "view": "right"
+      },
+      {
+        "src": "",
+        "view": "size_representation"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/48d91740-35f5-4eb4-897b-40a17a3a085a1706543722858BULLMERMenTribalPrintedAppliqueT-shirt3.jpg",
+        "view": "back"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/cb3b576f-8e7e-43d6-888b-503c3857e0ad1706543722852BULLMERMenTribalPrintedAppliqueT-shirt6.jpg",
+        "view": "top"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/3787b25f-bd53-4e9d-836c-2c2017baf54a1706543722869BULLMERMenTribalPrintedAppliqueT-shirt5.jpg",
+        "view": "left"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/0d63dbfd-673d-49d0-be10-751fa0d54c0f1706543722864BULLMERMenTribalPrintedAppliqueT-shirt1.jpg",
+        "view": "search"
+      },
+      {
+        "src": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/19cb4732-f2d8-4cac-a9d5-a7b90a6e37df1706543722846BULLMERMenTribalPrintedAppliqueT-shirt2.jpg",
+        "view": "front"
+      }
+    ],
+    "rating": 3.5911664962768555,
+    "isFastFashion": true,
+    "personalizedCoupon": "",
+    "ratingCount": 883,
+    "systemAttributes": [
+      {
+        "attribute": "SA_XT_SALEPRICE",
+        "value": "Crazy Deal",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "SA_XT_BESTSELLER",
+        "value": "BESTSELLER",
+        "metaInfo": ""
+      },
+      {
+        "attribute": "VTR_Available",
+        "value": "Yes",
+        "metaInfo": ""
+      }
+    ],
+    "deliveryPromise": "",
+    "preferredDeliveryTag": "",
+    "inPriceRevealMode": false,
+    "srcSetImg": "http://assets.myntassets.com/assets/images/27226100/2024/1/29/0d63dbfd-673d-49d0-be10-751fa0d54c0f1706543722864BULLMERMenTribalPrintedAppliqueT-shirt1.jpg",
+    "sizes": ["S"],
+    "inWishlist": false,
+    "wishlistEnabled": true,
+    "isHoverDisabled": false,
+    "isProductScrollerEnabled": true,
+    "isPreLaunch": false,
+    "prelaunchAttr": [],
+    "isSimilarProduct": false
+  }
+]

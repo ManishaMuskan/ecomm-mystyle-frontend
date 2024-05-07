@@ -23,7 +23,7 @@
 }
 
 .navbar-links {
-  flex: 0 0 50%;
+  flex: 0 0 45%;
 }
 
 .navbar-links-container {
@@ -42,12 +42,16 @@
   border-bottom: none;
 }
 
+.nav-link a {
+  color: var(--secondary-txt-color);
+}
+
 .navbar-search {
-  flex: 0 0 30%; /*This is a shorthand property that sets flex-grow, flex-shrink, and flex-basis.*/
+  flex: 0 0 35%; /*This is a shorthand property that sets flex-grow, flex-shrink, and flex-basis.*/
 }
 
 .navbar-actions {
-  flex: 0 0 10%;
+  flex: 0 0 13%;
 }
 
 .navbar-actions-container {
@@ -83,4 +87,24 @@
   width: 16px;
   height: 16px;
   background-position: -344px -58px;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart-items-badge {
+  position: absolute;
+  left: 13px;
+  top: -8px;
+  width: 18px;
+  height: 18px;
+  border-radius: var(--border-radius-circle);
+  background-color: var(--accent-pink-color);
+  color: var(--white);
+  font-size: var(--font-size-sm);
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
 }

@@ -1,4 +1,8 @@
 .footer {
+  background-color: var(--footer-bg-color);
+}
+
+.footer-container {
   width: 80%;
   margin: 0 auto;
 }

@@ -16,12 +16,15 @@ const NavbarActions = ({ link }) => {
         <span className={classes['navbar-action-label']}>Wishlist</span>
       </NavLink>
 
-      <NavLink to="cart" className={classes['navbar-action']}>
+      <NavLink
+        to="cart"
+        className={`${classes['navbar-action']} ${classes.cart}`}>
         {/* Included just to get an idea about how image sprites work */}
         <span
           className={`${classes['mystyle-icons-sprite']} ${classes['sprites-headerBag']}`}
         />
         <span className={classes['navbar-action-label']}>Bag</span>
+        <span className={classes['cart-items-badge']}>3</span>
       </NavLink>
     </div>
   );
