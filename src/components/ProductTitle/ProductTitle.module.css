@@ -1,0 +1,28 @@
+.product-title-container {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-15);
+  overflow: hidden;
+}
+
+span.product-title-title {
+  font-weight: 700;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-transform: capitalize;
+  color: var(--secondary-txt-color);
+}
+
+span.product-title-count {
+  color: var(--secondary-txt-color-lighter);
+  white-space: pre-wrap;
+}
+
+span.product-title-corrections {
+  color: var(--primary-txt-color-light);
+  margin-left: var(--spacer-sm);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

@@ -90,10 +90,11 @@ SALES ADS BEGINS
   display: block;
   width: 100%;
   padding: var(--spacer-sm);
-  margin: var(--spacer-md) auto;
+  margin-top: var(--spacer-xl);
   border: 0;
   border-radius: var(--border-radius-sm);
-  background: darkkhaki;
+  background: var(--button-blue-bg-color);
+  color: var(--white);
 }
 
 .coupons-corner-img {

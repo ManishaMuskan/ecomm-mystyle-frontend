@@ -196,6 +196,7 @@ const salesAds = [
   },
 ];
 
+// TODO: Provide relevant links to all Link Tags, also style :focus and :active state of <a></a>
 const HomePage = () => {
   return (
     <div className={classes.home}>
@@ -226,12 +227,12 @@ const HomePage = () => {
         ))}
 
         <div className={classes['coupons-and-sign-in']}>
-          <Card className={classes['br-4px']}>
+          <Card className={classes['card-br-small']}>
             <h3>Sign in for your best experience</h3>
             <button type="button">Sign in</button>
           </Card>
 
-          <Card className={`${classes['br-4px']} ${classes.coupons}`}>
+          <Card className={`${classes['card-br-small']} ${classes.coupons}`}>
             <h3>Coupons Corner</h3>
             <div className={classes['coupons-corner-img']}>
               <img src={flat400} alt="Flat 400" />

@@ -12,11 +12,13 @@
   --primary-txt-color-light: #696e79;
   --primary-txt-color-lighter: #94969f;
 
-  --secondary-txt-color: #282c3f;
-  --secondary-txt-color-light: #535766;
-
+  --secondary-txt-color: #282c3f; /*used in headings*/
+  --secondary-txt-color-light: #535766; /*used in footer headings*/
+  --secondary-txt-color-lighter: #878b94;
   --accent-blue-txt-color: #526cd0;
   --accent-pink-color: #f16565;
+
+  --button-blue-bg-color: #0097d7;
 
   --primary-border-clr: #eaeaec;
 

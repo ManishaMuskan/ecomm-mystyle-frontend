@@ -1,6 +1,11 @@
+import BreadCrumbs from '../components/BreadCrumbs/BreadCrumbs';
+import ProductTitle from '../components/ProductTitle/ProductTitle';
+
 const Products = () => {
   return (
     <div>
+      <BreadCrumbs />
+      <ProductTitle />
       {/* for /shop route  */}
       <div>Popular products list of all categories</div>
 

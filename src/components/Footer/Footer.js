@@ -68,7 +68,7 @@ const Footer = () => {
           </div>
           <div className={classes['footer-column']}>
             <div className={classes.assurance}>
-              <img src="images/original-guarantee.png" alt="100% Original" />
+              <img src="/images/original-guarantee.png" alt="100% Original" />
               <p>
                 <strong>100% ORIGINAL</strong> guarantee for all products at
                 mystyle.co.in
