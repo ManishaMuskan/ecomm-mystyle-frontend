@@ -21,10 +21,12 @@
   --accent-pink-color: #f16565;
   --accent-pink-color-lighter: #ff905a;
   --accent-grey-color-lighter: #7e818c;
+  --accent-pink-indicators-color: #ff3e6c;
 
   --button-blue-bg-color: #0097d7;
 
   --primary-border-clr: #eaeaec;
+  --secondary-border-clr: #d4d5d9;
 
   --border-radius-circle: 50%;
   --border-radius-xs: 2px;
@@ -33,6 +35,8 @@
 
   --font-size: 16px;
   --font-size-15: 15px;
+  --font-size-xxxs: 4px;
+  --font-size-xxs: 5px;
   --font-size-xs: 10px;
   --font-size-sm: 12px;
   --font-size-md: 14px;
@@ -56,6 +60,7 @@
   --z-index-header: 9;
   --z-index-product-ratings: 1;
   --z-index-product-actions: 2;
+  --z-index-carousel-indicators-product-slider-preview: 3;
 }
 
 @font-face {

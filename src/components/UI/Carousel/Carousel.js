@@ -65,13 +65,12 @@ const Carousel = ({
           </div>
         )}
       </div>
-      {/* {console.log(currentSlide)} */}
-      <div className={classes.indicators}>
+      <div className={`${classes.indicators} ${indicatorsClassName}`}>
         {items.map((item, index) => (
           <FontAwesomeIcon
             icon={faCircle}
             key={item.title || index}
-            className={`${classes.indicator} ${indicatorsClassName} ${classes[index === currentSlide ? 'indicator-active' : '']}`}
+            className={`${classes.indicator} ${classes[index === currentSlide ? 'indicator-active' : '']}`}
             onClick={() => setCurrentSlide(index)}
           />
         ))}

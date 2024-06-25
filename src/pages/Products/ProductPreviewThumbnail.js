@@ -47,11 +47,13 @@ const ProductPreviewThumbnail = () => {
     <section
       className={`flex-center-wrap ${classes['product-thumbnail-container']}`}>
       {product.map((p) => (
-        <Link to="/#" key={p} className={classes['product-thumbnail-box']}>
-          <div
-            className={classes['product-thumbnail-inner-box']}
-            onMouseEnter={() => showSliderPreview(p)}
-            onMouseLeave={hideSliderPreview}>
+        <Link
+          to="/#"
+          key={p}
+          className={classes['product-thumbnail-box']}
+          onMouseEnter={() => showSliderPreview(p)}
+          onMouseLeave={hideSliderPreview}>
+          <div className={classes['product-thumbnail-inner-box']}>
             {!(currentActiveProduct === p) && (
               <div className={classes['product-image-preview']}>
                 <ImageBox
@@ -77,6 +79,9 @@ const ProductPreviewThumbnail = () => {
                     showActionButtons={false}
                     pauseAutoPlayOnHover={false}
                     slideTimeOut={1000}
+                    indicatorsClassName={
+                      classes['carousel-indicators-product-slider-preview']
+                    }
                   />
                 </div>
               </div>
