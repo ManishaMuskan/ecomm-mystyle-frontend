@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './App.css';
+import './App.module.css';
 import BeautyAndPersonalCare from './pages/BeautyAndPersonalCare';
 import Cart from './pages/Cart';
 import ErrorPage from './pages/ErrorPage';

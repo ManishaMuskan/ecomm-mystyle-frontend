@@ -1,0 +1,23 @@
+.base-aspect-ratio-box {
+  position: relative;
+  width: 100%;
+  padding-top: calc(100% * (520 / 400));
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.base-aspect-ratio-img-box {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.base-aspect-ratio-img-box img {
+  object-fit: cover;
+  width: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}

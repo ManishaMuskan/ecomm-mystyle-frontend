@@ -13,6 +13,15 @@
 
 .home-special-offers {
   padding: var(--spacer-0) var(--spacer-0) var(--spacer-md);
+  height: 500px;
+}
+
+.carousel-home-special-offers {
+  height: 500px;
+}
+
+.home-special-offers-aspect-ratio-box {
+  padding-top: calc(100% * (1 / 2.3));
 }
 
 .banner-container {
@@ -62,13 +71,13 @@ SALES ADS BEGINS
   align-self: flex-start;
 }
 
-.sales-category-image-box {
+.sales-category-img-box {
   width: 100%;
   height: 100%;
   margin-bottom: var(--spacer-xs);
 }
 
-.sales-category-image-box img {
+.sales-category-img-box img {
   width: 100%;
   height: 100%;
   aspect-ratio: 1/1;
@@ -131,30 +140,6 @@ Shop by category begins
 
 .shop-by-category-box {
   flex: 0 0 16.5%;
-}
-
-.shop-by-category-aspect-ratio-box {
-  position: relative;
-  width: 100%;
-  padding-top: calc(100% * (520 / 400));
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.shop-by-category-image-box {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.shop-by-category-image-box img {
-  object-fit: cover;
-  width: 100%;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 
 /* ------------------

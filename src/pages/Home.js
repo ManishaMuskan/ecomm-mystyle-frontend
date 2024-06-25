@@ -28,6 +28,7 @@ import homeDecorSofaCovers from '../assets/imgs/sales-ads/home_decor_sofa_covers
 import flat400 from '../assets/imgs/coupon-offers/FLAT-400-Off-on-1st-Purchase-Strip.webp';
 import flat200 from '../assets/imgs/coupon-offers/MYNTRA200.webp';
 import MultiItemCarousel from '../components/UI/MultiItemCarousel/MultiItemCarousel';
+import ImageBox from '../components/UI/ImageBox/ImageBox';
 
 const bannerImgs = [
   {
@@ -201,7 +202,12 @@ const HomePage = () => {
   return (
     <div className={classes.home}>
       <section className={classes['home-special-offers']}>
-        <Carousel items={bannerImgs} />
+        <Carousel
+          items={bannerImgs}
+          aspectRatioBoxClassName={
+            classes['home-special-offers-aspect-ratio-box']
+          }
+        />
       </section>
 
       <section className={classes['sales-ads-container']}>
@@ -212,7 +218,8 @@ const HomePage = () => {
               {salesAd.ads.map((ad) => (
                 <Link to="/#" key={ad.title}>
                   <div className={classes['sales-category']}>
-                    <div className={classes['sales-category-image-box']}>
+                    <div
+                      className={`base-img-box ${classes['sales-category-img-box']}`}>
                       <img src={ad.imageSrc} alt={ad.alt} />
                     </div>
                     <small>{ad.title}</small>
@@ -272,11 +279,7 @@ const HomePage = () => {
           {shopByCategoriesImages.map(({ imageSrc, alt }) => (
             <div key={alt} className={classes['shop-by-category-box']}>
               <Link to="/#">
-                <div className={classes['shop-by-category-aspect-ratio-box']}>
-                  <div className={classes['shop-by-category-image-box']}>
-                    <img src={imageSrc} alt={alt} />
-                  </div>
-                </div>
+                <ImageBox imageSrc={imageSrc} imageAltTitle={alt} />
               </Link>
             </div>
           ))}

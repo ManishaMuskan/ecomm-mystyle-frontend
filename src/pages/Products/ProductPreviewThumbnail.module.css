@@ -1,0 +1,192 @@
+.product-thumbnail-container {
+  gap: var(--spacer-lg);
+  background: var(--white);
+}
+
+.product-thumbnail-box {
+  /* flex: 0 0 16.5%; */
+  width: 210px;
+  position: relative;
+}
+
+.product-thumbnail-box:hover {
+  box-shadow: 0 2px 16px 4px rgba(40, 44, 63, 0.07);
+}
+
+/* ----------------- product image preview---------------- */
+.product-thumbnail-inner-box {
+  position: relative;
+}
+
+.product-image-preview {
+  height: 270px;
+}
+
+.product-ratings {
+  display: flex;
+  align-items: center;
+  z-index: var(--z-index-product-ratings);
+  position: absolute;
+  bottom: var(--spacer-xs);
+  /* ---------to place a div inside div in center using position-------- */
+  /* left: 50%; */
+  /* transform: translate(-50%, 0%); */
+  padding: 0 var(--spacer-xs);
+  margin: 0 var(--spacer-xs);
+  border-radius: var(--border-radius-xs);
+  background-color: var(--translucent-bg-white);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.sprites-green-solid-star-icon {
+  transform: scale(0.55);
+  background-position: -171px -28px;
+  width: 24px;
+  height: 24px;
+}
+
+.product-ratings-count::before {
+  content: '|';
+  margin-right: var(--spacer-xs);
+}
+
+/* ----------------- product Preview ---------------- */
+.product-slider-preview {
+  /* position: absolute; */
+  background: var(
+    --white
+  ); /* to avoid background div showing up in between lag time of diplay: block and display: none*/
+  top: 0;
+  /* z-index: 2; */
+  width: 100%;
+  height: 270px;
+  /* display: none; */
+}
+
+.image-slider-container {
+  height: 100%;
+}
+
+/* ----------------- product meta info ---------------- */
+.product-meta-info {
+  padding: var(--spacer-xs);
+}
+
+.product-brand-name {
+  font-size: var(--font-size);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--secondary-txt-color);
+  margin-bottom: var(--spacer-xs);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-title {
+  color: var(--secondary-txt-color-light);
+  font-size: var(--font-size-md);
+  line-height: 1;
+  margin-bottom: var(--spacer-0);
+  margin-top: var(--spacer-0);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+  display: block;
+}
+
+.product-sizes {
+  font-size: 14px;
+  color: #535665;
+  line-height: 1;
+  display: none;
+  margin-top: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.product-price {
+  font-size: var(--font-size-md);
+  line-height: 15px;
+  color: var(--secondary-txt-color);
+  white-space: nowrap;
+  padding: var(--spacer-xs) 0;
+}
+
+.product-discounted-price {
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  color: var(--secondary-txt-color);
+}
+
+.product-strike {
+  text-decoration: line-through;
+  color: var(--accent-grey-color-lighter);
+  font-weight: 400;
+  margin-left: var(--spacer-xs);
+  font-size: var(--font-size-sm);
+}
+
+.product-discount-percentage {
+  color: var(--accent-pink-color-lighter);
+  font-weight: 400;
+  font-size: var(--font-size-sm);
+  margin-left: var(--spacer-xs);
+}
+
+.product-actions {
+  display: none;
+  position: absolute;
+  z-index: var(--z-index-product-actions);
+  left: 0;
+  top: 240px;
+  background: var(--white);
+  width: 100%;
+  padding: var(--spacer-sm);
+  box-sizing: border-box;
+}
+
+.product-actions button {
+  font-weight: 700;
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  padding: var(--spacer-xs) var(--spacer-sm);
+  width: 100%;
+  background: transparent;
+}
+
+.sprite-product-not-wishlisted-icon {
+  background-position: -315px -186px;
+  width: 17px;
+  height: 22px;
+  vertical-align: middle;
+  margin: var(--spacer-0) var(--spacer-xs);
+}
+
+.product-wishlist-btn {
+  border-radius: var(--border-radius-xs);
+  border: 1px solid var(--secondary-border-clr);
+  color: var(--secondary-txt-color);
+  letter-spacing: var(--letter-spacing-sm);
+}
+
+.product-wishlist-btn:hover {
+  border: 1px solid var(--secondary-txt-color-light);
+}
+
+.product-thumbnail-box:hover .product-actions,
+.product-thumbnail-box:hover .product-sizes {
+  display: block;
+}
+
+.product-thumbnail-box:hover .product-title {
+  display: none;
+}

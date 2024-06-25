@@ -4,7 +4,14 @@ import { useCallback, useEffect, useState } from 'react';
 import classes from './Carousel.module.css';
 import ImageTitleCarouselContent from './ImageTitleCarouselContent';
 
-const Carousel = ({ items }) => {
+const Carousel = ({
+  items,
+  showActionButtons = true,
+  pauseAutoPlayOnHover = true,
+  slideTimeOut = 2500,
+  aspectRatioBoxClassName,
+  indicatorsClassName,
+}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
 
@@ -25,44 +32,49 @@ const Carousel = ({ items }) => {
       autoPlay &&
       setTimeout(() => {
         slideRight();
-      }, 2500);
+      }, slideTimeOut);
 
     return () => clearTimeout(timeOut);
   });
 
   return (
     <div
-      className={classes.carousel}
-      onMouseEnter={() => {
-        setAutoPlay(false);
-      }}
-      onMouseLeave={() => setAutoPlay(true)}>
+      className={`${classes.carousel}`}
+      onMouseEnter={() => pauseAutoPlayOnHover && setAutoPlay(false)}
+      onMouseLeave={() => pauseAutoPlayOnHover && setAutoPlay(true)}>
       <div className={classes['carousel-wrapper']}>
-        <ImageTitleCarouselContent items={items} currentSlide={currentSlide} />
-        <div className={classes['carousel-slide-actions']}>
-          <button
-            type="button"
-            className={classes['carousel-arrow-left']}
-            onClick={slideLeft}>
-            &lsaquo;
-          </button>
-          <button
-            type="button"
-            className={classes['carousel-arrow-right']}
-            onClick={slideRight}>
-            &rsaquo;
-          </button>
-        </div>
-        <div className={classes.indicators}>
-          {items.map((item, index) => (
-            <FontAwesomeIcon
-              icon={faCircle}
-              key={item.title || index}
-              className={`${classes.indicator} ${classes[index === currentSlide ? 'indicator-active' : '']}`}
-              onClick={() => setCurrentSlide(index)}
-            />
-          ))}
-        </div>
+        <ImageTitleCarouselContent
+          items={items}
+          currentSlide={currentSlide}
+          aspectRatioBoxClassName={aspectRatioBoxClassName}
+        />
+        {showActionButtons && (
+          <div className={classes['carousel-slide-actions']}>
+            <button
+              type="button"
+              className={classes['carousel-arrow-left']}
+              onClick={slideLeft}>
+              &lsaquo;
+            </button>
+            <button
+              type="button"
+              className={classes['carousel-arrow-right']}
+              onClick={slideRight}>
+              &rsaquo;
+            </button>
+          </div>
+        )}
+      </div>
+      {/* {console.log(currentSlide)} */}
+      <div className={classes.indicators}>
+        {items.map((item, index) => (
+          <FontAwesomeIcon
+            icon={faCircle}
+            key={item.title || index}
+            className={`${classes.indicator} ${indicatorsClassName} ${classes[index === currentSlide ? 'indicator-active' : '']}`}
+            onClick={() => setCurrentSlide(index)}
+          />
+        ))}
       </div>
     </div>
   );
