@@ -18,3 +18,5 @@
 6. Created UI components like - Carousel, Multi-Item Carousel
 
 7. Created basic layout of Home page
+
+8. Created product preview thumbnail and did some modification in slider, small animation added to the slider indicator

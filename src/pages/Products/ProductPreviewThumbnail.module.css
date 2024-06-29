@@ -10,7 +10,7 @@
 }
 
 .product-thumbnail-box:hover {
-  box-shadow: 0 2px 16px 4px rgba(40, 44, 63, 0.07);
+  box-shadow: var(--box-shadow-thumbnail-preview);
 }
 
 /* ----------------- product image preview---------------- */
@@ -71,19 +71,18 @@
 .carousel-indicators-product-slider-preview {
   background: var(--white);
   padding: var(--spacer-sm);
-  width: 100%;
+  width: 101%;
   font-size: var(--font-size-xxxs);
-  z-index: var(--z-index-carousel-indicators-product-slider-preview);
   justify-content: center;
   gap: var(--spacer-sm);
   animation-name: slide-up-indicators; /*how it should appear and how long should it take to do the transition */
-  animation-duration: 0.5s;
+  animation-duration: 0.2s;
+  margin: 0;
 }
 
 @keyframes slide-up-indicators {
   /* initial state */
   0% {
-    z-index: 0;
     bottom: 0px;
   }
   /* final state */
@@ -124,7 +123,7 @@
 
 .product-sizes {
   font-size: 14px;
-  color: #535665;
+  color: var(--tertiary-txt-color);
   line-height: 1;
   display: none;
   margin-top: 0;

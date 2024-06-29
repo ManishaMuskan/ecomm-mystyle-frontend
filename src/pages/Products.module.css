@@ -1,0 +1,15 @@
+.products-container {
+  flex: 0 0 80%;
+}
+
+.v-filters-container {
+  flex: 0 0 20%;
+}
+
+.products-wrapper {
+  display: flex;
+  gap: 32px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+}

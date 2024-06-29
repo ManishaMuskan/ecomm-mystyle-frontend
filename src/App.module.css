@@ -19,3 +19,10 @@ header {
   align-items: center;
   align-content: center;
 }
+
+:global .flex-stretch {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: center;
+}
