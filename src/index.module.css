@@ -30,6 +30,9 @@
 
   --primary-border-clr: #eaeaec;
   --secondary-border-clr: #d4d5d9;
+  --tertiary-border-clr: #e9e9ed;
+  --quaternary-border-clr: #edebef;
+  --custom-input-border-clr: #c3c2c9;
 
   --border-radius-circle: 50%;
   --border-radius-xs: 2px;
@@ -56,17 +59,18 @@
   --spacer-xxs: 3px;
   --spacer-xs: 5px;
   --spacer-sm: 10px;
-  --spacer-md: 16px;
+  --spacer-md: 20px;
   --spacer-lg: 32px;
   --spacer-xl: 50px;
 
   --z-index-header: 9;
-  --z-index-product-ratings: 1;
-  --z-index-product-actions: 2;
+  --z-index-1: 1;
+  --z-index-2: 2;
   --z-index-carousel-indicators-product-slider-preview: 3;
 
   --box-shadow-product-sort-select: 0 8px 10px 0 rgba(0, 0, 0, 0.08);
   --box-shadow-thumbnail-preview: 0 2px 16px 4px rgba(40, 44, 63, 0.07);
+  --box-shadow-checked-radio-button: inset 0 0 0 3px var(--white);
 }
 
 @font-face {

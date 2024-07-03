@@ -1,1 +1,58 @@
-  
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacer-sm) var(--spacer-md);
+  text-transform: uppercase;
+}
+
+.filter-header h4 {
+  color: var(--secondary-txt-color);
+}
+
+.filter-header button {
+  color: var(--accent-pink-indicators-color);
+  font-size: calc(var(--font-size) - 3px);
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: transparent;
+  outline: 0;
+  border: 0;
+}
+
+.v-filters-content-wrapper {
+  border: 1px solid var(--quaternary-border-clr);
+  overflow: auto;
+}
+
+.gender-filter,
+.category-filter,
+.brand-filter {
+  padding: var(--spacer-md);
+  border-bottom: 1px solid var(--quaternary-border-clr);
+}
+
+.gender-filter h3,
+.category-filter h3,
+.brand-filter h3 {
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 calc(var(--spacer-md) - 2px);
+  color: var(--secondary-txt-color);
+  display: block;
+}
+
+.gender-filter li,
+.category-filter li,
+.brand-filter li {
+  margin-bottom: 7px;
+  font-size: var(--font-size-md);
+}
+
+.filtered-product-num {
+  color: #94969f;
+  font-size: 11px;
+  margin-left: 4px;
+}

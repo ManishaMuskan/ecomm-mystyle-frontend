@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */ /* TODO: fix this */
+/* eslint-disable jsx-a11y/label-has-associated-control */ /* FIXME: fix this */
 import { useState } from 'react';
 import SpriteIcon from '../../../../components/UI/SpriteIcon/SpriteIcon';
 import classes from './SelectSortOption.module.css';

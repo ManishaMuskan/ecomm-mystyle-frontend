@@ -25,7 +25,7 @@
 .product-ratings {
   display: flex;
   align-items: center;
-  z-index: var(--z-index-product-ratings);
+  z-index: var(--z-index-1);
   position: absolute;
   bottom: var(--spacer-xs);
   /* ---------to place a div inside div in center using position-------- */
@@ -167,7 +167,7 @@
 .product-actions {
   display: none;
   position: absolute;
-  z-index: var(--z-index-product-actions);
+  z-index: var(--z-index-2);
   left: 0;
   top: 240px;
   background: var(--white);

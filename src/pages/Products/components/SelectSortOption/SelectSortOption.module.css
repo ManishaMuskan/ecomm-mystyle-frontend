@@ -49,7 +49,7 @@
   top: 39px;
   width: 255px;
   padding-bottom: var(--spacer-md);
-  z-index: var(--z-index-product-actions);
+  z-index: var(--z-index-2);
   background-color: var(--white);
   border: 1px solid var(--secondary-border-clr);
   border-top-color: transparent;
