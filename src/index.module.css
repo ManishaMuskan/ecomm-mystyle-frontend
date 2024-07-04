@@ -97,8 +97,15 @@
 }
 
 body {
-  /* color: var(--primary-txt-color); */
   margin: var(--spacer-0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body * {
   font-family:
     Assistant,
     -apple-system,
@@ -112,11 +119,6 @@ body {
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 code {

@@ -4,6 +4,7 @@ import VerticalFilters from '../components/filters/VerticalFilters/VerticalFilte
 import ProductPreviewThumbnail from './Products/ProductPreviewThumbnail';
 import classes from './Products.module.css';
 import SelectSortOption from './Products/components/SelectSortOption/SelectSortOption';
+import Pagination from '../components/Pagination/Pagination';
 
 const productImages = [
   {
@@ -217,6 +218,7 @@ const Products = () => {
               <ProductPreviewThumbnail key={p.thumbnailImage} product={p} />
             ))}
           </div>
+          <Pagination totalPages={10} />
         </section>
       </div>
 

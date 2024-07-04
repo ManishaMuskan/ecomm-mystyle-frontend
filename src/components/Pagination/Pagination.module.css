@@ -1,0 +1,88 @@
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacer-sm);
+  border-top: 1px solid var(--quaternary-border-clr);
+  margin-top: 76px;
+  padding-top: 24px;
+  padding-bottom: 60px;
+  color: var(--secondary-txt-color);
+}
+
+.pagination-container button {
+  font-weight: 700;
+  padding: var(--spacer-sm) calc(var(--spacer-md) + 2px);
+  background: transparent;
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size);
+}
+
+button.btn-page-one {
+  padding: calc(var(--spacer-sm) - 2px) var(--spacer-sm);
+  position: relative;
+  border: 0;
+}
+
+button.btn-previous,
+button.btn-next {
+  height: 42px;
+  border: 1px solid var(--secondary-border-clr);
+  text-align: center;
+  position: relative;
+}
+
+button.btn-previous {
+  padding: 10px 23px 10px 37px;
+}
+
+button.btn-next {
+  padding: 10px 37px 10px 23px;
+}
+
+.btn-previous:hover,
+.btn-next:hover {
+  border-color: var(--secondary-txt-color);
+}
+
+.btn-page-one:before,
+.btn-page-one:after,
+.btn-previous:before,
+.btn-next:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: -5px;
+  width: 8px;
+  height: 8px;
+  border: solid var(--secondary-txt-color);
+  border-width: 2px 2px 0 0;
+  transform: rotate(224deg);
+}
+
+.btn-page-one:after {
+  left: -13px;
+}
+
+.btn-previous:before {
+  left: 20px;
+  top: 17px;
+}
+
+.btn-next:after {
+  top: 17px;
+  left: 62px;
+  transform: rotate(45deg);
+}
+
+.pagination-container button.btn-disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.current-page-of-total-page-txt {
+  padding: 0 65px;
+  color: var(--secondary-txt-color-light);
+  font-size: 14px;
+  font-weight: 400;
+}
