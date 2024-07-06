@@ -1,10 +1,10 @@
-import BreadCrumbs from '../components/BreadCrumbs/BreadCrumbs';
-import ProductTitle from '../components/ProductTitle/ProductTitle';
-import VerticalFilters from '../components/filters/VerticalFilters/VerticalFilters';
-import ProductPreviewThumbnail from './Products/ProductPreviewThumbnail';
+import BreadCrumbs from '../../components/BreadCrumbs/BreadCrumbs';
+import ProductTitle from '../../components/ProductTitle/ProductTitle';
+import VerticalFilters from './components/VerticalFilters/VerticalFilters';
+import ProductPreviewThumbnail from './components/ProductPreviewThumbnail/ProductPreviewThumbnail';
 import classes from './Products.module.css';
-import SelectSortOption from './Products/components/SelectSortOption/SelectSortOption';
-import Pagination from '../components/Pagination/Pagination';
+import SelectSortOption from './components/SelectSortOption/SelectSortOption';
+import Pagination from '../../components/Pagination/Pagination';
 
 const productImages = [
   {
@@ -215,23 +215,16 @@ const Products = () => {
           <SelectSortOption />
           <div className={classes['products-wrapper']}>
             {products.map((p) => (
-              <ProductPreviewThumbnail key={p.thumbnailImage} product={p} />
+              <ProductPreviewThumbnail
+                key={p.thumbnailImage}
+                product={p}
+                link="/product-details"
+              />
             ))}
           </div>
           <Pagination totalPages={10} />
         </section>
       </div>
-
-      {/* for /shop route  */}
-      {/* <div>Popular products list of all categories</div> */}
-      {/* for /shop/men route  */}
-      {/* <div>Filter products list based on men category</div> */}
-
-      {/* for /shop/women route  */}
-      {/* <div>Filter products list based on women category</div> */}
-
-      {/* for /shop/kids route  */}
-      {/* <div>Filter products list based on kids category</div> */}
     </div>
   );
 };

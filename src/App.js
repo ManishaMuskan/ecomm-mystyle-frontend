@@ -7,12 +7,13 @@ import Home from './pages/Home';
 import HomeDecor from './pages/HomeDecor';
 import KidsShop from './pages/KidsShop';
 import MenShop from './pages/MenShop';
-import Products from './pages/Products';
+import Products from './pages/Products/Products';
 import RootLayout from './pages/RootLayout';
 import ShopRootLayout from './pages/ShopRootLayout';
 import Wishlist from './pages/Wishlist';
 import WomenShop from './pages/WomenShop';
 import Discover from './pages/Discover';
+import ProductDetails from './pages/Products/ProductDetails';
 
 const router = createBrowserRouter([
   {
@@ -62,6 +63,10 @@ const router = createBrowserRouter([
       {
         path: 'cart',
         element: <Cart />,
+      },
+      {
+        path: 'product-details',
+        element: <ProductDetails />,
       },
     ],
   },

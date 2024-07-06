@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import classes from './ProductPreviewThumbnail.module.css';
-import Carousel from '../../components/UI/Carousel/Carousel';
-import ImageBox from '../../components/UI/ImageBox/ImageBox';
-import SpriteIcon from '../../components/UI/SpriteIcon/SpriteIcon';
+import Carousel from '../../../../components/UI/Carousel/Carousel';
+import ImageBox from '../../../../components/UI/ImageBox/ImageBox';
+import SpriteIcon from '../../../../components/UI/SpriteIcon/SpriteIcon';
 
-const ProductPreviewThumbnail = ({ product }) => {
+const ProductPreviewThumbnail = ({ product, link }) => {
   const [currentActiveProduct, setCurrentActiveProduct] = useState(false);
 
   const showSliderPreview = () => {
@@ -18,7 +18,7 @@ const ProductPreviewThumbnail = ({ product }) => {
 
   return (
     <Link
-      to="/#"
+      to={link}
       className={classes['product-thumbnail-box']}
       onMouseEnter={() => showSliderPreview()}
       onMouseLeave={hideSliderPreview}>

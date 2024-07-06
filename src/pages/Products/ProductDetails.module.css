@@ -1,0 +1,113 @@
+.product-details-container {
+}
+
+.details-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacer-md);
+}
+
+.product-images {
+  flex: 58%;
+}
+
+.Product-specification {
+  flex: 42%;
+}
+
+.product-brand {
+  color: var(--secondary-txt-color);
+  font-size: calc(var(--font-size-sm) * 2);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.product-title {
+  color: var(--tertiary-txt-color);
+  padding: 5px 20px 14px 0;
+  font-size: calc(var(--font-size-xs) * 2);
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.product-ratings-box {
+  padding-bottom: var(--spacer-sm);
+  border-bottom: 1px solid var(--secondary-border-clr);
+}
+
+.product-ratings {
+  display: inline-block;
+  padding: var(--spacer-xxs) var(--spacer-sm);
+  border-radius: var(--border-radius-xs);
+  color: var(--secondary-txt-color);
+  font-size: var(--font-size);
+  font-weight: 700;
+  border: 1px solid var(--primary-border-clr);
+  cursor: pointer;
+}
+
+.sprites-green-solid-star-icon {
+  transform: scale(0.6);
+  background-position: -194px -28px;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.product-ratings-count {
+  font-weight: 400;
+  color: #535766;
+}
+
+.product-ratings-count::before {
+  content: '|';
+  margin-right: var(--spacer-xs);
+  color: var(--secondary-border-clr);
+  width: 1px;
+}
+
+.product-ratings:hover {
+  border: 1px solid var(--tertiary-txt-color);
+}
+
+.sprite-delivery-option-icon {
+  background-position: -252px -58px;
+  width: 23px;
+  height: 22px;
+}
+
+.product-price-box {
+  color: #696e79;
+  font-size: 14px;
+  margin-top: 14px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.product-price-discounted {
+}
+
+.product-price-mrp {
+  height: 22px;
+  opacity: 0.8;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #282c3f;
+  margin-right: 12px;
+}
+
+.product-price-discountText {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #ff905a;
+}
+
+.product-vat-info {
+  color: #03a685;
+  font-weight: 700;
+  font-size: 14px;
+  display: block;
+  margin: 5px 10px 0 0;
+}

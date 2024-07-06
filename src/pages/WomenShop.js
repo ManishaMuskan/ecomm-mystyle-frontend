@@ -1,4 +1,4 @@
-import Products from './Products';
+import Products from './Products/Products';
 
 const WomenShop = () => {
   return (
