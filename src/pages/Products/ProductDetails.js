@@ -1,379 +1,573 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import {
+  SvgAddressTick,
+  SvgExchangeOrReturn,
+  SvgPayOnDelivery,
+  SvgServiceAbility,
+} from '../../assets/svgs/SvgIcons';
 import BreadCrumbs from '../../components/BreadCrumbs/BreadCrumbs';
-import classes from './ProductDetails.module.css';
 import SpriteIcon from '../../components/UI/SpriteIcon/SpriteIcon';
+import data from '../../seeds/product-men-shirt-denim.json';
+import classes from './ProductDetails.module.css';
+import RatingsAndReview from './components/ProductDetails/RatingsAndReview';
 
-const product = {
-  brand: 'CARBONN CLOTH',
-  title: 'Faded Spread Collar Regular Fit Denim Opaque Casual Shirt',
-  price: {
-    mrp: 2499,
-    discounted: 799,
-    discountText: '65% OFF',
-  },
-  ratings: {
-    averageRating: 3.487603305785124,
-    totalCount: 121,
-    isFastFashion: true,
-    ratingInfo: [
+const product = data.data;
+product.title = product.name.slice(product.brand.name.length + 1);
+console.log(product);
+product.ratings = {
+  averageRating: 3.923076923076923,
+  totalCount: 78,
+  isFastFashion: true,
+  ratingInfo: [
+    {
+      rating: 2,
+      count: 4,
+    },
+    {
+      rating: 3,
+      count: 7,
+    },
+    {
+      rating: 4,
+      count: 10,
+    },
+    {
+      rating: 5,
+      count: 45,
+    },
+    {
+      rating: 1,
+      count: 12,
+    },
+  ],
+  reviewInfo: {
+    reviewsCount: '18',
+    reviewsImageCount: '4',
+    topReviews: [
       {
-        rating: 4,
-        count: 28,
+        reviewId: '615af732-09fc-468c-b178-f8bb2d8f5b0c',
+        userName: 'Rahul singh',
+        reviewText: '',
+        userRating: 4,
+        timestamp: '1716089282000',
+        upvotes: '1',
+        downvotes: '3',
+        reviewImages: [
+          {
+            reviewId: '615af732-09fc-468c-b178-f8bb2d8f5b0c',
+            imageUrl:
+              'https://assets.myntassets.com/assets/images/2024/5/19/0192a57f-5f0c-4a70-8026-9594fc40513c1716089278575-image722.jpg',
+            aspectRatio: '4:5',
+            resolution: '1080X1350',
+          },
+          {
+            reviewId: '615af732-09fc-468c-b178-f8bb2d8f5b0c',
+            imageUrl:
+              'https://assets.myntassets.com/assets/images/2024/5/19/2dfd24b2-7916-4a69-8c12-d57146fce1141716089278660-image233.jpg',
+            aspectRatio: '4:5',
+            resolution: '1080X1350',
+          },
+          {
+            reviewId: '615af732-09fc-468c-b178-f8bb2d8f5b0c',
+            imageUrl:
+              'https://assets.myntassets.com/assets/images/2024/5/19/934e1cf2-d795-4def-bfaf-9594984fef6c1716089278608-image151.jpg',
+            aspectRatio: '4:5',
+            resolution: '1080X1350',
+          },
+        ],
+      },
+    ],
+    topImageReviews: [
+      {
+        uidx: null,
+        reviewId: '615af732-09fc-468c-b178-f8bb2d8f5b0c',
+        userName: 'Rahul singh',
+        reviewText: '',
+        userRating: 4,
+        timestamp: '1716089282000',
+        upvotes: '1',
+        downvotes: '3',
+        reviewImages: null,
       },
       {
-        rating: 5,
-        count: 50,
+        reviewId: 'a68a8de1-f481-4e68-88e6-4623769e4206',
+        userName: 'rajni',
+        reviewText: 'Osm\n',
+        userRating: 5,
+        timestamp: '1714101022000',
+        upvotes: '0',
+        downvotes: '0',
+        reviewImages: null,
+      },
+    ],
+    topImages: [
+      {
+        reviewId: '615af732-09fc-468c-b178-f8bb2d8f5b0c',
+        imageUrl:
+          'https://assets.myntassets.com/assets/images/2024/5/19/934e1cf2-d795-4def-bfaf-9594984fef6c1716089278608-image151.jpg',
+        aspectRatio: '4:5',
+        resolution: '1080X1350',
       },
       {
-        rating: 1,
-        count: 31,
+        reviewId: '615af732-09fc-468c-b178-f8bb2d8f5b0c',
+        imageUrl:
+          'https://assets.myntassets.com/assets/images/2024/5/19/0192a57f-5f0c-4a70-8026-9594fc40513c1716089278575-image722.jpg',
+        aspectRatio: '4:5',
+        resolution: '1080X1350',
       },
       {
-        rating: 2,
-        count: 7,
+        reviewId: '615af732-09fc-468c-b178-f8bb2d8f5b0c',
+        imageUrl:
+          'https://assets.myntassets.com/assets/images/2024/5/19/2dfd24b2-7916-4a69-8c12-d57146fce1141716089278660-image233.jpg',
+        aspectRatio: '4:5',
+        resolution: '1080X1350',
       },
       {
-        rating: 3,
-        count: 5,
+        reviewId: 'a68a8de1-f481-4e68-88e6-4623769e4206',
+        imageUrl:
+          'https://assets.myntassets.com/assets/images/2024/4/26/99b43f71-9258-4893-915d-4c76546b34c01714101016966-image628.jpg',
+        aspectRatio: '9:16',
+        resolution: '540X960',
       },
     ],
   },
+  aggregatedQuestionsAndAnswers: [
+    {
+      question: {
+        text_for_pdp: 'Fit',
+      },
+      total_count_for_question: 6,
+      answers_with_count: [
+        {
+          option: {
+            text_for_pdp: 'Tight',
+          },
+          count: 0,
+          percentage: 0,
+          is_highlighted: false,
+        },
+        {
+          option: {
+            text_for_pdp: 'A Little Tight',
+          },
+          count: 0,
+          percentage: 0,
+          is_highlighted: false,
+        },
+        {
+          option: {
+            text_for_pdp: 'Just Right',
+          },
+          count: 6,
+          percentage: 100,
+          is_highlighted: true,
+        },
+        {
+          option: {
+            text_for_pdp: 'A Little Loose',
+          },
+          count: 0,
+          percentage: 0,
+          is_highlighted: false,
+        },
+        {
+          option: {
+            text_for_pdp: 'Loose',
+          },
+          count: 0,
+          percentage: 0,
+          is_highlighted: false,
+        },
+      ],
+      rating: 5,
+    },
+    {
+      question: {
+        text_for_pdp: 'Length',
+      },
+      total_count_for_question: 6,
+      answers_with_count: [
+        {
+          option: {
+            text_for_pdp: 'Short',
+          },
+          count: 0,
+          percentage: 0,
+          is_highlighted: false,
+        },
+        {
+          option: {
+            text_for_pdp: 'A Little Short',
+          },
+          count: 1,
+          percentage: 17,
+          is_highlighted: false,
+        },
+        {
+          option: {
+            text_for_pdp: 'Just Right',
+          },
+          count: 4,
+          percentage: 67,
+          is_highlighted: true,
+        },
+        {
+          option: {
+            text_for_pdp: 'A Little Long',
+          },
+          count: 1,
+          percentage: 16,
+          is_highlighted: false,
+        },
+        {
+          option: {
+            text_for_pdp: 'Long',
+          },
+          count: 0,
+          percentage: 0,
+          is_highlighted: false,
+        },
+      ],
+      rating: 3.68,
+    },
+  ],
+  isVirtualBundle: false,
 };
 
+const p = {
+  data: [
+    {
+      question: {
+        text_for_pdp: 'Fit',
+      },
+      total_count_for_question: 6,
+      answers_with_count: [
+        {
+          option: {
+            text_for_pdp: 'Tight',
+          },
+          count: 0,
+          percentage: 0,
+          is_highlighted: false,
+        },
+        {
+          option: {
+            text_for_pdp: 'A Little Tight',
+          },
+          count: 0,
+          percentage: 0,
+          is_highlighted: false,
+        },
+        {
+          option: {
+            text_for_pdp: 'Just Right',
+          },
+          count: 6,
+          percentage: 100,
+          is_highlighted: true,
+        },
+        {
+          option: {
+            text_for_pdp: 'A Little Loose',
+          },
+          count: 0,
+          percentage: 0,
+          is_highlighted: false,
+        },
+        {
+          option: {
+            text_for_pdp: 'Loose',
+          },
+          count: 0,
+          percentage: 0,
+          is_highlighted: false,
+        },
+      ],
+      rating: 5,
+    },
+    {
+      question: {
+        text_for_pdp: 'Length',
+      },
+      total_count_for_question: 6,
+      answers_with_count: [
+        {
+          option: {
+            text_for_pdp: 'Short',
+          },
+          count: 0,
+          percentage: 0,
+          is_highlighted: false,
+        },
+        {
+          option: {
+            text_for_pdp: 'A Little Short',
+          },
+          count: 1,
+          percentage: 17,
+          is_highlighted: false,
+        },
+        {
+          option: {
+            text_for_pdp: 'Just Right',
+          },
+          count: 4,
+          percentage: 67,
+          is_highlighted: true,
+        },
+        {
+          option: {
+            text_for_pdp: 'A Little Long',
+          },
+          count: 1,
+          percentage: 16,
+          is_highlighted: false,
+        },
+        {
+          option: {
+            text_for_pdp: 'Long',
+          },
+          count: 0,
+          percentage: 0,
+          is_highlighted: false,
+        },
+      ],
+      rating: 3.68,
+    },
+  ],
+  inPdp: true,
+  showRating: [
+    {
+      rating: 5,
+      count: 45,
+    },
+    {
+      rating: 1,
+      count: 12,
+    },
+    {
+      rating: 2,
+      count: 4,
+    },
+    {
+      rating: 3,
+      count: 7,
+    },
+    {
+      rating: 4,
+      count: 10,
+    },
+  ],
+};
+
+const discountPercentage = (mrp, sp) => Math.floor(((mrp - sp) / mrp) * 100);
+
 const ProductDetails = () => {
+  const [selectedSize, setSelectedSize] = useState(null);
+  const [wishlisted, setWishlisted] = useState(false);
+
+  const handleSizeChange = (index) => setSelectedSize(index);
+  const handleWishlistChange = () => setWishlisted((prev) => !prev);
+
   return (
     <div className={classes['product-details-container']}>
       <BreadCrumbs />
       <div className={classes['details-wrapper']}>
         <div className={classes['product-images']}>image grid</div>
         <div className={classes['Product-specification']}>
-          <h1 className={classes['product-brand']}>{product.brand}</h1>
+          <h1 className={classes['product-brand']}>{product.brand.name}</h1>
           <p className={classes['product-title']}>{product.title}</p>
-          <div className={classes['product-ratings-box']}>
-            <div className={classes['product-ratings']}>
-              <span>{Math.round(product.ratings.averageRating * 10) / 10}</span>
-              <SpriteIcon
-                iconClassName={classes['sprites-green-solid-star-icon']}
-              />
-              <span className={classes['product-ratings-count']}>
-                {product.ratings.totalCount} Ratings
-              </span>
+
+          {product.ratings.averageRating && (
+            <div className={classes['product-ratings-box']}>
+              <div className={classes['product-ratings']}>
+                <span>
+                  {Math.round(product.ratings.averageRating * 10) / 10}
+                </span>
+                <SpriteIcon
+                  className={classes['sprites-green-solid-star-icon']}
+                />
+                <span className={classes['product-ratings-count']}>
+                  {product.ratings.totalCount} Ratings
+                </span>
+              </div>
             </div>
-          </div>
+          )}
+
           <p className={classes['product-price-box']}>
             <span className={classes['product-price-discounted']}>
-              <strong>₹{product.price.discounted}</strong>
+              ₹{product.price.discounted}
             </span>
             <span className={classes['product-price-mrp']}>
-              <s>MRP {product.price.mrp}</s>
+              <s>MRP ₹{product.price.mrp}</s>
             </span>
             <span className={classes['product-price-discountText']}>
-              ({product.price.discountText})
+              (
+              {`${discountPercentage(
+                product.price.mrp,
+                product.price.discounted
+              )}% OFF`}
+              )
             </span>
-            <p className={classes['product-vat-info']}>
+            <span className={classes['product-vat-info']}>
               inclusive of all taxes
-            </p>
+            </span>
           </p>
 
-          <div className="product-colors">
-            <p className="colors-heading">
-              <strong>More Colors</strong>
-            </p>
-            <div>showing different colors</div>
-          </div>
+          {product.colours && (
+            <div className={classes['product-colors']}>
+              <h4 className={classes['colors-heading']}>More colors</h4>
+              <ul>
+                {product.colours.map((clr) => (
+                  <li key={clr.label} title={clr.label}>
+                    <Link to="/#">
+                      <img
+                        src={clr.image}
+                        alt={clr.label}
+                        className={classes['colors-image']}
+                      />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
-          <div className="product-sizes">
-            <p className="sizes-heading">
-              <strong>More Sizes</strong>
-            </p>
-            <div>showing different sizes</div>
+          <div className={classes['product-sizes']}>
+            <p className={classes['sizes-heading']}>Select Size</p>
+            <ul>
+              {product.sizes.map((s, index) => (
+                <li key={s.label} className={classes['product-size']}>
+                  <button
+                    type="button"
+                    onClick={() => handleSizeChange(index)}
+                    className={
+                      selectedSize === index
+                        ? classes['product-size-size-button-selected']
+                        : ''
+                    }>
+                    {s.label}
+                  </button>
+                </li>
+              ))}
+            </ul>
           </div>
 
           <div className={classes['product-actions']}>
-            <button type="button">Add to cart</button>
-            <button type="button">wishlist</button>
+            <button type="button" className={classes['add-to-cart']}>
+              <SpriteIcon className={classes['sprites-white-bag-icon']} />
+              Add to cart
+            </button>
+            <button
+              type="button"
+              className={`${classes['add-to-wishlist']} ${wishlisted ? classes['add-to-wishlist-selected'] : ''}`}
+              onClick={handleWishlistChange}>
+              <SpriteIcon
+                className={`${classes['sprites-not-Wishlisted-icon']} ${wishlisted ? classes['sprites-wishlisted-icon'] : ''}`}
+              />
+              wishlist
+            </button>
           </div>
 
           <div className={classes['delivery-options']}>
             <h4>
               Delivery Options
-              <SpriteIcon
-                iconClassName={classes['sprite-delivery-option-icon']}
-              />
+              <SpriteIcon className={classes['sprite-delivery-option-icon']} />
             </h4>
-            <div className="Address-address-box Address-address-line Address-pdp-box">
-              <span className="Address-text">
-                <span>829134</span>
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="#23C5A0"
-                  className="Address-tick">
-                  <g fill="none" fillRule="evenodd">
-                    <path d="M0 0h24v24H0z" />
-                    <path
-                      fill="#23C5A0"
-                      fillRule="nonzero"
-                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.29 16.29L5.7 12.7a.996.996 0 111.41-1.41L10 14.17l6.88-6.88a.996.996 0 111.41 1.41l-7.59 7.59a.996.996 0 01-1.41 0z"
-                    />
-                  </g>
-                </svg>
+            <div className={classes['address-box']}>
+              <span className={classes['address-text']}>
+                <span>829134 (Manisha)</span>
+                <SvgAddressTick className={classes['address-tick']} />
               </span>
-              <span
-                className="Address-address-button"
-                style={{ color: 'rgb(255, 63, 108)' }}>
-                CHANGE
-              </span>
+              <span className={classes['address-button']}>CHANGE</span>
             </div>
-            <ul className="pincode-serviceability-list">
-              <li className="pincode-serviceabilityItem">
-                <svg viewBox="0 0 24 25" className="pincode-serviceabilityIcon">
-                  <g fill="none" fillRule="evenodd">
-                    <path d="M0 1h24v24H0z" />
-                    <path
-                      d="M21.872 12.843l-.68 3.849a1.949 1.949 0 00-.398-.819c-.377-.447-.925-.693-1.549-.693-1.024 0-1.98.669-2.395 1.601l1.159-6.571h1.703c.7 0 1.31.265 1.713.746.415.494.573 1.164.447 1.887m-3.238 5.812c-.297 0-.55-.108-.715-.306-.172-.204-.236-.486-.183-.795.123-.698.816-1.288 1.51-1.288.296 0 .55.108.716.306.17.204.235.486.18.794-.123.699-.814 1.289-1.508 1.289m-11.308 0c-.295 0-.55-.108-.715-.306-.171-.204-.236-.486-.18-.794.122-.699.814-1.289 1.508-1.289.296 0 .55.108.714.306.172.204.237.486.182.794-.123.699-.815 1.289-1.509 1.289m14.932-8.397c-.616-.731-1.518-1.134-2.546-1.134H18.2l.262-1.487A.546.546 0 0017.927 7H6.417a.543.543 0 100 1.086H17.28l-1.557 8.832h-5.8a1.965 1.965 0 00-.438-1.045c-.376-.447-.926-.693-1.548-.693-1.074 0-2.074.734-2.454 1.738h-.356l.143-.811a.543.543 0 10-1.069-.188l-.256 1.447a.546.546 0 00.535.637h.86c.045.389.194.753.438 1.045.375.446.925.693 1.548.693 1.075 0 2.075-.734 2.454-1.738h6.867c.044.389.194.752.439 1.045.375.446.925.693 1.547.693 1.075 0 2.075-.734 2.454-1.738h.52c.264 0 .49-.189.534-.449l.799-4.523c.184-1.043-.058-2.028-.683-2.773"
-                      fill="#535766"
-                    />
-                    <path
-                      d="M9.812 9.667c0-.3-.243-.543-.543-.543H1.543a.544.544 0 000 1.086h7.726c.3 0 .543-.243.543-.543M9.387 12.074c0-.3-.243-.543-.543-.543h-5.82a.543.543 0 100 1.086h5.82c.3 0 .543-.243.543-.543M8.42 13.938H4.502a.543.543 0 100 1.086H8.42a.543.543 0 100-1.086"
-                      fill="#535766"
-                    />
-                  </g>
-                </svg>
-                <h4 className="pincode-serviceabilityTitle">
-                  Get it by Fri, Jul 12
-                </h4>
+            <ul className={classes['pincode-serviceability-list']}>
+              <li>
+                <SvgServiceAbility
+                  className={classes['pincode-service-ability-icon']}
+                />
+                <h4>Get it by Fri, Jul 12</h4>
               </li>
-              <li className="pincode-serviceabilityItem">
-                <svg
-                  id="prefix__Layer_1"
-                  data-name="Layer 1"
-                  viewBox="0 0 24 24"
-                  className="pincode-serviceabilityIcon">
-                  <defs>
-                    <mask
-                      id="prefix__mask"
-                      x="0"
-                      y="0"
-                      width="24"
-                      height="24"
-                      maskUnits="userSpaceOnUse">
-                      <g id="prefix__b">
-                        <path
-                          id="prefix__a"
-                          className="prefix__cls-1"
-                          d="M0 0h24v24H0z"
-                        />
-                      </g>
-                    </mask>
-                    <mask
-                      id="prefix__mask-2"
-                      x="5.17"
-                      y="2"
-                      width="13.59"
-                      height="20"
-                      maskUnits="userSpaceOnUse">
-                      <g id="prefix__d">
-                        <path
-                          id="prefix__c"
-                          className="prefix__cls-1"
-                          d="M5.17 2h13.59v20H5.17z"
-                        />
-                      </g>
-                    </mask>
-                    <style>
-                      {/* NOTE: in jsx, style will be added as template string */}
-                      {`.prefix__cls-1,.prefix__cls-4 { fill : #fff; fill-rule: evenodd; }`}
-                      {`.prefix__cls-4 { fill: #535766; }`}
-                    </style>
-                  </defs>
-                  <g mask="url(#prefix__mask)">
-                    <g mask="url(#prefix__mask-2)">
-                      <path
-                        className="prefix__cls-4"
-                        d="M17.59 18v2.47a1.17 1.17 0 010 .32 1.13 1.13 0 01-.32 0h-2.76a4.18 4.18 0 01-4-3.48h1.14a.57.57 0 00.57-.57.58.58 0 00-.57-.58H6.84a1.17 1.17 0 01-.45-.05 1.27 1.27 0 010-.44v-3.63-8.5a.51.51 0 01.09-.35.44.44 0 01.33-.08h6.08a1.1 1.1 0 01.31 0 1.31 1.31 0 010 .33v7.15a.59.59 0 00.58.58.58.58 0 00.57-.59V8.91l2.23 2.74.31.42a2.5 2.5 0 01.74 1.57v4.38m1.17-4.36a3.55 3.55 0 00-1-2.3l-.3-.39-3.17-3.89V3.52c0-1-.48-1.5-1.5-1.5H11C9.64 2 8.19 2 6.78 2a1.54 1.54 0 00-1.17.42 1.59 1.59 0 00-.44 1.18V15.72c0 1.18.46 1.64 1.65 1.64h2.47A5.31 5.31 0 0014.51 22h2.74a1.32 1.32 0 001.5-1.5V18v-4.36"
-                      />
-                    </g>
-                    <path
-                      className="prefix__cls-4"
-                      d="M14.54 12.57c-.71-.76-1.43-1.51-2.17-2.25a1.72 1.72 0 00-1.78-.46 1.54 1.54 0 00-1 1.3 2 2 0 00.64 1.6l2.08 2.15.53.55a3.93 3.93 0 001.08 4 .58.58 0 00.82.05.57.57 0 000-.81c-1-1.15-1.22-2.06-.75-3.14a.55.55 0 00-.11-.63l-.79-.82c-.7-.71-1.39-1.42-2.07-2.14-.27-.28-.36-.46-.33-.66A.36.36 0 0111 11a.6.6 0 01.6.18c.72.73 1.45 1.49 2.14 2.23l.92 1a.58.58 0 00.82 0 .57.57 0 000-.82l-.91-1m-3.94-3.78a.29.29 0 00.29-.28.27.27 0 00-.09-.21L9.35 6.83a1.17 1.17 0 00.52-.36 1.53 1.53 0 00.32-.62h1a.29.29 0 00.27-.31.28.28 0 00-.27-.27h-.86a2.49 2.49 0 000-.48h.87a.29.29 0 100-.58H8.37a.29.29 0 100 .58H9.7a2.56 2.56 0 010 .48H8.37a.29.29 0 000 .58h1.21a.72.72 0 01-.14.24.8.8 0 01-.7.24.3.3 0 00-.28.17.33.33 0 00.06.33l1.9 1.9a.32.32 0 00.21.08"
-                    />
-                  </g>
-                </svg>
-                <h4 className="pincode-serviceabilityTitle">
-                  Pay on delivery available
-                </h4>
+              <li>
+                <SvgPayOnDelivery
+                  className={classes['pincode-service-ability-icon']}
+                />
+                <h4>Pay on delivery available</h4>
               </li>
-              <li className="pincode-serviceabilityItem">
-                <svg viewBox="0 0 24 24" className="pincode-serviceabilityIcon">
-                  <g fill="#535766">
-                    <path d="M15.19 8.606V4.3a.625.625 0 00-.622-.625H6.384V.672a.624.624 0 00-.407-.588.62.62 0 00-.687.178L.367 6.048a.628.628 0 000 .812l4.923 5.778a.626.626 0 00.687.182.624.624 0 00.407-.588V9.228h8.184a.62.62 0 00.621-.622zm-1.244-.625H5.762a.625.625 0 00-.621.625v1.938l-3.484-4.09L5.14 2.362V4.3c0 .344.28.625.621.625h8.184v3.056z" />
-                    <path d="M22.708 13.028L17.785 7.25a.616.616 0 00-.687-.178.624.624 0 00-.407.587v3.003H8.507a.625.625 0 00-.622.625v4.304c0 .343.28.625.622.625h8.184v3.003a.624.624 0 00.621.625.626.626 0 00.473-.219l4.923-5.781a.632.632 0 000-.816zm-4.774 4.497v-1.937a.625.625 0 00-.622-.625H9.13v-3.054h8.183a.625.625 0 00.622-.625V9.347l3.484 4.09-3.484 4.088z" />
-                  </g>
-                </svg>
-                <h4 className="pincode-serviceabilityTitle">
-                  Easy 30 days return &amp; exchange available
-                </h4>
-                <span className="pincode-serviceabilityViewMore">
+              <li>
+                <SvgExchangeOrReturn
+                  className={classes['pincode-service-ability-icon']}
+                />
+                <h4>Easy 30 days return &amp; exchange available</h4>
+                {/* TODO: Design More Info side view box */}
+                {/* <span className="pincode-serviceabilityViewMore">
                   MORE INFO
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="#ff3e6c"
-                    className="pincode-rightArrow">
-                    <g fill="none" fillRule="evenodd">
-                      <path d="M0 0h24v24H0z" opacity="0.05" />
-                      <path
-                        fill="#ff3e6c"
-                        d="M12.55 15.768a.786.786 0 00.041-.048l6.183-6.36a.815.815 0 000-1.128.761.761 0 00-1.095 0l-5.68 5.844-5.678-5.844a.761.761 0 00-1.095 0 .816.816 0 000 1.127l6.182 6.361A.761.761 0 0012 16a.76.76 0 00.55-.232"
-                      />
-                    </g>
-                  </svg>
-                </span>
+                  <SvgMoreInfo className={classes['pincode-right-arrow']} />
+                </span> */}
               </li>
             </ul>
+            <p>100% Original Products</p>
           </div>
+
+          {/* TODO: Design product description part */}
           {/* <div className={classes['product-description']}>
             product description
           </div> */}
-          <div className="detailed-reviews-ratingContainer">
-            <div
-              id="detailedRatingContainer"
-              className="index-detailedRatingContainer index-inPdp index-showUGC">
-              <div id="headingContainer" className="index-header">
+          <div className={classes['detailed-reviews-rating-container']}>
+            <div className={classes['detailed-rating-container']}>
+              <h4 className={classes['index-header']}>
                 Ratings
-                <span className="myntraweb-sprite index-productRatingsIcon sprites-productRatingsIcon" />
-              </div>
-              <div className="index-flexRow index-margin22">
-                <div className="index-flexColumn">
-                  <div className="index-flexRow index-averageRating">
-                    <span>3.9</span>
-                    <span className="myntraweb-sprite index-starIcon index-productRatingsGoodIcon sprites-productRatingsGoodIcon" />
+                <SpriteIcon
+                  className={classes['sprites-product-ratings-icon']}
+                />
+              </h4>
+              <div className={classes['ratings-container']}>
+                <div className={classes['average-rating-container']}>
+                  <div className={classes['average-rating']}>
+                    <span>
+                      {Math.round(product.ratings.averageRating * 10) / 10}
+                    </span>
+                    <SpriteIcon
+                      className={classes['sprites-good-ratings-icon']}
+                    />
                   </div>
-                  <div className="index-countDesc">70Verified Buyers</div>
+                  <div className={classes['verified-buyers-count']}>
+                    {product.ratings.totalCount} Verified Buyers
+                  </div>
                 </div>
-                <div className="index-separator" />
-                <div>
-                  <div className="index-flexRow index-ratingBarContainer">
-                    <div className="index-rating">
-                      <span className="index-ratingLevel">5</span>
-                      <span className="myntraweb-sprite index-grayStarIcon sprites-productRatingsGrayIcon" />
-                    </div>
-                    <progress min="0" max="70" value="41" data-rating="5" />
-                    <div className="index-count">41</div>
-                  </div>
-                  <div className="index-flexRow index-ratingBarContainer">
-                    <div className="index-rating">
-                      <span className="index-ratingLevel">4</span>
-                      <span className="myntraweb-sprite index-grayStarIcon sprites-productRatingsGrayIcon" />
-                    </div>
-                    <progress min="0" max="70" value="8" data-rating="4" />
-                    <div className="index-count">8</div>
-                  </div>
-                  <div className="index-flexRow index-ratingBarContainer">
-                    <div className="index-rating">
-                      <span className="index-ratingLevel">3</span>
-                      <span className="myntraweb-sprite index-grayStarIcon sprites-productRatingsGrayIcon" />
-                    </div>
-                    <progress min="0" max="70" value="7" data-rating="3" />
-                    <div className="index-count">7</div>
-                  </div>
-                  <div className="index-flexRow index-ratingBarContainer">
-                    <div className="index-rating">
-                      <span className="index-ratingLevel">2</span>
-                      <span className="myntraweb-sprite index-grayStarIcon sprites-productRatingsGrayIcon" />
-                    </div>
-                    <progress min="0" max="70" value="4" data-rating="2" />
-                    <div className="index-count">4</div>
-                  </div>
-                  <div className="index-flexRow index-ratingBarContainer">
-                    <div className="index-rating">
-                      <span className="index-ratingLevel">1</span>
-                      <span className="myntraweb-sprite index-grayStarIcon sprites-productRatingsGrayIcon" />
-                    </div>
-                    <progress min="0" max="70" value="10" data-rating="1" />
-                    <div className="index-count">10</div>
-                  </div>
+                <div className={classes['ratings-bar-container']}>
+                  {product.ratings.ratingInfo
+                    .sort((a, b) => (a.rating > b.rating ? -1 : 1))
+                    .map((r) => (
+                      <div
+                        key={r.rating}
+                        className={classes['rating-bar-wrapper']}>
+                        <div className={classes['index-rating']}>
+                          <span className={classes['rating-label']}>
+                            {r.rating}
+                          </span>
+                          <SpriteIcon
+                            className={
+                              classes['sprites-product-ratings-gray-icon']
+                            }
+                          />
+                        </div>
+                        <progress
+                          min="0"
+                          max="70"
+                          value={r.count}
+                          data-rating={r.rating}
+                        />
+                        <div className={classes['rating-count']}>{r.count}</div>
+                      </div>
+                    ))}
                 </div>
               </div>
             </div>
             <div className="ugc-ugcContainer ugc-inPdp ugc-showRating">
               <div>
-                <div className="ugc-ugcDescriptionTitle">
-                  What Customers Said
-                  <span className="ugc-iconContainer">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="16"
-                      viewBox="0 0 20 16">
-                      <g fill="none" fillRule="evenodd">
-                        <g>
-                          <g>
-                            <g>
-                              <g>
-                                <path
-                                  fill="#FFF"
-                                  d="M.827 3.937L2.416.847c.149-.298.576-.294.72.006L4.816 4.32l3.81.587c.329.051.457.456.217.687L6.062 8.26l.623 3.802c.054.328-.293.576-.587.418L3.08 10.752"
-                                  transform="translate(-1015 -1319) translate(824 1315) translate(191 4) translate(10 .874)"
-                                />
-                                <path
-                                  stroke="#282C3F"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  d="M.827 3.937L2.416.847c.149-.298.576-.294.72.006L4.816 4.32l3.81.587c.329.051.457.456.217.687L6.062 8.26l.623 3.802c.054.328-.293.576-.587.418L3.08 10.752"
-                                  transform="translate(-1015 -1319) translate(824 1315) translate(191 4) translate(10 .874)"
-                                />
-                              </g>
-                              <path
-                                fill="#FFF"
-                                d="M7.517 2.933L9.32 6.655l4.09.629c.326.05.454.454.214.683l-2.982 2.862.667 4.08c.054.327-.29.573-.582.417L7.08 13.373 3.405 15.27c-.294.15-.635-.1-.576-.426l.73-4.07L.62 7.87c-.236-.233-.102-.634.226-.68l4.098-.567 1.858-3.694c.15-.296.572-.293.716.005"
-                                transform="translate(-1015 -1319) translate(824 1315) translate(191 4)"
-                              />
-                              <path
-                                stroke="#282C3F"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M7.517 2.933L9.32 6.655l4.09.629c.326.05.454.454.214.683l-2.982 2.862.667 4.08c.054.327-.29.573-.582.417L7.08 13.373 3.405 15.27c-.294.15-.635-.1-.576-.426l.73-4.07L.62 7.87c-.236-.233-.102-.634.226-.68l4.098-.567 1.858-3.694c.15-.296.572-.293.716.005z"
-                                transform="translate(-1015 -1319) translate(824 1315) translate(191 4)"
-                              />
-                            </g>
-                          </g>
-                        </g>
-                      </g>
-                    </svg>
-                  </span>
-                </div>
-                <div>
-                  <div className="">
-                    <div className="answer-wrapper-AnswerWrapper answer-wrapper-onlyHighlighted">
-                      <div>Fit</div>
-                      <div className="answer-AnswerRow">
-                        <div className="answer-fill-wrapper">
-                          <div
-                            className="answer-fill"
-                            style={{ width: '100%' }}
-                          />
-                        </div>
-                        <div className="answer-caption-wrapper answer-highlighted">
-                          Just Right (100%)
-                        </div>
-                      </div>
-                    </div>
-                    <div className="answer-wrapper-AnswerWrapper answer-wrapper-onlyHighlighted">
-                      <div>Length</div>
-                      <div className="answer-AnswerRow">
-                        <div className="answer-fill-wrapper">
-                          <div
-                            className="answer-fill"
-                            style={{ width: '67%' }}
-                          />
-                        </div>
-                        <div className="answer-caption-wrapper answer-highlighted">
-                          Just Right(67%)
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="ugc-viewDetails">View Details</div>
-                </div>
+                <RatingsAndReview data={p.data} />
               </div>
             </div>
           </div>

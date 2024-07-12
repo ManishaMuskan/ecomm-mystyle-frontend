@@ -8609,5 +8609,3652 @@
       }
     },
     "brandLogo": "http://assets.myntassets.com/assets/images/retaillabs/2019/2/13/8a530aea-74bb-4bfc-8199-edb4c24254491550060302491-US-Polo-Assn.png"
+  },
+  {
+    "id": 25751490,
+    "name": "Koburg Men Colourblocked Lightweight Comfort Insole Basics Sneakers",
+    "price": {
+      "mrp": 2499,
+      "discounted": 899,
+      "discount": {
+        "label": "(64% OFF)"
+      }
+    },
+    "brand": {
+      "name": "Koburg"
+    },
+    "defaultImage": {
+      "src": "http://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/25751490/2024/3/1/47e9b0c2-ebf6-4ef8-a599-9562245a48e61709295254204-Koburg-Men-Colourblocked-Lightweight-Comfort-Insole-Basics-S-1.jpg",
+      "secureSrc": "https://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/25751490/2024/3/1/47e9b0c2-ebf6-4ef8-a599-9562245a48e61709295254204-Koburg-Men-Colourblocked-Lightweight-Comfort-Insole-Basics-S-1.jpg"
+    },
+    "info": "Men Lightweight Sneakers",
+    "baseColour": "White",
+    "tag": "",
+    "landingPageUrl": "Casual-Shoes/Koburg/Koburg-Men-Colourblocked-Lightweight-Comfort-Insole-Basics-Sneakers/25751490/buy",
+    "rating": 4.3,
+    "category": "Casual Shoes",
+    "isFastFashion": true,
+    "systemAttributes": [],
+    "isOnlyFewLeft": false,
+    "showAddToBag": true,
+    "sizeChart": {
+      "sizeChartUrl": null,
+      "sizeRepresentationUrl": "http://assets.myntassets.com/assets/images/sizechart/2016/12/12/11481538267795-footwear.png"
+    },
+    "inventoryInfo": null,
+    "analytics": {
+      "articleType": "Casual Shoes",
+      "subCategory": "Shoes",
+      "masterCategory": "Footwear",
+      "gender": "Men",
+      "brand": "Koburg",
+      "colourHexCode": null
+    },
+    "buyButtonSellerOrder": [
+      {
+        "skuId": 83180770,
+        "sellerPartnerId": 1051
+      },
+      {
+        "skuId": 83180764,
+        "sellerPartnerId": 1051
+      },
+      {
+        "skuId": 83180768,
+        "sellerPartnerId": 1051
+      },
+      {
+        "skuId": 83180774,
+        "sellerPartnerId": 1051
+      },
+      {
+        "skuId": 83180778,
+        "sellerPartnerId": 1051
+      }
+    ],
+    "discounts": [
+      {
+        "type": 1,
+        "freeItem": false,
+        "label": "(64% OFF)",
+        "discountPercent": 64,
+        "discountId": "25751490:509296146"
+      }
+    ],
+    "sellers": [
+      {
+        "sellerPartnerId": 1051,
+        "sellerName": "VIRAJ ENTERPRISES"
+      }
+    ],
+    "sizes": [
+      {
+        "skuId": 83180764,
+        "styleId": 25751490,
+        "action": "/product/25751490/related/6?co=1",
+        "label": "6",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2499,
+            "sellerPartnerId": 1051,
+            "availableCount": 3,
+            "sellableInventoryCount": 3,
+            "warehouses": ["6416"],
+            "supplyType": "ON_HAND",
+            "discountId": "25751490:509296146",
+            "discountedPrice": 899,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 83180768,
+        "styleId": 25751490,
+        "action": "/product/25751490/related/7?co=1",
+        "label": "7",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2499,
+            "sellerPartnerId": 1051,
+            "availableCount": 10,
+            "sellableInventoryCount": 10,
+            "warehouses": ["6416"],
+            "supplyType": "ON_HAND",
+            "discountId": "25751490:509296146",
+            "discountedPrice": 899,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 83180770,
+        "styleId": 25751490,
+        "action": "/product/25751490/related/8?co=1",
+        "label": "8",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2499,
+            "sellerPartnerId": 1051,
+            "availableCount": 28,
+            "sellableInventoryCount": 28,
+            "warehouses": ["6416"],
+            "supplyType": "ON_HAND",
+            "discountId": "25751490:509296146",
+            "discountedPrice": 899,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 83180774,
+        "styleId": 25751490,
+        "action": "/product/25751490/related/9?co=1",
+        "label": "9",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2499,
+            "sellerPartnerId": 1051,
+            "availableCount": 22,
+            "sellableInventoryCount": 22,
+            "warehouses": ["6416"],
+            "supplyType": "ON_HAND",
+            "discountId": "25751490:509296146",
+            "discountedPrice": 899,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 83180778,
+        "styleId": 25751490,
+        "action": "/product/25751490/related/10?co=1",
+        "label": "10",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2499,
+            "sellerPartnerId": 1051,
+            "availableCount": 14,
+            "sellableInventoryCount": 14,
+            "warehouses": ["6416"],
+            "supplyType": "ON_HAND",
+            "discountId": "25751490:509296146",
+            "discountedPrice": 899,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      }
+    ]
+  },
+  {
+    "id": 24927986,
+    "name": "Roadster Men Bootcut Stretchable Jeans",
+    "price": {
+      "mrp": 2899,
+      "discounted": 1188,
+      "discount": {
+        "label": "(59% OFF)"
+      }
+    },
+    "brand": {
+      "name": "Roadster"
+    },
+    "defaultImage": {
+      "src": "http://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/24927986/2023/9/18/5c7aef2f-84a9-4417-a6db-5333273f46061695031803903-Roadster-Men-Jeans-8451695031803454-4.jpg",
+      "secureSrc": "https://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/24927986/2023/9/18/5c7aef2f-84a9-4417-a6db-5333273f46061695031803903-Roadster-Men-Jeans-8451695031803454-4.jpg"
+    },
+    "info": "Men Bootcut Jeans",
+    "baseColour": "Grey",
+    "tag": "",
+    "landingPageUrl": "Jeans/Roadster/Roadster-Men-Bootcut-Stretchable-Jeans/24927986/buy",
+    "rating": 3.8085106382978724,
+    "category": "Jeans",
+    "isFastFashion": true,
+    "systemAttributes": [
+      {
+        "systemAttributeValueEntry": {
+          "id": 200,
+          "systemAttributeEntry": {
+            "attributeCode": "VTR_AVAILABLE",
+            "attributeName": "VTR_Available",
+            "attributeType": "def",
+            "id": 158
+          },
+          "valueCode": "VTR_AVAILABLE_YES",
+          "valueName": "Yes"
+        }
+      },
+      {
+        "systemAttributeValueEntry": {
+          "id": 314,
+          "systemAttributeEntry": {
+            "attributeCode": "SA_XT_MyntraUnique",
+            "attributeName": "SA_XT_MyntraUnique",
+            "attributeType": "def",
+            "id": 210
+          },
+          "valueCode": "Myntra Unique",
+          "valueName": "Myntra Unique"
+        }
+      }
+    ],
+    "isOnlyFewLeft": false,
+    "showAddToBag": true,
+    "sizeChart": {
+      "sizeChartUrl": null,
+      "sizeRepresentationUrl": "http://assets.myntassets.com/assets/images/sizechart/2016/12/12/11481538267773-Jeans.png"
+    },
+    "inventoryInfo": null,
+    "analytics": {
+      "articleType": "Jeans",
+      "subCategory": "Bottomwear",
+      "masterCategory": "Apparel",
+      "gender": "Men",
+      "brand": "Roadster",
+      "colourHexCode": null
+    },
+    "buyButtonSellerOrder": [
+      {
+        "skuId": 80165008,
+        "sellerPartnerId": 8922
+      },
+      {
+        "skuId": 80165024,
+        "sellerPartnerId": 8922
+      },
+      {
+        "skuId": 80165032,
+        "sellerPartnerId": 8922
+      },
+      {
+        "skuId": 80164998,
+        "sellerPartnerId": 8922
+      },
+      {
+        "skuId": 80165016,
+        "sellerPartnerId": 8922
+      }
+    ],
+    "discounts": [
+      {
+        "type": 1,
+        "freeItem": false,
+        "label": "(59% OFF)",
+        "discountPercent": 59,
+        "discountId": "24927986:507957978"
+      }
+    ],
+    "sellers": [
+      {
+        "sellerPartnerId": 8922,
+        "sellerName": "Value Centrum Retail Private Limited"
+      }
+    ],
+    "sizes": [
+      {
+        "skuId": 80164998,
+        "styleId": 24927986,
+        "action": "/product/24927986/related/28?co=1",
+        "label": "28",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2899,
+            "sellerPartnerId": 8922,
+            "availableCount": 11,
+            "sellableInventoryCount": 11,
+            "warehouses": ["7298"],
+            "supplyType": "ON_HAND",
+            "discountId": "24927986:507957978",
+            "discountedPrice": 1188,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 80165008,
+        "styleId": 24927986,
+        "action": "/product/24927986/related/30?co=1",
+        "label": "30",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2899,
+            "sellerPartnerId": 8922,
+            "availableCount": 22,
+            "sellableInventoryCount": 22,
+            "warehouses": ["7298"],
+            "supplyType": "ON_HAND",
+            "discountId": "24927986:507957978",
+            "discountedPrice": 1188,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 80165016,
+        "styleId": 24927986,
+        "action": "/product/24927986/related/32?co=1",
+        "label": "32",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2899,
+            "sellerPartnerId": 8922,
+            "availableCount": 46,
+            "sellableInventoryCount": 46,
+            "warehouses": ["7298"],
+            "supplyType": "ON_HAND",
+            "discountId": "24927986:507957978",
+            "discountedPrice": 1188,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 80165024,
+        "styleId": 24927986,
+        "action": "/product/24927986/related/34?co=1",
+        "label": "34",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2899,
+            "sellerPartnerId": 8922,
+            "availableCount": 32,
+            "sellableInventoryCount": 32,
+            "warehouses": ["7298", "40602"],
+            "supplyType": "ON_HAND",
+            "discountId": "24927986:507957978",
+            "discountedPrice": 1188,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 80165032,
+        "styleId": 24927986,
+        "action": "/product/24927986/related/36?co=1",
+        "label": "36",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2899,
+            "sellerPartnerId": 8922,
+            "availableCount": 15,
+            "sellableInventoryCount": 15,
+            "warehouses": ["7298", "40602"],
+            "supplyType": "ON_HAND",
+            "discountId": "24927986:507957978",
+            "discountedPrice": 1188,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      }
+    ]
+  },
+  {
+    "id": 24814714,
+    "name": "MEENAZ Men Silver-Plated AD Studded Adjustable Finger Ring",
+    "price": {
+      "mrp": 1750,
+      "discounted": 349,
+      "discount": {
+        "label": "(Rs. 1401 OFF)"
+      }
+    },
+    "brand": {
+      "name": "MEENAZ"
+    },
+    "defaultImage": {
+      "src": "http://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/24814714/2023/9/5/3959420b-d389-4000-bbad-2bea23d52f101693898446251Ring1.jpg",
+      "secureSrc": "https://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/24814714/2023/9/5/3959420b-d389-4000-bbad-2bea23d52f101693898446251Ring1.jpg"
+    },
+    "info": "Men Silver-Plated Finger Ring",
+    "baseColour": "Silver",
+    "tag": "",
+    "landingPageUrl": "Ring/MEENAZ/MEENAZ-Men-Silver-Plated-AD-Studded-Adjustable-Finger-Ring/24814714/buy",
+    "rating": null,
+    "category": "Ring",
+    "isFastFashion": null,
+    "systemAttributes": [],
+    "isOnlyFewLeft": false,
+    "showAddToBag": true,
+    "sizeChart": {
+      "sizeChartUrl": null,
+      "sizeRepresentationUrl": "http://assets.myntassets.com/images/style/sizechart/ring_adults_unisex.png"
+    },
+    "inventoryInfo": null,
+    "analytics": {
+      "articleType": "Ring",
+      "subCategory": "Jewellery",
+      "masterCategory": "Accessories",
+      "gender": "Men",
+      "brand": "MEENAZ",
+      "colourHexCode": null
+    },
+    "buyButtonSellerOrder": [
+      {
+        "skuId": 79762856,
+        "sellerPartnerId": 22912
+      }
+    ],
+    "discounts": [
+      {
+        "type": 1,
+        "freeItem": false,
+        "label": "(Rs. 1401 OFF)",
+        "discountPercent": 80,
+        "discountId": "24814714:503912281"
+      }
+    ],
+    "sellers": [
+      {
+        "sellerPartnerId": 22912,
+        "sellerName": "MEENAZ LIFESTYLE PRIVATE LIMITED"
+      }
+    ],
+    "sizes": [
+      {
+        "skuId": 79762856,
+        "styleId": 24814714,
+        "action": "/product/24814714/related/Onesize?co=1",
+        "label": "Onesize",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 1750,
+            "sellerPartnerId": 22912,
+            "availableCount": 12,
+            "sellableInventoryCount": 12,
+            "warehouses": ["30496"],
+            "supplyType": "ON_HAND",
+            "discountId": "24814714:503912281",
+            "discountedPrice": 349,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 3,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      }
+    ]
+  },
+  {
+    "id": 26237374,
+    "name": "DENNISON Men Mid-Rise Smart Tapered Fit Easy Wash Trousers",
+    "price": {
+      "mrp": 2799,
+      "discounted": 1035,
+      "discount": {
+        "label": "(63% OFF)"
+      }
+    },
+    "brand": {
+      "name": "DENNISON"
+    },
+    "defaultImage": {
+      "src": "http://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/26237374/2023/12/5/f8fac137-32b7-447d-b2c4-e1e4912aaac91701755380264DENNISONMenGreenSmartTaperedFitEasyWashTrousers1.jpg",
+      "secureSrc": "https://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/26237374/2023/12/5/f8fac137-32b7-447d-b2c4-e1e4912aaac91701755380264DENNISONMenGreenSmartTaperedFitEasyWashTrousers1.jpg"
+    },
+    "info": "Men Tapered Fit Trousers",
+    "baseColour": "Green",
+    "tag": "",
+    "landingPageUrl": "Trousers/DENNISON/DENNISON-Men-Mid-Rise-Smart-Tapered-Fit-Easy-Wash-Trousers/26237374/buy",
+    "rating": 3.8219178082191783,
+    "category": "Trousers",
+    "isFastFashion": true,
+    "systemAttributes": [
+      {
+        "systemAttributeValueEntry": {
+          "id": 39,
+          "systemAttributeEntry": {
+            "attributeCode": "SA_XT_BEST_PRICE",
+            "attributeName": "SA_XT_Best_Price",
+            "attributeType": "def",
+            "id": 7
+          },
+          "valueCode": "PRICE_MAY_GO_UP",
+          "valueName": "Price may go up"
+        }
+      },
+      {
+        "systemAttributeValueEntry": {
+          "id": 314,
+          "systemAttributeEntry": {
+            "attributeCode": "SA_XT_MyntraUnique",
+            "attributeName": "SA_XT_MyntraUnique",
+            "attributeType": "def",
+            "id": 210
+          },
+          "valueCode": "Myntra Unique",
+          "valueName": "Myntra Unique"
+        }
+      },
+      {
+        "systemAttributeValueEntry": {
+          "id": 296,
+          "systemAttributeEntry": {
+            "attributeCode": "SA_XT_SALEPRICE",
+            "attributeName": "SA_XT_SALEPRICE",
+            "attributeType": "def",
+            "id": 178
+          },
+          "valueCode": "Crazy Deal",
+          "valueName": "Crazy Deal"
+        }
+      }
+    ],
+    "isOnlyFewLeft": false,
+    "showAddToBag": true,
+    "sizeChart": {
+      "sizeChartUrl": null,
+      "sizeRepresentationUrl": "http://assets.myntassets.com/assets/images/sizechart/2016/12/12/11481538623570-Trousers_Adults-Men.png"
+    },
+    "inventoryInfo": null,
+    "analytics": {
+      "articleType": "Trousers",
+      "subCategory": "Bottomwear",
+      "masterCategory": "Apparel",
+      "gender": "Men",
+      "brand": "DENNISON",
+      "colourHexCode": null
+    },
+    "buyButtonSellerOrder": [
+      {
+        "skuId": 84807366,
+        "sellerPartnerId": 4036
+      },
+      {
+        "skuId": 84807370,
+        "sellerPartnerId": 4036
+      },
+      {
+        "skuId": 84807374,
+        "sellerPartnerId": 4036
+      }
+    ],
+    "discounts": [
+      {
+        "type": 1,
+        "freeItem": false,
+        "label": "(65% OFF)",
+        "discountPercent": 65,
+        "discountId": "26237374:507998309"
+      },
+      {
+        "type": 1,
+        "freeItem": false,
+        "label": "(63% OFF)",
+        "discountPercent": 63,
+        "discountId": "26237374:508631377"
+      }
+    ],
+    "sellers": [
+      {
+        "sellerPartnerId": 4036,
+        "sellerName": "Supercom Net"
+      }
+    ],
+    "sizes": [
+      {
+        "skuId": 84807366,
+        "styleId": 26237374,
+        "action": "/product/26237374/related/30?co=1",
+        "label": "30",
+        "available": false,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 84807370,
+        "styleId": 26237374,
+        "action": "/product/26237374/related/32?co=1",
+        "label": "32",
+        "available": false,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 84807374,
+        "styleId": 26237374,
+        "action": "/product/26237374/related/34?co=1",
+        "label": "34",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2799,
+            "sellerPartnerId": 4036,
+            "availableCount": 2,
+            "sellableInventoryCount": 2,
+            "warehouses": ["309", "27235"],
+            "supplyType": "ON_HAND",
+            "discountId": "26237374:508631377",
+            "discountedPrice": 1035,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 84807378,
+        "styleId": 26237374,
+        "action": "/product/26237374/related/36?co=1",
+        "label": "36",
+        "available": false,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [],
+        "kidsSizeMeasurements": null
+      }
+    ]
+  },
+  {
+    "id": 25627606,
+    "name": "V-Mart Men Regular Fit Mid-Rise Light Fade Cotton Jeans",
+    "price": {
+      "mrp": 999,
+      "discounted": 949,
+      "discount": {
+        "label": "(5% OFF)"
+      }
+    },
+    "brand": {
+      "name": "V-Mart"
+    },
+    "defaultImage": {
+      "src": "http://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/25627606/2023/10/26/2cf39baf-233f-47ee-acac-5a26a533bdee1698296204593V-MartMenGreyLowDistressLightFadeJeans1.jpg",
+      "secureSrc": "https://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/25627606/2023/10/26/2cf39baf-233f-47ee-acac-5a26a533bdee1698296204593V-MartMenGreyLowDistressLightFadeJeans1.jpg"
+    },
+    "info": "Men Regular Fit Cotton Jeans",
+    "baseColour": "Grey",
+    "tag": "",
+    "landingPageUrl": "Jeans/V-Mart/V-Mart-Men-Regular-Fit-Mid-Rise-Light-Fade-Cotton-Jeans/25627606/buy",
+    "rating": null,
+    "category": "Jeans",
+    "isFastFashion": null,
+    "systemAttributes": [],
+    "isOnlyFewLeft": false,
+    "showAddToBag": true,
+    "sizeChart": {
+      "sizeChartUrl": null,
+      "sizeRepresentationUrl": "http://assets.myntassets.com/assets/images/sizechart/2016/12/12/11481538267773-Jeans.png"
+    },
+    "inventoryInfo": null,
+    "analytics": {
+      "articleType": "Jeans",
+      "subCategory": "Bottomwear",
+      "masterCategory": "Apparel",
+      "gender": "Men",
+      "brand": "V-Mart",
+      "colourHexCode": null
+    },
+    "buyButtonSellerOrder": [
+      {
+        "skuId": 82719442,
+        "sellerPartnerId": 14020
+      },
+      {
+        "skuId": 82719446,
+        "sellerPartnerId": 14020
+      },
+      {
+        "skuId": 82719448,
+        "sellerPartnerId": 14020
+      },
+      {
+        "skuId": 82719440,
+        "sellerPartnerId": 14020
+      },
+      {
+        "skuId": 82719444,
+        "sellerPartnerId": 14020
+      }
+    ],
+    "discounts": [
+      {
+        "type": 1,
+        "freeItem": false,
+        "label": "(5% OFF)",
+        "discountPercent": 5,
+        "discountId": "25627606:507772094"
+      }
+    ],
+    "sellers": [
+      {
+        "sellerPartnerId": 14020,
+        "sellerName": "V-Mart Retail Limited"
+      }
+    ],
+    "sizes": [
+      {
+        "skuId": 82719448,
+        "styleId": 25627606,
+        "action": "/product/25627606/related/28?co=1",
+        "label": "28",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 999,
+            "sellerPartnerId": 14020,
+            "availableCount": 12,
+            "sellableInventoryCount": 12,
+            "warehouses": [
+              "20585",
+              "20627",
+              "30729",
+              "32108",
+              "33415",
+              "35325",
+              "36806",
+              "36814",
+              "36818",
+              "36833"
+            ],
+            "supplyType": "ON_HAND",
+            "discountId": "25627606:507772094",
+            "discountedPrice": 949,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 82719440,
+        "styleId": 25627606,
+        "action": "/product/25627606/related/30?co=1",
+        "label": "30",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 999,
+            "sellerPartnerId": 14020,
+            "availableCount": 21,
+            "sellableInventoryCount": 21,
+            "warehouses": [
+              "20581",
+              "20583",
+              "20627",
+              "23399",
+              "33415",
+              "33418",
+              "33424",
+              "33426",
+              "33428",
+              "36801",
+              "36806",
+              "36814",
+              "36819"
+            ],
+            "supplyType": "ON_HAND",
+            "discountId": "25627606:507772094",
+            "discountedPrice": 949,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 82719442,
+        "styleId": 25627606,
+        "action": "/product/25627606/related/32?co=1",
+        "label": "32",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 999,
+            "sellerPartnerId": 14020,
+            "availableCount": 34,
+            "sellableInventoryCount": 34,
+            "warehouses": [
+              "20585",
+              "20593",
+              "20624",
+              "20627",
+              "23397",
+              "23399",
+              "29427",
+              "32734",
+              "33329",
+              "33418",
+              "33422",
+              "33424",
+              "33426",
+              "33428",
+              "36794",
+              "36796",
+              "36810",
+              "36812",
+              "36814",
+              "36819",
+              "36833",
+              "36842",
+              "36844"
+            ],
+            "supplyType": "ON_HAND",
+            "discountId": "25627606:507772094",
+            "discountedPrice": 949,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 82719444,
+        "styleId": 25627606,
+        "action": "/product/25627606/related/34?co=1",
+        "label": "34",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 999,
+            "sellerPartnerId": 14020,
+            "availableCount": 13,
+            "sellableInventoryCount": 13,
+            "warehouses": [
+              "20585",
+              "20598",
+              "33426",
+              "36794",
+              "36796",
+              "36806",
+              "36818",
+              "36833",
+              "36842",
+              "38073"
+            ],
+            "supplyType": "ON_HAND",
+            "discountId": "25627606:507772094",
+            "discountedPrice": 949,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 82719446,
+        "styleId": 25627606,
+        "action": "/product/25627606/related/36?co=1",
+        "label": "36",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 999,
+            "sellerPartnerId": 14020,
+            "availableCount": 7,
+            "sellableInventoryCount": 7,
+            "warehouses": [
+              "20627",
+              "33418",
+              "36812",
+              "36818",
+              "36819",
+              "36820",
+              "36833",
+              "38073"
+            ],
+            "supplyType": "ON_HAND",
+            "discountId": "25627606:507772094",
+            "discountedPrice": 949,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      }
+    ]
+  },
+  {
+    "id": 26714720,
+    "name": "max Men Mid Rise Jeans",
+    "price": {
+      "mrp": 1499,
+      "discounted": 1499,
+      "discount": {
+        "label": ""
+      }
+    },
+    "brand": {
+      "name": "max"
+    },
+    "defaultImage": {
+      "src": "http://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/26714720/2023/12/29/e6404a25-f113-4c8c-b922-7c72121fd72f1703821634332maxMenBlackJeans1.jpg",
+      "secureSrc": "https://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/26714720/2023/12/29/e6404a25-f113-4c8c-b922-7c72121fd72f1703821634332maxMenBlackJeans1.jpg"
+    },
+    "info": "Men Mid Rise Jeans",
+    "baseColour": "Black",
+    "tag": "",
+    "landingPageUrl": "Jeans/max/max-Men-Mid-Rise-Jeans/26714720/buy",
+    "rating": 2.8,
+    "category": "Jeans",
+    "isFastFashion": true,
+    "systemAttributes": [],
+    "isOnlyFewLeft": false,
+    "showAddToBag": true,
+    "sizeChart": {
+      "sizeChartUrl": null,
+      "sizeRepresentationUrl": "http://assets.myntassets.com/assets/images/sizechart/2016/12/12/11481538267773-Jeans.png"
+    },
+    "inventoryInfo": null,
+    "analytics": {
+      "articleType": "Jeans",
+      "subCategory": "Bottomwear",
+      "masterCategory": "Apparel",
+      "gender": "Men",
+      "brand": "max",
+      "colourHexCode": null
+    },
+    "buyButtonSellerOrder": [
+      {
+        "skuId": 86167146,
+        "sellerPartnerId": 9114
+      },
+      {
+        "skuId": 86167144,
+        "sellerPartnerId": 9114
+      }
+    ],
+    "discounts": null,
+    "sellers": [
+      {
+        "sellerPartnerId": 9114,
+        "sellerName": "Landmark Online India Pvt Ltd"
+      }
+    ],
+    "sizes": [
+      {
+        "skuId": 86167140,
+        "styleId": 26714720,
+        "action": "/product/26714720/related/28?co=1",
+        "label": "28",
+        "available": false,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 86167142,
+        "styleId": 26714720,
+        "action": "/product/26714720/related/30?co=1",
+        "label": "30",
+        "available": false,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 86167144,
+        "styleId": 26714720,
+        "action": "/product/26714720/related/32?co=1",
+        "label": "32",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 0,
+            "sellerPartnerId": 9114,
+            "availableCount": 8,
+            "sellableInventoryCount": 8,
+            "warehouses": ["32991"],
+            "supplyType": "ON_HAND",
+            "discountId": "",
+            "discountedPrice": 0,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 86167146,
+        "styleId": 26714720,
+        "action": "/product/26714720/related/34?co=1",
+        "label": "34",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 0,
+            "sellerPartnerId": 9114,
+            "availableCount": 4,
+            "sellableInventoryCount": 4,
+            "warehouses": ["32991"],
+            "supplyType": "ON_HAND",
+            "discountId": "",
+            "discountedPrice": 0,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 86167148,
+        "styleId": 26714720,
+        "action": "/product/26714720/related/36?co=1",
+        "label": "36",
+        "available": false,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 86167150,
+        "styleId": 26714720,
+        "action": "/product/26714720/related/38?co=1",
+        "label": "38",
+        "available": false,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [],
+        "kidsSizeMeasurements": null
+      }
+    ]
+  },
+  {
+    "id": 24789842,
+    "name": "Dennis Lingo Men Straight Fit Highly Distressed Stretchable Cargos",
+    "price": {
+      "mrp": 3299,
+      "discounted": 1022,
+      "discount": {
+        "label": "(69% OFF)"
+      }
+    },
+    "brand": {
+      "name": "Dennis Lingo"
+    },
+    "defaultImage": {
+      "src": "http://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/24789842/2023/9/4/210de135-6417-4275-b2e7-5a1c3137df4c1693807452459DennisLingoMenBlackStraightFitHighlyDistressedStretchableJea1.jpg",
+      "secureSrc": "https://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/24789842/2023/9/4/210de135-6417-4275-b2e7-5a1c3137df4c1693807452459DennisLingoMenBlackStraightFitHighlyDistressedStretchableJea1.jpg"
+    },
+    "info": "Men Straight Fit Cargos",
+    "baseColour": "Black",
+    "tag": "",
+    "landingPageUrl": "Jeans/Dennis+Lingo/Dennis-Lingo-Men-Straight-Fit-Highly-Distressed-Stretchable-Cargos/24789842/buy",
+    "rating": 4.038224414303329,
+    "category": "Jeans",
+    "isFastFashion": true,
+    "systemAttributes": [
+      {
+        "systemAttributeValueEntry": {
+          "id": 298,
+          "systemAttributeEntry": {
+            "attributeCode": "SA_XT_TOPDEALS",
+            "attributeName": "SA_XT_TOPDEALS",
+            "attributeType": "def",
+            "id": 198
+          },
+          "valueCode": "Top Deals",
+          "valueName": "Top Deals"
+        }
+      },
+      {
+        "systemAttributeValueEntry": {
+          "id": 39,
+          "systemAttributeEntry": {
+            "attributeCode": "SA_XT_BEST_PRICE",
+            "attributeName": "SA_XT_Best_Price",
+            "attributeType": "def",
+            "id": 7
+          },
+          "valueCode": "PRICE_MAY_GO_UP",
+          "valueName": "Price may go up"
+        }
+      },
+      {
+        "systemAttributeValueEntry": {
+          "id": 296,
+          "systemAttributeEntry": {
+            "attributeCode": "SA_XT_SALEPRICE",
+            "attributeName": "SA_XT_SALEPRICE",
+            "attributeType": "def",
+            "id": 178
+          },
+          "valueCode": "Crazy Deal",
+          "valueName": "Crazy Deal"
+        }
+      },
+      {
+        "systemAttributeValueEntry": {
+          "id": 292,
+          "systemAttributeEntry": {
+            "attributeCode": "SA_XT_PRICECRASH",
+            "attributeName": "SA_XT_PRICECRASH",
+            "attributeType": "def",
+            "id": 196
+          },
+          "valueCode": "Price Crash",
+          "valueName": "Price Crash"
+        }
+      }
+    ],
+    "isOnlyFewLeft": false,
+    "showAddToBag": true,
+    "sizeChart": {
+      "sizeChartUrl": null,
+      "sizeRepresentationUrl": "http://assets.myntassets.com/assets/images/sizechart/2016/12/12/11481538267773-Jeans.png"
+    },
+    "inventoryInfo": null,
+    "analytics": {
+      "articleType": "Jeans",
+      "subCategory": "Bottomwear",
+      "masterCategory": "Apparel",
+      "gender": "Men",
+      "brand": "Dennis Lingo",
+      "colourHexCode": null
+    },
+    "buyButtonSellerOrder": [
+      {
+        "skuId": 79678790,
+        "sellerPartnerId": 14768
+      },
+      {
+        "skuId": 79678782,
+        "sellerPartnerId": 14768
+      },
+      {
+        "skuId": 79678786,
+        "sellerPartnerId": 14768
+      },
+      {
+        "skuId": 79678802,
+        "sellerPartnerId": 14768
+      },
+      {
+        "skuId": 79678794,
+        "sellerPartnerId": 14768
+      },
+      {
+        "skuId": 79678798,
+        "sellerPartnerId": 14768
+      }
+    ],
+    "discounts": [
+      {
+        "type": 1,
+        "freeItem": false,
+        "label": "(69% OFF)",
+        "discountPercent": 69,
+        "discountId": "24789842:507990322"
+      }
+    ],
+    "sellers": [
+      {
+        "sellerPartnerId": 14768,
+        "sellerName": "Mensa Brand Technologies Private Limited"
+      }
+    ],
+    "sizes": [
+      {
+        "skuId": 79678782,
+        "styleId": 24789842,
+        "action": "/product/24789842/related/28?co=1",
+        "label": "28",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 3299,
+            "sellerPartnerId": 14768,
+            "availableCount": 58,
+            "sellableInventoryCount": 58,
+            "warehouses": ["21728", "23821", "26659"],
+            "supplyType": "ON_HAND",
+            "discountId": "24789842:507990322",
+            "discountedPrice": 1022,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 79678786,
+        "styleId": 24789842,
+        "action": "/product/24789842/related/30?co=1",
+        "label": "30",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 3299,
+            "sellerPartnerId": 14768,
+            "availableCount": 70,
+            "sellableInventoryCount": 70,
+            "warehouses": ["21728", "23821", "26659"],
+            "supplyType": "ON_HAND",
+            "discountId": "24789842:507990322",
+            "discountedPrice": 1022,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 79678790,
+        "styleId": 24789842,
+        "action": "/product/24789842/related/32?co=1",
+        "label": "32",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 3299,
+            "sellerPartnerId": 14768,
+            "availableCount": 179,
+            "sellableInventoryCount": 179,
+            "warehouses": ["21728", "23821", "26659"],
+            "supplyType": "ON_HAND",
+            "discountId": "24789842:507990322",
+            "discountedPrice": 1022,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 79678794,
+        "styleId": 24789842,
+        "action": "/product/24789842/related/34?co=1",
+        "label": "34",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 3299,
+            "sellerPartnerId": 14768,
+            "availableCount": 91,
+            "sellableInventoryCount": 91,
+            "warehouses": ["21728", "23821", "26659"],
+            "supplyType": "ON_HAND",
+            "discountId": "24789842:507990322",
+            "discountedPrice": 1022,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 79678798,
+        "styleId": 24789842,
+        "action": "/product/24789842/related/36?co=1",
+        "label": "36",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 3299,
+            "sellerPartnerId": 14768,
+            "availableCount": 34,
+            "sellableInventoryCount": 34,
+            "warehouses": ["21728", "26659"],
+            "supplyType": "ON_HAND",
+            "discountId": "24789842:507990322",
+            "discountedPrice": 1022,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 79678802,
+        "styleId": 24789842,
+        "action": "/product/24789842/related/38?co=1",
+        "label": "38",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 3299,
+            "sellerPartnerId": 14768,
+            "availableCount": 14,
+            "sellableInventoryCount": 14,
+            "warehouses": ["21728", "23821", "26659"],
+            "supplyType": "ON_HAND",
+            "discountId": "24789842:507990322",
+            "discountedPrice": 1022,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      }
+    ]
+  },
+  {
+    "id": 26702262,
+    "name": "Dennis Lingo Men Tapered Fit Light Fade Clean Look Cotton Jeans",
+    "price": {
+      "mrp": 3749,
+      "discounted": 1124,
+      "discount": {
+        "label": "(70% OFF)"
+      }
+    },
+    "brand": {
+      "name": "Dennis Lingo"
+    },
+    "defaultImage": {
+      "src": "http://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/26702262/2023/12/28/b6231b1a-a8d2-4ac9-8f33-f3588402dc671703755297286DennisLingoMenBlueTaperedFitJeans1.jpg",
+      "secureSrc": "https://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/26702262/2023/12/28/b6231b1a-a8d2-4ac9-8f33-f3588402dc671703755297286DennisLingoMenBlueTaperedFitJeans1.jpg"
+    },
+    "info": "Men Clean Look Cotton Jeans",
+    "baseColour": "Blue",
+    "tag": "",
+    "landingPageUrl": "Jeans/Dennis+Lingo/Dennis-Lingo-Men-Tapered-Fit-Light-Fade-Clean-Look-Cotton-Jeans/26702262/buy",
+    "rating": 3.903225806451613,
+    "category": "Jeans",
+    "isFastFashion": true,
+    "systemAttributes": [
+      {
+        "systemAttributeValueEntry": {
+          "id": 296,
+          "systemAttributeEntry": {
+            "attributeCode": "SA_XT_SALEPRICE",
+            "attributeName": "SA_XT_SALEPRICE",
+            "attributeType": "def",
+            "id": 178
+          },
+          "valueCode": "Crazy Deal",
+          "valueName": "Crazy Deal"
+        }
+      }
+    ],
+    "isOnlyFewLeft": false,
+    "showAddToBag": true,
+    "sizeChart": {
+      "sizeChartUrl": null,
+      "sizeRepresentationUrl": "http://assets.myntassets.com/assets/images/sizechart/2016/12/12/11481538267773-Jeans.png"
+    },
+    "inventoryInfo": null,
+    "analytics": {
+      "articleType": "Jeans",
+      "subCategory": "Bottomwear",
+      "masterCategory": "Apparel",
+      "gender": "Men",
+      "brand": "Dennis Lingo",
+      "colourHexCode": null
+    },
+    "buyButtonSellerOrder": [
+      {
+        "skuId": 86130528,
+        "sellerPartnerId": 14768
+      },
+      {
+        "skuId": 86130530,
+        "sellerPartnerId": 14768
+      },
+      {
+        "skuId": 86130532,
+        "sellerPartnerId": 14768
+      },
+      {
+        "skuId": 86130534,
+        "sellerPartnerId": 14768
+      },
+      {
+        "skuId": 86130536,
+        "sellerPartnerId": 14768
+      },
+      {
+        "skuId": 86130538,
+        "sellerPartnerId": 14768
+      }
+    ],
+    "discounts": [
+      {
+        "type": 1,
+        "freeItem": false,
+        "label": "(70% OFF)",
+        "discountPercent": 70,
+        "discountId": "26702262:507990323"
+      }
+    ],
+    "sellers": [
+      {
+        "sellerPartnerId": 14768,
+        "sellerName": "Mensa Brand Technologies Private Limited"
+      }
+    ],
+    "sizes": [
+      {
+        "skuId": 86130528,
+        "styleId": 26702262,
+        "action": "/product/26702262/related/28?co=1",
+        "label": "28",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 3749,
+            "sellerPartnerId": 14768,
+            "availableCount": 15,
+            "sellableInventoryCount": 15,
+            "warehouses": ["21728", "23821", "26659"],
+            "supplyType": "ON_HAND",
+            "discountId": "26702262:507990323",
+            "discountedPrice": 1124,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 86130530,
+        "styleId": 26702262,
+        "action": "/product/26702262/related/30?co=1",
+        "label": "30",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 3749,
+            "sellerPartnerId": 14768,
+            "availableCount": 27,
+            "sellableInventoryCount": 27,
+            "warehouses": ["21728", "23821", "26659"],
+            "supplyType": "ON_HAND",
+            "discountId": "26702262:507990323",
+            "discountedPrice": 1124,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 86130532,
+        "styleId": 26702262,
+        "action": "/product/26702262/related/32?co=1",
+        "label": "32",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 3749,
+            "sellerPartnerId": 14768,
+            "availableCount": 30,
+            "sellableInventoryCount": 30,
+            "warehouses": ["23821", "26659"],
+            "supplyType": "ON_HAND",
+            "discountId": "26702262:507990323",
+            "discountedPrice": 1124,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 86130534,
+        "styleId": 26702262,
+        "action": "/product/26702262/related/34?co=1",
+        "label": "34",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 3749,
+            "sellerPartnerId": 14768,
+            "availableCount": 29,
+            "sellableInventoryCount": 29,
+            "warehouses": ["23821", "26659"],
+            "supplyType": "ON_HAND",
+            "discountId": "26702262:507990323",
+            "discountedPrice": 1124,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 86130536,
+        "styleId": 26702262,
+        "action": "/product/26702262/related/36?co=1",
+        "label": "36",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 3749,
+            "sellerPartnerId": 14768,
+            "availableCount": 16,
+            "sellableInventoryCount": 16,
+            "warehouses": ["23821", "26659"],
+            "supplyType": "ON_HAND",
+            "discountId": "26702262:507990323",
+            "discountedPrice": 1124,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 86130538,
+        "styleId": 26702262,
+        "action": "/product/26702262/related/38?co=1",
+        "label": "38",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 3749,
+            "sellerPartnerId": 14768,
+            "availableCount": 6,
+            "sellableInventoryCount": 6,
+            "warehouses": ["23821", "26659"],
+            "supplyType": "ON_HAND",
+            "discountId": "26702262:507990323",
+            "discountedPrice": 1124,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      }
+    ]
+  },
+  {
+    "id": 26320792,
+    "name": "Koburg Men Colourblocked Lace Up Sneakers",
+    "price": {
+      "mrp": 2499,
+      "discounted": 899,
+      "discount": {
+        "label": "(64% OFF)"
+      }
+    },
+    "brand": {
+      "name": "Koburg"
+    },
+    "defaultImage": {
+      "src": "http://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/26320792/2023/12/8/e0e9b534-f67d-40bb-be46-6998b4c3de0e1702030338368KoburgMenBeigePUSneakers1.jpg",
+      "secureSrc": "https://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/26320792/2023/12/8/e0e9b534-f67d-40bb-be46-6998b4c3de0e1702030338368KoburgMenBeigePUSneakers1.jpg"
+    },
+    "info": "Men Colourblocked Sneakers",
+    "baseColour": "Beige",
+    "tag": "",
+    "landingPageUrl": "Casual-Shoes/Koburg/Koburg-Men-Colourblocked-Lace-Up-Sneakers/26320792/buy",
+    "rating": 3,
+    "category": "Casual Shoes",
+    "isFastFashion": true,
+    "systemAttributes": [],
+    "isOnlyFewLeft": false,
+    "showAddToBag": true,
+    "sizeChart": {
+      "sizeChartUrl": null,
+      "sizeRepresentationUrl": "http://assets.myntassets.com/assets/images/sizechart/2016/12/12/11481538267795-footwear.png"
+    },
+    "inventoryInfo": null,
+    "analytics": {
+      "articleType": "Casual Shoes",
+      "subCategory": "Shoes",
+      "masterCategory": "Footwear",
+      "gender": "Men",
+      "brand": "Koburg",
+      "colourHexCode": null
+    },
+    "buyButtonSellerOrder": [
+      {
+        "skuId": 85073212,
+        "sellerPartnerId": 1051
+      },
+      {
+        "skuId": 85073210,
+        "sellerPartnerId": 1051
+      },
+      {
+        "skuId": 85073214,
+        "sellerPartnerId": 1051
+      },
+      {
+        "skuId": 85073216,
+        "sellerPartnerId": 1051
+      },
+      {
+        "skuId": 85073218,
+        "sellerPartnerId": 1051
+      }
+    ],
+    "discounts": [
+      {
+        "type": 1,
+        "freeItem": false,
+        "label": "(64% OFF)",
+        "discountPercent": 64,
+        "discountId": "26320792:509296146"
+      }
+    ],
+    "sellers": [
+      {
+        "sellerPartnerId": 1051,
+        "sellerName": "VIRAJ ENTERPRISES"
+      }
+    ],
+    "sizes": [
+      {
+        "skuId": 85073210,
+        "styleId": 26320792,
+        "action": "/product/26320792/related/6?co=1",
+        "label": "6",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2499,
+            "sellerPartnerId": 1051,
+            "availableCount": 5,
+            "sellableInventoryCount": 5,
+            "warehouses": ["6416"],
+            "supplyType": "ON_HAND",
+            "discountId": "26320792:509296146",
+            "discountedPrice": 899,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 85073212,
+        "styleId": 26320792,
+        "action": "/product/26320792/related/7?co=1",
+        "label": "7",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2499,
+            "sellerPartnerId": 1051,
+            "availableCount": 16,
+            "sellableInventoryCount": 16,
+            "warehouses": ["6416"],
+            "supplyType": "ON_HAND",
+            "discountId": "26320792:509296146",
+            "discountedPrice": 899,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 85073214,
+        "styleId": 26320792,
+        "action": "/product/26320792/related/8?co=1",
+        "label": "8",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2499,
+            "sellerPartnerId": 1051,
+            "availableCount": 29,
+            "sellableInventoryCount": 29,
+            "warehouses": ["6416"],
+            "supplyType": "ON_HAND",
+            "discountId": "26320792:509296146",
+            "discountedPrice": 899,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 85073216,
+        "styleId": 26320792,
+        "action": "/product/26320792/related/9?co=1",
+        "label": "9",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2499,
+            "sellerPartnerId": 1051,
+            "availableCount": 19,
+            "sellableInventoryCount": 19,
+            "warehouses": ["6416"],
+            "supplyType": "ON_HAND",
+            "discountId": "26320792:509296146",
+            "discountedPrice": 899,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 85073218,
+        "styleId": 26320792,
+        "action": "/product/26320792/related/10?co=1",
+        "label": "10",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2499,
+            "sellerPartnerId": 1051,
+            "availableCount": 16,
+            "sellableInventoryCount": 16,
+            "warehouses": ["6416"],
+            "supplyType": "ON_HAND",
+            "discountId": "26320792:509296146",
+            "discountedPrice": 899,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 2,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      }
+    ]
+  },
+  {
+    "id": 25752044,
+    "name": "V-Mart Men Slim Fit Mid-Rise Cotton Trouser",
+    "price": {
+      "mrp": 999,
+      "discounted": 899,
+      "discount": {
+        "label": "(10% OFF)"
+      }
+    },
+    "brand": {
+      "name": "V-Mart"
+    },
+    "defaultImage": {
+      "src": "http://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/25752044/2023/11/3/0ce0f43c-6fe6-4934-9dda-59c09ad3d7811699006822611V-MartMenBrownSlimFitTrousers1.jpg",
+      "secureSrc": "https://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/25752044/2023/11/3/0ce0f43c-6fe6-4934-9dda-59c09ad3d7811699006822611V-MartMenBrownSlimFitTrousers1.jpg"
+    },
+    "info": "Men Mid-Rise Cotton Trouser",
+    "baseColour": "Brown",
+    "tag": "",
+    "landingPageUrl": "Trousers/V-Mart/V-Mart-Men-Slim-Fit-Mid-Rise-Cotton-Trouser/25752044/buy",
+    "rating": 4.75,
+    "category": "Trousers",
+    "isFastFashion": true,
+    "systemAttributes": [
+      {
+        "systemAttributeValueEntry": {
+          "id": 300,
+          "systemAttributeEntry": {
+            "attributeCode": "SA_XT_CURTAINRAISER",
+            "attributeName": "SA_XT_CURTAINRAISER",
+            "attributeType": "def",
+            "id": 200
+          },
+          "valueCode": "Curtain Raiser",
+          "valueName": "Curtain Raiser"
+        }
+      }
+    ],
+    "isOnlyFewLeft": false,
+    "showAddToBag": true,
+    "sizeChart": {
+      "sizeChartUrl": null,
+      "sizeRepresentationUrl": "http://assets.myntassets.com/assets/images/sizechart/2016/12/12/11481538623570-Trousers_Adults-Men.png"
+    },
+    "inventoryInfo": null,
+    "analytics": {
+      "articleType": "Trousers",
+      "subCategory": "Bottomwear",
+      "masterCategory": "Apparel",
+      "gender": "Men",
+      "brand": "V-Mart",
+      "colourHexCode": null
+    },
+    "buyButtonSellerOrder": [
+      {
+        "skuId": 83183788,
+        "sellerPartnerId": 14020
+      },
+      {
+        "skuId": 83183790,
+        "sellerPartnerId": 14020
+      },
+      {
+        "skuId": 83183792,
+        "sellerPartnerId": 14020
+      },
+      {
+        "skuId": 83183780,
+        "sellerPartnerId": 14020
+      },
+      {
+        "skuId": 83183784,
+        "sellerPartnerId": 14020
+      },
+      {
+        "skuId": 83183786,
+        "sellerPartnerId": 14020
+      }
+    ],
+    "discounts": [
+      {
+        "type": 1,
+        "freeItem": false,
+        "label": "(10% OFF)",
+        "discountPercent": 10,
+        "discountId": "25752044:507772099"
+      }
+    ],
+    "sellers": [
+      {
+        "sellerPartnerId": 14020,
+        "sellerName": "V-Mart Retail Limited"
+      }
+    ],
+    "sizes": [
+      {
+        "skuId": 83183790,
+        "styleId": 25752044,
+        "action": "/product/25752044/related/28?co=1",
+        "label": "28",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 999,
+            "sellerPartnerId": 14020,
+            "availableCount": 55,
+            "sellableInventoryCount": 55,
+            "warehouses": [
+              "20581",
+              "20585",
+              "20587",
+              "20589",
+              "23397",
+              "32108",
+              "32736",
+              "33319",
+              "33321",
+              "33323",
+              "33333",
+              "33335",
+              "33415",
+              "33418",
+              "33426",
+              "33874",
+              "33882",
+              "36793",
+              "36799",
+              "36801",
+              "36802",
+              "36804",
+              "36806",
+              "36810",
+              "36815",
+              "36817",
+              "36818",
+              "36819",
+              "36825",
+              "36827",
+              "36828",
+              "36831",
+              "36833",
+              "36840",
+              "38072"
+            ],
+            "supplyType": "ON_HAND",
+            "discountId": "25752044:507772099",
+            "discountedPrice": 899,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 83183792,
+        "styleId": 25752044,
+        "action": "/product/25752044/related/30?co=1",
+        "label": "30",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 999,
+            "sellerPartnerId": 14020,
+            "availableCount": 109,
+            "sellableInventoryCount": 109,
+            "warehouses": [
+              "20573",
+              "20578",
+              "20581",
+              "20585",
+              "20587",
+              "20589",
+              "20591",
+              "20598",
+              "20624",
+              "23469",
+              "29364",
+              "29365",
+              "29425",
+              "32736",
+              "33321",
+              "33325",
+              "33331",
+              "33333",
+              "33335",
+              "33415",
+              "33416",
+              "33422",
+              "33426",
+              "33874",
+              "33882",
+              "36797",
+              "36801",
+              "36802",
+              "36804",
+              "36806",
+              "36807",
+              "36810",
+              "36812",
+              "36814",
+              "36815",
+              "36817",
+              "36819",
+              "36827",
+              "36831",
+              "36833",
+              "38073",
+              "38076"
+            ],
+            "supplyType": "ON_HAND",
+            "discountId": "25752044:507772099",
+            "discountedPrice": 899,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 83183780,
+        "styleId": 25752044,
+        "action": "/product/25752044/related/32?co=1",
+        "label": "32",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 999,
+            "sellerPartnerId": 14020,
+            "availableCount": 111,
+            "sellableInventoryCount": 111,
+            "warehouses": [
+              "20578",
+              "20581",
+              "20585",
+              "20587",
+              "20591",
+              "20598",
+              "23396",
+              "23469",
+              "29427",
+              "32736",
+              "32994",
+              "33321",
+              "33331",
+              "33333",
+              "33415",
+              "33416",
+              "33424",
+              "33426",
+              "33874",
+              "33882",
+              "35323",
+              "35324",
+              "35325",
+              "36794",
+              "36797",
+              "36799",
+              "36801",
+              "36802",
+              "36806",
+              "36812",
+              "36815",
+              "36819",
+              "36827",
+              "36828",
+              "36830",
+              "36831",
+              "36833",
+              "36836",
+              "36839"
+            ],
+            "supplyType": "ON_HAND",
+            "discountId": "25752044:507772099",
+            "discountedPrice": 899,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 83183784,
+        "styleId": 25752044,
+        "action": "/product/25752044/related/34?co=1",
+        "label": "34",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 999,
+            "sellerPartnerId": 14020,
+            "availableCount": 59,
+            "sellableInventoryCount": 59,
+            "warehouses": [
+              "20578",
+              "20581",
+              "20585",
+              "20598",
+              "23396",
+              "29364",
+              "29427",
+              "32736",
+              "32994",
+              "33323",
+              "33333",
+              "33415",
+              "33426",
+              "33874",
+              "36797",
+              "36799",
+              "36801",
+              "36802",
+              "36807",
+              "36812",
+              "36815",
+              "36819",
+              "36828",
+              "36831",
+              "36836",
+              "36840",
+              "38076"
+            ],
+            "supplyType": "ON_HAND",
+            "discountId": "25752044:507772099",
+            "discountedPrice": 899,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 83183786,
+        "styleId": 25752044,
+        "action": "/product/25752044/related/36?co=1",
+        "label": "36",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 999,
+            "sellerPartnerId": 14020,
+            "availableCount": 17,
+            "sellableInventoryCount": 17,
+            "warehouses": [
+              "20578",
+              "20581",
+              "20587",
+              "29427",
+              "32736",
+              "32994",
+              "33321",
+              "35323",
+              "36794",
+              "36801",
+              "36810",
+              "36812",
+              "36828",
+              "36830",
+              "36840"
+            ],
+            "supplyType": "ON_HAND",
+            "discountId": "25752044:507772099",
+            "discountedPrice": 899,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 83183788,
+        "styleId": 25752044,
+        "action": "/product/25752044/related/38?co=1",
+        "label": "38",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 999,
+            "sellerPartnerId": 14020,
+            "availableCount": 21,
+            "sellableInventoryCount": 21,
+            "warehouses": [
+              "20558",
+              "20581",
+              "20585",
+              "20589",
+              "20624",
+              "33331",
+              "33426",
+              "33874",
+              "36806",
+              "36807",
+              "36812",
+              "36814",
+              "36815",
+              "36817",
+              "36818",
+              "36819",
+              "36827",
+              "36828",
+              "36830"
+            ],
+            "supplyType": "ON_HAND",
+            "discountId": "25752044:507772099",
+            "discountedPrice": 899,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      }
+    ]
+  },
+  {
+    "id": 25483104,
+    "name": "HIGHLANDER Men Straight Fit Mid-Rise Clean Look Stretchable Jeans",
+    "price": {
+      "mrp": 2199,
+      "discounted": 589,
+      "discount": {
+        "label": "(Rs. 1610 OFF)"
+      }
+    },
+    "brand": {
+      "name": "HIGHLANDER"
+    },
+    "defaultImage": {
+      "src": "http://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/25483104/2024/1/23/16b83be9-7024-439e-b788-39e38b8d89b91706010729025HIGHLANDERMenGreyStraightFitMid-RiseCleanLookStretchableJean1.jpg",
+      "secureSrc": "https://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/25483104/2024/1/23/16b83be9-7024-439e-b788-39e38b8d89b91706010729025HIGHLANDERMenGreyStraightFitMid-RiseCleanLookStretchableJean1.jpg"
+    },
+    "info": "Men Straight Fit Jeans",
+    "baseColour": "Charcoal",
+    "tag": "",
+    "landingPageUrl": "Jeans/HIGHLANDER/HIGHLANDER-Men-Straight-Fit-Mid-Rise-Clean-Look-Stretchable-Jeans/25483104/buy",
+    "rating": 3.7980266976204295,
+    "category": "Jeans",
+    "isFastFashion": true,
+    "systemAttributes": [
+      {
+        "systemAttributeValueEntry": {
+          "id": 298,
+          "systemAttributeEntry": {
+            "attributeCode": "SA_XT_TOPDEALS",
+            "attributeName": "SA_XT_TOPDEALS",
+            "attributeType": "def",
+            "id": 198
+          },
+          "valueCode": "Top Deals",
+          "valueName": "Top Deals"
+        }
+      },
+      {
+        "systemAttributeValueEntry": {
+          "id": 39,
+          "systemAttributeEntry": {
+            "attributeCode": "SA_XT_BEST_PRICE",
+            "attributeName": "SA_XT_Best_Price",
+            "attributeType": "def",
+            "id": 7
+          },
+          "valueCode": "PRICE_MAY_GO_UP",
+          "valueName": "Price may go up"
+        }
+      },
+      {
+        "systemAttributeValueEntry": {
+          "id": 314,
+          "systemAttributeEntry": {
+            "attributeCode": "SA_XT_MyntraUnique",
+            "attributeName": "SA_XT_MyntraUnique",
+            "attributeType": "def",
+            "id": 210
+          },
+          "valueCode": "Myntra Unique",
+          "valueName": "Myntra Unique"
+        }
+      }
+    ],
+    "isOnlyFewLeft": false,
+    "showAddToBag": true,
+    "sizeChart": {
+      "sizeChartUrl": null,
+      "sizeRepresentationUrl": "http://assets.myntassets.com/assets/images/sizechart/2016/12/12/11481538267773-Jeans.png"
+    },
+    "inventoryInfo": null,
+    "analytics": {
+      "articleType": "Jeans",
+      "subCategory": "Bottomwear",
+      "masterCategory": "Apparel",
+      "gender": "Men",
+      "brand": "HIGHLANDER",
+      "colourHexCode": null
+    },
+    "buyButtonSellerOrder": [
+      {
+        "skuId": 82193170,
+        "sellerPartnerId": 17924
+      },
+      {
+        "skuId": 82193166,
+        "sellerPartnerId": 17924
+      },
+      {
+        "skuId": 82193172,
+        "sellerPartnerId": 17924
+      },
+      {
+        "skuId": 82193174,
+        "sellerPartnerId": 17924
+      },
+      {
+        "skuId": 82193176,
+        "sellerPartnerId": 17924
+      },
+      {
+        "skuId": 82193170,
+        "sellerPartnerId": 4214
+      },
+      {
+        "skuId": 82193166,
+        "sellerPartnerId": 4214
+      },
+      {
+        "skuId": 82193172,
+        "sellerPartnerId": 4214
+      },
+      {
+        "skuId": 82193174,
+        "sellerPartnerId": 4214
+      },
+      {
+        "skuId": 82193176,
+        "sellerPartnerId": 4214
+      }
+    ],
+    "discounts": [
+      {
+        "type": 1,
+        "freeItem": false,
+        "label": "(71% OFF)",
+        "discountPercent": 71,
+        "discountId": "25483104:508649818"
+      },
+      {
+        "type": 1,
+        "freeItem": false,
+        "label": "(Rs. 1610 OFF)",
+        "discountPercent": 73,
+        "discountId": "25483104:508333371"
+      }
+    ],
+    "sellers": [
+      {
+        "sellerPartnerId": 17924,
+        "sellerName": "S & S Marketing"
+      },
+      {
+        "sellerPartnerId": 4214,
+        "sellerName": "Flashstar Commerce"
+      }
+    ],
+    "sizes": [
+      {
+        "skuId": 82193166,
+        "styleId": 25483104,
+        "action": "/product/25483104/related/30?co=1",
+        "label": "30",
+        "available": false,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 82193170,
+        "styleId": 25483104,
+        "action": "/product/25483104/related/32?co=1",
+        "label": "32",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2199,
+            "sellerPartnerId": 17924,
+            "availableCount": 84,
+            "sellableInventoryCount": 84,
+            "warehouses": ["27325"],
+            "supplyType": "ON_HAND",
+            "discountId": "25483104:508333371",
+            "discountedPrice": 589,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          },
+          {
+            "mrp": 2199,
+            "sellerPartnerId": 4214,
+            "availableCount": 10,
+            "sellableInventoryCount": 10,
+            "warehouses": ["28", "81", "309", "15774"],
+            "supplyType": "ON_HAND",
+            "discountId": "25483104:508649818",
+            "discountedPrice": 637,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 82193172,
+        "styleId": 25483104,
+        "action": "/product/25483104/related/34?co=1",
+        "label": "34",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2199,
+            "sellerPartnerId": 17924,
+            "availableCount": 67,
+            "sellableInventoryCount": 67,
+            "warehouses": ["27325"],
+            "supplyType": "ON_HAND",
+            "discountId": "25483104:508333371",
+            "discountedPrice": 589,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          },
+          {
+            "mrp": 2199,
+            "sellerPartnerId": 4214,
+            "availableCount": 12,
+            "sellableInventoryCount": 12,
+            "warehouses": ["28", "81", "309", "15774", "27235"],
+            "supplyType": "ON_HAND",
+            "discountId": "25483104:508649818",
+            "discountedPrice": 637,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 82193174,
+        "styleId": 25483104,
+        "action": "/product/25483104/related/36?co=1",
+        "label": "36",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2199,
+            "sellerPartnerId": 17924,
+            "availableCount": 17,
+            "sellableInventoryCount": 17,
+            "warehouses": ["27325"],
+            "supplyType": "ON_HAND",
+            "discountId": "25483104:508333371",
+            "discountedPrice": 589,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          },
+          {
+            "mrp": 2199,
+            "sellerPartnerId": 4214,
+            "availableCount": 2,
+            "sellableInventoryCount": 2,
+            "warehouses": ["81"],
+            "supplyType": "ON_HAND",
+            "discountId": "25483104:508649818",
+            "discountedPrice": 637,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 82193176,
+        "styleId": 25483104,
+        "action": "/product/25483104/related/38?co=1",
+        "label": "38",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2199,
+            "sellerPartnerId": 17924,
+            "availableCount": 12,
+            "sellableInventoryCount": 12,
+            "warehouses": ["27325"],
+            "supplyType": "ON_HAND",
+            "discountId": "25483104:508333371",
+            "discountedPrice": 589,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      }
+    ]
+  },
+  {
+    "id": 26061614,
+    "name": "BADMAASH Men Blue Jean Clean Look Relaxed Fit Light Fade Stretchable Cotton Jeans",
+    "price": {
+      "mrp": 2798,
+      "discounted": 1399,
+      "discount": {
+        "label": "(50% OFF)"
+      }
+    },
+    "brand": {
+      "name": "BADMAASH"
+    },
+    "defaultImage": {
+      "src": "http://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/26061614/2023/11/25/931d6808-10f3-46bd-9d01-22e625ebf4b31700915866755BADMAASHMenBlueJeanRelaxedFitLightFadeStretchableJeans1.jpg",
+      "secureSrc": "https://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/26061614/2023/11/25/931d6808-10f3-46bd-9d01-22e625ebf4b31700915866755BADMAASHMenBlueJeanRelaxedFitLightFadeStretchableJeans1.jpg"
+    },
+    "info": "Men Relaxed Fit Jeans",
+    "baseColour": "Blue",
+    "tag": "",
+    "landingPageUrl": "Jeans/BADMAASH/BADMAASH-Men-Blue-Jean-Clean-Look-Relaxed-Fit-Light-Fade-Stretchable-Cotton-Jeans/26061614/buy",
+    "rating": null,
+    "category": "Jeans",
+    "isFastFashion": null,
+    "systemAttributes": [
+      {
+        "systemAttributeValueEntry": {
+          "id": 288,
+          "systemAttributeEntry": {
+            "attributeCode": "SA_XT_RisingStars",
+            "attributeName": "SA_XT_RisingStars",
+            "attributeType": "def",
+            "id": 192
+          },
+          "valueCode": "Rising Stars",
+          "valueName": "Rising Stars"
+        }
+      }
+    ],
+    "isOnlyFewLeft": false,
+    "showAddToBag": true,
+    "sizeChart": {
+      "sizeChartUrl": null,
+      "sizeRepresentationUrl": "http://assets.myntassets.com/assets/images/sizechart/2016/12/12/11481538267773-Jeans.png"
+    },
+    "inventoryInfo": null,
+    "analytics": {
+      "articleType": "Jeans",
+      "subCategory": "Bottomwear",
+      "masterCategory": "Apparel",
+      "gender": "Men",
+      "brand": "BADMAASH",
+      "colourHexCode": null
+    },
+    "buyButtonSellerOrder": [
+      {
+        "skuId": 84257132,
+        "sellerPartnerId": 23955
+      },
+      {
+        "skuId": 84257144,
+        "sellerPartnerId": 23955
+      },
+      {
+        "skuId": 84257138,
+        "sellerPartnerId": 23955
+      },
+      {
+        "skuId": 84257148,
+        "sellerPartnerId": 23955
+      },
+      {
+        "skuId": 84257152,
+        "sellerPartnerId": 23955
+      }
+    ],
+    "discounts": [
+      {
+        "type": 1,
+        "freeItem": false,
+        "label": "(50% OFF)",
+        "discountPercent": 50,
+        "discountId": "26061614:502534633"
+      }
+    ],
+    "sellers": [
+      {
+        "sellerPartnerId": 23955,
+        "sellerName": "ADDERALL APPARELS PRIVATE LIMITED"
+      }
+    ],
+    "sizes": [
+      {
+        "skuId": 84257132,
+        "styleId": 26061614,
+        "action": "/product/26061614/related/30?co=1",
+        "label": "30",
+        "available": false,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 84257138,
+        "styleId": 26061614,
+        "action": "/product/26061614/related/32?co=1",
+        "label": "32",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2798,
+            "sellerPartnerId": 23955,
+            "availableCount": 11,
+            "sellableInventoryCount": 11,
+            "warehouses": ["34071"],
+            "supplyType": "ON_HAND",
+            "discountId": "26061614:502534633",
+            "discountedPrice": 1399,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 3,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 84257144,
+        "styleId": 26061614,
+        "action": "/product/26061614/related/34?co=1",
+        "label": "34",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2798,
+            "sellerPartnerId": 23955,
+            "availableCount": 21,
+            "sellableInventoryCount": 21,
+            "warehouses": ["34071"],
+            "supplyType": "ON_HAND",
+            "discountId": "26061614:502534633",
+            "discountedPrice": 1399,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 3,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 84257148,
+        "styleId": 26061614,
+        "action": "/product/26061614/related/36?co=1",
+        "label": "36",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2798,
+            "sellerPartnerId": 23955,
+            "availableCount": 2,
+            "sellableInventoryCount": 2,
+            "warehouses": ["34071"],
+            "supplyType": "ON_HAND",
+            "discountId": "26061614:502534633",
+            "discountedPrice": 1399,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 3,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 84257152,
+        "styleId": 26061614,
+        "action": "/product/26061614/related/38?co=1",
+        "label": "38",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 2798,
+            "sellerPartnerId": 23955,
+            "availableCount": 4,
+            "sellableInventoryCount": 4,
+            "warehouses": ["34071"],
+            "supplyType": "ON_HAND",
+            "discountId": "26061614:502534633",
+            "discountedPrice": 1399,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 3,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      }
+    ]
+  },
+  {
+    "id": 25449212,
+    "name": "Shocknshop Men Water Resistance Analogue & Digital Chronograph Watch WCH87Black",
+    "price": {
+      "mrp": 1799,
+      "discounted": 539,
+      "discount": {
+        "label": "(70% OFF)"
+      }
+    },
+    "brand": {
+      "name": "Shocknshop"
+    },
+    "defaultImage": {
+      "src": "http://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/25449212/2023/10/11/bc961ad7-7d87-4917-a0ba-c087f8279d571697034127266ShocknshopMenBlackDialSilverTonedStainlessSteelBraceletStyle1.jpg",
+      "secureSrc": "https://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/25449212/2023/10/11/bc961ad7-7d87-4917-a0ba-c087f8279d571697034127266ShocknshopMenBlackDialSilverTonedStainlessSteelBraceletStyle1.jpg"
+    },
+    "info": "Men Chronograph Watch",
+    "baseColour": "Black",
+    "tag": "",
+    "landingPageUrl": "Watches/Shocknshop/Shocknshop-Men-Water-Resistance-Analogue--Digital-Chronograph-Watch-WCH87Black/25449212/buy",
+    "rating": null,
+    "category": "Watches",
+    "isFastFashion": null,
+    "systemAttributes": [],
+    "isOnlyFewLeft": false,
+    "showAddToBag": true,
+    "sizeChart": {
+      "sizeChartUrl": null,
+      "sizeRepresentationUrl": null
+    },
+    "inventoryInfo": null,
+    "analytics": {
+      "articleType": "Watches",
+      "subCategory": "Watches",
+      "masterCategory": "Accessories",
+      "gender": "Men",
+      "brand": "Shocknshop",
+      "colourHexCode": null
+    },
+    "buyButtonSellerOrder": [
+      {
+        "skuId": 82069084,
+        "sellerPartnerId": 27797
+      },
+      {
+        "skuId": 82069084,
+        "sellerPartnerId": 21044
+      }
+    ],
+    "discounts": [
+      {
+        "type": 1,
+        "freeItem": false,
+        "label": "(70% OFF)",
+        "discountPercent": 70,
+        "discountId": "25449212:501551175"
+      },
+      {
+        "type": 1,
+        "freeItem": false,
+        "label": "(70% OFF)",
+        "discountPercent": 70,
+        "discountId": "25449212:203537377"
+      }
+    ],
+    "sellers": [
+      {
+        "sellerPartnerId": 27797,
+        "sellerName": "SHOCKNSHOP"
+      },
+      {
+        "sellerPartnerId": 21044,
+        "sellerName": "SHOCKNSHOP"
+      }
+    ],
+    "sizes": [
+      {
+        "skuId": 82069084,
+        "styleId": 25449212,
+        "action": "/product/25449212/related/Onesize?co=1",
+        "label": "Onesize",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 1799,
+            "sellerPartnerId": 27797,
+            "availableCount": 38,
+            "sellableInventoryCount": 38,
+            "warehouses": ["41738"],
+            "supplyType": "ON_HAND",
+            "discountId": "25449212:501551175",
+            "discountedPrice": 539,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 3,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      }
+    ]
+  },
+  {
+    "id": 27242116,
+    "name": "SERVER Men Mid-Top Lightweight Sneakers",
+    "price": {
+      "mrp": 1999,
+      "discounted": 839,
+      "discount": {
+        "label": "(58% OFF)"
+      }
+    },
+    "brand": {
+      "name": "SERVER"
+    },
+    "defaultImage": {
+      "src": "http://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/27242116/2024/1/29/cde64dbb-5e5e-42d0-949c-063bbb3faf841706520481063SERVERMenFashion1.jpg",
+      "secureSrc": "https://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/27242116/2024/1/29/cde64dbb-5e5e-42d0-949c-063bbb3faf841706520481063SERVERMenFashion1.jpg"
+    },
+    "info": "Men Lightweight Sneakersion",
+    "baseColour": "Brown",
+    "tag": "",
+    "landingPageUrl": "Casual-Shoes/SERVER/SERVER-Men-Mid-Top-Lightweight-Sneakers/27242116/buy",
+    "rating": 3.7083333333333335,
+    "category": "Casual Shoes",
+    "isFastFashion": true,
+    "systemAttributes": [],
+    "isOnlyFewLeft": false,
+    "showAddToBag": true,
+    "sizeChart": {
+      "sizeChartUrl": null,
+      "sizeRepresentationUrl": "http://assets.myntassets.com/assets/images/sizechart/2016/12/12/11481538267795-footwear.png"
+    },
+    "inventoryInfo": null,
+    "analytics": {
+      "articleType": "Casual Shoes",
+      "subCategory": "Shoes",
+      "masterCategory": "Footwear",
+      "gender": "Men",
+      "brand": "SERVER",
+      "colourHexCode": null
+    },
+    "buyButtonSellerOrder": [
+      {
+        "skuId": 87770748,
+        "sellerPartnerId": 22408
+      },
+      {
+        "skuId": 87770750,
+        "sellerPartnerId": 22408
+      },
+      {
+        "skuId": 87770752,
+        "sellerPartnerId": 22408
+      },
+      {
+        "skuId": 87770754,
+        "sellerPartnerId": 22408
+      },
+      {
+        "skuId": 87770746,
+        "sellerPartnerId": 22408
+      }
+    ],
+    "discounts": [
+      {
+        "type": 1,
+        "freeItem": false,
+        "label": "(58% OFF)",
+        "discountPercent": 58,
+        "discountId": "27242116:506419732"
+      }
+    ],
+    "sellers": [
+      {
+        "sellerPartnerId": 22408,
+        "sellerName": "M/S  JHAMNANI TRADELINKS"
+      }
+    ],
+    "sizes": [
+      {
+        "skuId": 87770748,
+        "styleId": 27242116,
+        "action": "/product/27242116/related/6?co=1",
+        "label": "6",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 1999,
+            "sellerPartnerId": 22408,
+            "availableCount": 19,
+            "sellableInventoryCount": 19,
+            "warehouses": ["28169"],
+            "supplyType": "ON_HAND",
+            "discountId": "27242116:506419732",
+            "discountedPrice": 839,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 3,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 87770750,
+        "styleId": 27242116,
+        "action": "/product/27242116/related/7?co=1",
+        "label": "7",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 1999,
+            "sellerPartnerId": 22408,
+            "availableCount": 31,
+            "sellableInventoryCount": 31,
+            "warehouses": ["28169"],
+            "supplyType": "ON_HAND",
+            "discountId": "27242116:506419732",
+            "discountedPrice": 839,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 3,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 87770752,
+        "styleId": 27242116,
+        "action": "/product/27242116/related/8?co=1",
+        "label": "8",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 1999,
+            "sellerPartnerId": 22408,
+            "availableCount": 31,
+            "sellableInventoryCount": 31,
+            "warehouses": ["28169"],
+            "supplyType": "ON_HAND",
+            "discountId": "27242116:506419732",
+            "discountedPrice": 839,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 3,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 87770754,
+        "styleId": 27242116,
+        "action": "/product/27242116/related/9?co=1",
+        "label": "9",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 1999,
+            "sellerPartnerId": 22408,
+            "availableCount": 28,
+            "sellableInventoryCount": 28,
+            "warehouses": ["28169"],
+            "supplyType": "ON_HAND",
+            "discountId": "27242116:506419732",
+            "discountedPrice": 839,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 3,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 87770746,
+        "styleId": 27242116,
+        "action": "/product/27242116/related/10?co=1",
+        "label": "10",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 1999,
+            "sellerPartnerId": 22408,
+            "availableCount": 18,
+            "sellableInventoryCount": 18,
+            "warehouses": ["28169"],
+            "supplyType": "ON_HAND",
+            "discountId": "27242116:506419732",
+            "discountedPrice": 839,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 3,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      }
+    ]
+  },
+  {
+    "id": 28452138,
+    "name": "HIGHLANDER Men Mid-Rise Cotton Cargos Trouser",
+    "price": {
+      "mrp": 3299,
+      "discounted": 1286,
+      "discount": {
+        "label": "(61% OFF)"
+      }
+    },
+    "brand": {
+      "name": "HIGHLANDER"
+    },
+    "defaultImage": {
+      "src": "http://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/28452138/2024/3/22/b69837f5-503b-46a0-b543-e8c1b3049d331711103728133HIGHLANDERMenCargosTrousers1.jpg",
+      "secureSrc": "https://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/28452138/2024/3/22/b69837f5-503b-46a0-b543-e8c1b3049d331711103728133HIGHLANDERMenCargosTrousers1.jpg"
+    },
+    "info": "Men Cotton Cargos Trousers",
+    "baseColour": "Blue",
+    "tag": "",
+    "landingPageUrl": "Trousers/HIGHLANDER/HIGHLANDER-Men-Mid-Rise-Cotton-Cargos-Trouser/28452138/buy",
+    "rating": 3.5483870967741935,
+    "category": "Trousers",
+    "isFastFashion": true,
+    "systemAttributes": [],
+    "isOnlyFewLeft": false,
+    "showAddToBag": true,
+    "sizeChart": {
+      "sizeChartUrl": null,
+      "sizeRepresentationUrl": "http://assets.myntassets.com/assets/images/sizechart/2016/12/12/11481538623570-Trousers_Adults-Men.png"
+    },
+    "inventoryInfo": null,
+    "analytics": {
+      "articleType": "Trousers",
+      "subCategory": "Bottomwear",
+      "masterCategory": "Apparel",
+      "gender": "Men",
+      "brand": "HIGHLANDER",
+      "colourHexCode": null
+    },
+    "buyButtonSellerOrder": [
+      {
+        "skuId": 91445428,
+        "sellerPartnerId": 4214
+      },
+      {
+        "skuId": 91445430,
+        "sellerPartnerId": 4214
+      },
+      {
+        "skuId": 91445432,
+        "sellerPartnerId": 4214
+      },
+      {
+        "skuId": 91445434,
+        "sellerPartnerId": 4214
+      },
+      {
+        "skuId": 91445428,
+        "sellerPartnerId": 17924
+      },
+      {
+        "skuId": 91445430,
+        "sellerPartnerId": 17924
+      },
+      {
+        "skuId": 91445432,
+        "sellerPartnerId": 17924
+      },
+      {
+        "skuId": 91445434,
+        "sellerPartnerId": 17924
+      }
+    ],
+    "discounts": [
+      {
+        "type": 1,
+        "freeItem": false,
+        "label": "(Rs. 2250 OFF)",
+        "discountPercent": 68,
+        "discountId": "28452138:508333431"
+      },
+      {
+        "type": 1,
+        "freeItem": false,
+        "label": "(61% OFF)",
+        "discountPercent": 61,
+        "discountId": "28452138:508649647"
+      }
+    ],
+    "sellers": [
+      {
+        "sellerPartnerId": 4214,
+        "sellerName": "Flashstar Commerce"
+      },
+      {
+        "sellerPartnerId": 17924,
+        "sellerName": "S & S Marketing"
+      }
+    ],
+    "sizes": [
+      {
+        "skuId": 91445428,
+        "styleId": 28452138,
+        "action": "/product/28452138/related/30?co=1",
+        "label": "30",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 3299,
+            "sellerPartnerId": 4214,
+            "availableCount": 15,
+            "sellableInventoryCount": 15,
+            "warehouses": ["495", "17787"],
+            "supplyType": "ON_HAND",
+            "discountId": "28452138:508649647",
+            "discountedPrice": 1286,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 91445430,
+        "styleId": 28452138,
+        "action": "/product/28452138/related/32?co=1",
+        "label": "32",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 3299,
+            "sellerPartnerId": 4214,
+            "availableCount": 17,
+            "sellableInventoryCount": 17,
+            "warehouses": ["81", "495", "17787"],
+            "supplyType": "ON_HAND",
+            "discountId": "28452138:508649647",
+            "discountedPrice": 1286,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 91445432,
+        "styleId": 28452138,
+        "action": "/product/28452138/related/34?co=1",
+        "label": "34",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 3299,
+            "sellerPartnerId": 4214,
+            "availableCount": 10,
+            "sellableInventoryCount": 10,
+            "warehouses": ["495", "17787"],
+            "supplyType": "ON_HAND",
+            "discountId": "28452138:508649647",
+            "discountedPrice": 1286,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      },
+      {
+        "skuId": 91445434,
+        "styleId": 28452138,
+        "action": "/product/28452138/related/36?co=1",
+        "label": "36",
+        "available": true,
+        "sizeType": null,
+        "originalStyle": true,
+        "measurements": [],
+        "allSizesList": [],
+        "sizeSellerData": [
+          {
+            "mrp": 3299,
+            "sellerPartnerId": 4214,
+            "availableCount": 3,
+            "sellableInventoryCount": 3,
+            "warehouses": ["309", "17787"],
+            "supplyType": "ON_HAND",
+            "discountId": "28452138:508649647",
+            "discountedPrice": 1286,
+            "countryOfOrigin": [],
+            "manufacturerInfo": "",
+            "importerInfo": "",
+            "packerInfo": "",
+            "procurementTimeInDays": 0,
+            "expiryDate": "0"
+          }
+        ],
+        "kidsSizeMeasurements": null
+      }
+    ]
   }
 ]

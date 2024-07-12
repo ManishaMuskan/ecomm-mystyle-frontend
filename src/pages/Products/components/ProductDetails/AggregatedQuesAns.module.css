@@ -1,0 +1,41 @@
+.answer-wrapper {
+  margin: 25px 0;
+  font-size: 14px;
+  color: #3e4152;
+}
+
+.only-highlighted {
+  margin: var(--spacer-sm) 0;
+}
+
+.answer-fill-wrapper {
+  margin-right: 12px;
+  width: 140px;
+  height: 4px;
+  background-color: #eaeaec;
+  position: relative;
+  border-radius: 2px;
+}
+
+.answer-caption,
+.answer-fill-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.answer-fill {
+  background-color: #03a685;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.answer-caption {
+  font-size: 13.5px;
+}
+
+.answer-caption-highlighted {
+  font-weight: 700;
+}

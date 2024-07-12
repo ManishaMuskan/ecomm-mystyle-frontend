@@ -32,7 +32,7 @@ const ProductPreviewThumbnail = ({ product, link }) => {
             <div className={classes['product-ratings']}>
               <span>4.3</span>
               <SpriteIcon
-                iconClassName={classes['sprites-green-solid-star-icon']}
+                className={classes['sprites-green-solid-star-icon']}
               />
               <span className={classes['product-ratings-count']}>19.9k</span>
             </div>
@@ -79,7 +79,7 @@ const ProductPreviewThumbnail = ({ product, link }) => {
       <div className={classes['product-actions']}>
         <button type="button" className={classes['product-wishlist-btn']}>
           <SpriteIcon
-            iconClassName={classes['sprite-product-not-wishlisted-icon']}
+            className={classes['sprite-product-not-wishlisted-icon']}
           />
           <span>Wishlist</span>
         </button>

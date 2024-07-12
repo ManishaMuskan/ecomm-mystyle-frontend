@@ -1,0 +1,10 @@
+.svg-double-star {
+  margin-left: var(--spacer-xs);
+}
+
+.index-header {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 7px;
+  color: var(--secondary-txt-color);
+}

@@ -60,7 +60,7 @@
 
 .sort-option-label {
   cursor: pointer;
-  padding: var(--spacer-sm) calc(2 * var(--spacer-sm));
+  padding: var(--spacer-sm) var(--spacer-md);
   display: block;
 }
 

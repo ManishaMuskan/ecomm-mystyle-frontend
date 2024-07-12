@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */ /* FIXME: fix this */
 import { useState } from 'react';
 import SpriteIcon from '../../../../components/UI/SpriteIcon/SpriteIcon';
 import classes from './SelectSortOption.module.css';
@@ -30,15 +29,17 @@ const SelectSortOption = () => {
           <span>
             Sort by : <span>{selectedSort.label}</span>
           </span>
-          <SpriteIcon iconClassName={classes['sprites-down-arrow-icon']} />
+          <SpriteIcon className={classes['sprites-down-arrow-icon']} />
         </div>
 
         <ul className={classes['sorting-option-list']}>
           {sortOptions.map((option) => (
             <li key={option.value}>
               <label
+                htmlFor={option.value}
                 className={`${classes['sort-option-label']} ${option.value === selectedSort.value && classes['sort-selected']}`}>
                 <input
+                  id={option.value}
                   type="radio"
                   value={option.value}
                   onClick={handleChange}

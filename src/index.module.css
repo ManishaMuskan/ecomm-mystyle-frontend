@@ -17,14 +17,16 @@
   --secondary-txt-color: #282c3f; /*used in headings*/
   --secondary-txt-color-light: #535766; /*used in footer headings*/
   --secondary-txt-color-lighter: #878b94;
+  --secondary-txt-color-lightest: #a9abb3;
 
   --tertiary-txt-color: #535665;
 
   --accent-blue-txt-color: #526cd0;
+  --accent-pink-color-dark: #ff3e6c;
   --accent-pink-color: #f16565;
   --accent-pink-color-lighter: #ff905a;
   --accent-grey-color-lighter: #7e818c;
-  --accent-pink-indicators-color: #ff3e6c;
+  --accent-green-color: #03a685;
 
   --button-blue-bg-color: #0097d7;
 
@@ -33,6 +35,7 @@
   --tertiary-border-clr: #e9e9ed;
   --quaternary-border-clr: #edebef;
   --custom-input-border-clr: #c3c2c9;
+  --quinary-border-clr: #bfc0c6;
 
   --border-radius-circle: 50%;
   --border-radius-xs: 2px;
@@ -47,6 +50,8 @@
   --font-size-sm: 12px;
   --font-size-md: 14px;
   --font-size-lg: 18px;
+  --font-size-2xs: calc(var(--font-size-xs) * 2);
+  --font-size-2sm: calc(var(--font-size-sm) * 2);
   --font-size-xl: 25px;
   --font-size-xxl: 30px;
 
@@ -59,9 +64,10 @@
   --spacer-xxs: 3px;
   --spacer-xs: 5px;
   --spacer-sm: 10px;
+  --spacer-12: 12px;
   --spacer-md: 20px;
   --spacer-lg: 32px;
-  --spacer-xl: 50px;
+  --spacer-xl: 50px; /* 8(1), 22(1), 12(2), 15(1), 18(1) */
 
   --z-index-header: 9;
   --z-index-1: 1;
@@ -71,6 +77,11 @@
   --box-shadow-product-sort-select: 0 8px 10px 0 rgba(0, 0, 0, 0.08);
   --box-shadow-thumbnail-preview: 0 2px 16px 4px rgba(40, 44, 63, 0.07);
   --box-shadow-checked-radio-button: inset 0 0 0 3px var(--white);
+
+  --transform-origin-top-left: 0% 0;
+  --transform-origin-top-right: 100% 0%;
+  --transform-origin-bottom-left: 0% 100%;
+  --transform-origin-bottom-right: 100% 100%;
 }
 
 @font-face {
@@ -192,6 +203,7 @@ h6 {
 [type='submit'],
 button {
   cursor: pointer;
+  outline: 0;
 }
 
 [disabled] {

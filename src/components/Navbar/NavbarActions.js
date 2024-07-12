@@ -21,7 +21,7 @@ const NavbarActions = ({ link }) => {
         to="cart"
         className={`${classes['navbar-action']} ${classes.cart}`}>
         {/* Included just to get an idea about how image sprites work */}
-        <SpriteIcon iconClassName={classes['sprites-headerBag']} />
+        <SpriteIcon className={classes['sprites-headerBag']} />
         <span className={classes['navbar-action-label']}>Bag</span>
         <span className={classes['cart-items-badge']}>3</span>
       </NavLink>

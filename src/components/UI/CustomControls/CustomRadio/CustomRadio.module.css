@@ -35,8 +35,8 @@
 
 .custom-radio-label input:checked ~ .custom-radio-indicator:before {
   transform: rotate(-90deg);
-  border-color: var(--accent-pink-indicators-color);
+  border-color: var(--accent-pink-color-dark);
   visibility: visible;
-  background: var(--accent-pink-indicators-color);
+  background: var(--accent-pink-color-dark);
   box-shadow: var(--box-shadow-checked-radio-button);
 }
