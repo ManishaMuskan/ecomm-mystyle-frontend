@@ -1,4 +1,4 @@
-import { SvgDoubleStar } from '../../../../assets/svgs/SvgIcons';
+import { SvgDoubleStar } from '../../../../../assets/svgs/SvgIcons';
 import AggregatedQuesAns from './AggregatedQuesAns';
 import classes from './WhatCustomersSay.module.css';
 
@@ -22,7 +22,7 @@ const WhatCustomersSay = ({
           />
         );
       })}
-      <div className="ugc-viewDetails">View Details</div>
+      <div className={classes['view-details']}>View Details</div>
     </>
   );
 };

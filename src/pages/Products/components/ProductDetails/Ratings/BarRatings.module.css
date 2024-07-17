@@ -1,0 +1,56 @@
+.bar-ratings-container {
+  padding-left: var(--spacer-xl);
+}
+
+.bar-rating-wrapper {
+  display: flex;
+  gap: var(--spacer-sm);
+}
+
+.index-rating {
+  font-size: var(--font-size-md);
+  color: var(--secondary-txt-color-lightest);
+}
+
+.rating-count {
+  font-size: var(--font-size-sm);
+  color: var(--secondary-txt-color);
+  margin-left: var(--spacer-sm);
+}
+
+.sprites-product-ratings-gray-icon {
+  background-position: -265px -28px;
+  width: 12px;
+  height: 12px;
+  margin: 2px 3px;
+  transform: scale(0.8);
+}
+
+.bar-rating-wrapper progress {
+  border: none;
+  margin-top: 6px;
+  width: 120px;
+  height: 4px;
+  vertical-align: baseline;
+}
+
+.bar-rating-wrapper progress::-webkit-progress-bar {
+  background-color: #f5f5f6;
+}
+
+.bar-rating-wrapper progress[data-rating='4']::-webkit-progress-value,
+.bar-rating-wrapper progress[data-rating='5']::-webkit-progress-value {
+  background-color: #14958f;
+}
+
+.bar-rating-wrapper progress[data-rating='3']::-webkit-progress-value {
+  background-color: #72bfbc;
+}
+
+.bar-rating-wrapper progress[data-rating='2']::-webkit-progress-value {
+  background-color: #fcb301;
+}
+
+.rating-bar-wrapper progress[data-rating='1']::-webkit-progress-value {
+  background-color: #f16565;
+}

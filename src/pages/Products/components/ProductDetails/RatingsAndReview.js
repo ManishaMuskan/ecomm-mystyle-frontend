@@ -1,10 +1,14 @@
-import WhatCustomersSay from './WhatCustomersSay';
+import CustomersReviews from './CustomersReviews/CustomersReviews';
+import Ratings from './Ratings/Ratings';
+import WhatCustomersSay from './WhatCustomersSay/WhatCustomersSay';
 
-const RatingsAndReview = ({ data }) => {
+const RatingsAndReview = ({ data, ratings }) => {
   return (
-    <div>
+    <>
+      <Ratings ratings={ratings} />
       <WhatCustomersSay questionAndAnswer={data} />
-    </div>
+      <CustomersReviews />
+    </>
   );
 };
 

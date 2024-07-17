@@ -8,3 +8,11 @@
   padding-bottom: 7px;
   color: var(--secondary-txt-color);
 }
+
+.view-details {
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  color: var(--accent-pink-color-dark);
+  margin-top: var(--spacer-sm);
+  cursor: pointer;
+}

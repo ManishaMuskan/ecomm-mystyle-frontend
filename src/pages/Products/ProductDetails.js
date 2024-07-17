@@ -234,131 +234,116 @@ product.ratings = {
   ],
   isVirtualBundle: false,
 };
-
-const p = {
-  data: [
-    {
-      question: {
-        text_for_pdp: 'Fit',
+product.addresses = {
+  addresses: {
+    totalCount: 3,
+    addresses: [
+      {
+        id: 329476276,
+        isDefault: false,
+        score: 'VALID',
+        addressType: 'HOME',
+        notAvailableDays: [],
+        streetAddress:
+          'H no - 37, village - Atna (near shiva temple), po - chainpur, dist - Ramgarh',
+        locality: 'Chainpur',
+        city: 'Ghato',
+        pincode: '829134',
+        state: {
+          code: 'JH',
+          name: 'Jharkhand',
+        },
+        country: {
+          code: 'IN',
+          name: 'India',
+        },
+        user: {
+          uidx: '',
+          name: 'Manisha',
+          email: '',
+          mobile: '',
+        },
       },
-      total_count_for_question: 6,
-      answers_with_count: [
-        {
-          option: {
-            text_for_pdp: 'Tight',
-          },
-          count: 0,
-          percentage: 0,
-          is_highlighted: false,
+      {
+        id: 350468682,
+        isDefault: false,
+        score: 'VALID',
+        addressType: 'HOME',
+        notAvailableDays: [],
+        streetAddress: 'H no - 255 (Lotus House), ward no - 13, Lohiya Nagar',
+        locality: 'Godda',
+        city: 'Godda',
+        pincode: '814133',
+        state: {
+          code: 'JH',
+          name: 'Jharkhand',
         },
-        {
-          option: {
-            text_for_pdp: 'A Little Tight',
-          },
-          count: 0,
-          percentage: 0,
-          is_highlighted: false,
+        country: {
+          code: 'IN',
+          name: 'India',
         },
-        {
-          option: {
-            text_for_pdp: 'Just Right',
-          },
-          count: 6,
-          percentage: 100,
-          is_highlighted: true,
+        user: {
+          uidx: '',
+          name: 'Manisha sinha',
+          email: '',
+          mobile: '',
         },
-        {
-          option: {
-            text_for_pdp: 'A Little Loose',
-          },
-          count: 0,
-          percentage: 0,
-          is_highlighted: false,
-        },
-        {
-          option: {
-            text_for_pdp: 'Loose',
-          },
-          count: 0,
-          percentage: 0,
-          is_highlighted: false,
-        },
-      ],
-      rating: 5,
-    },
-    {
-      question: {
-        text_for_pdp: 'Length',
       },
-      total_count_for_question: 6,
-      answers_with_count: [
-        {
-          option: {
-            text_for_pdp: 'Short',
-          },
-          count: 0,
-          percentage: 0,
-          is_highlighted: false,
+      {
+        id: 396537579,
+        isDefault: true,
+        score: 'NOT_VALID',
+        addressType: 'HOME',
+        notAvailableDays: [],
+        streetAddress:
+          '158, Dubey niwas (near RTC high school/panchmukhi hanuman mandir), Bargain village (Shivaji nagar), Booty more',
+        locality: 'Bariatu',
+        city: 'Ranchi',
+        pincode: '834009',
+        state: {
+          code: 'JH',
+          name: 'Jharkhand',
         },
-        {
-          option: {
-            text_for_pdp: 'A Little Short',
-          },
-          count: 1,
-          percentage: 17,
-          is_highlighted: false,
+        country: {
+          code: 'IN',
+          name: 'India',
         },
-        {
-          option: {
-            text_for_pdp: 'Just Right',
-          },
-          count: 4,
-          percentage: 67,
-          is_highlighted: true,
+        user: {
+          uidx: '',
+          name: 'Manisha',
+          email: '',
+          mobile: '',
         },
-        {
-          option: {
-            text_for_pdp: 'A Little Long',
-          },
-          count: 1,
-          percentage: 16,
-          is_highlighted: false,
-        },
-        {
-          option: {
-            text_for_pdp: 'Long',
-          },
-          count: 0,
-          percentage: 0,
-          is_highlighted: false,
-        },
-      ],
-      rating: 3.68,
+      },
+    ],
+  },
+  selectedAddress: {
+    id: 396537579,
+    isDefault: true,
+    score: 'NOT_VALID',
+    addressType: 'HOME',
+    notAvailableDays: [],
+    streetAddress:
+      '158, Dubey niwas (near RTC high school/panchmukhi hanuman mandir), Bargain village (Shivaji nagar), Booty more',
+    locality: 'Bariatu',
+    city: 'Ranchi',
+    pincode: '834009',
+    state: {
+      code: 'JH',
+      name: 'Jharkhand',
     },
-  ],
-  inPdp: true,
-  showRating: [
-    {
-      rating: 5,
-      count: 45,
+    country: {
+      code: 'IN',
+      name: 'India',
     },
-    {
-      rating: 1,
-      count: 12,
+    user: {
+      uidx: '',
+      name: 'Manisha',
+      email: '',
+      mobile: '',
     },
-    {
-      rating: 2,
-      count: 4,
-    },
-    {
-      rating: 3,
-      count: 7,
-    },
-    {
-      rating: 4,
-      count: 10,
-    },
-  ],
+  },
+  warningShown: false,
 };
 
 const discountPercentage = (mrp, sp) => Math.floor(((mrp - sp) / mrp) * 100);
@@ -515,61 +500,10 @@ const ProductDetails = () => {
             product description
           </div> */}
           <div className={classes['detailed-reviews-rating-container']}>
-            <div className={classes['detailed-rating-container']}>
-              <h4 className={classes['index-header']}>
-                Ratings
-                <SpriteIcon
-                  className={classes['sprites-product-ratings-icon']}
-                />
-              </h4>
-              <div className={classes['ratings-container']}>
-                <div className={classes['average-rating-container']}>
-                  <div className={classes['average-rating']}>
-                    <span>
-                      {Math.round(product.ratings.averageRating * 10) / 10}
-                    </span>
-                    <SpriteIcon
-                      className={classes['sprites-good-ratings-icon']}
-                    />
-                  </div>
-                  <div className={classes['verified-buyers-count']}>
-                    {product.ratings.totalCount} Verified Buyers
-                  </div>
-                </div>
-                <div className={classes['ratings-bar-container']}>
-                  {product.ratings.ratingInfo
-                    .sort((a, b) => (a.rating > b.rating ? -1 : 1))
-                    .map((r) => (
-                      <div
-                        key={r.rating}
-                        className={classes['rating-bar-wrapper']}>
-                        <div className={classes['index-rating']}>
-                          <span className={classes['rating-label']}>
-                            {r.rating}
-                          </span>
-                          <SpriteIcon
-                            className={
-                              classes['sprites-product-ratings-gray-icon']
-                            }
-                          />
-                        </div>
-                        <progress
-                          min="0"
-                          max="70"
-                          value={r.count}
-                          data-rating={r.rating}
-                        />
-                        <div className={classes['rating-count']}>{r.count}</div>
-                      </div>
-                    ))}
-                </div>
-              </div>
-            </div>
-            <div className="ugc-ugcContainer ugc-inPdp ugc-showRating">
-              <div>
-                <RatingsAndReview data={p.data} />
-              </div>
-            </div>
+            <RatingsAndReview
+              data={product.ratings.aggregatedQuestionsAndAnswers}
+              ratings={product.ratings}
+            />
           </div>
         </div>
       </div>
