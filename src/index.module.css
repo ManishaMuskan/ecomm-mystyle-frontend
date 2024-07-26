@@ -22,13 +22,14 @@
   --tertiary-txt-color: #535665;
 
   --accent-blue-txt-color: #526cd0;
+  --accent-blue-color: #0097d7;
   --accent-pink-color-dark: #ff3e6c;
   --accent-pink-color: #f16565;
   --accent-pink-color-lighter: #ff905a;
   --accent-grey-color-lighter: #7e818c;
   --accent-green-color: #03a685;
-
-  --button-blue-bg-color: #0097d7;
+  --accent-tomato-color: #ff5722;
+  --accent-red-color: rgb(255, 87, 34);
 
   --primary-border-clr: #eaeaec;
   --secondary-border-clr: #d4d5d9;
@@ -43,6 +44,7 @@
   --border-radius-lg: 14px;
 
   --font-size: 16px;
+  --font-size-11: 11px;
   --font-size-15: 15px;
   --font-size-xxxs: 4px;
   --font-size-xxs: 5px;
@@ -82,6 +84,9 @@
   --transform-origin-top-right: 100% 0%;
   --transform-origin-bottom-left: 0% 100%;
   --transform-origin-bottom-right: 100% 100%;
+
+  --height-header: 85px;
+  --main-content-div-full-height: calc(100vh - var(--height-header));
 }
 
 @font-face {
@@ -203,9 +208,18 @@ h6 {
 [type='submit'],
 button {
   cursor: pointer;
-  outline: 0;
 }
 
 [disabled] {
   cursor: default;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  outline: 0;
 }

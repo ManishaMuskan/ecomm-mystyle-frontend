@@ -102,7 +102,7 @@ SALES ADS BEGINS
   margin-top: var(--spacer-xl);
   border: 0;
   border-radius: var(--border-radius-sm);
-  background: var(--button-blue-bg-color);
+  background: var(--accent-blue-color);
   color: var(--white);
 }
 

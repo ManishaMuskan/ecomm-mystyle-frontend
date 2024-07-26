@@ -14,6 +14,8 @@ import Wishlist from './pages/Wishlist';
 import WomenShop from './pages/WomenShop';
 import Discover from './pages/Discover';
 import ProductDetails from './pages/Products/ProductDetails';
+import Login from './pages/Login';
+import OtpLogin from './pages/OtpLogin';
 
 const router = createBrowserRouter([
   {
@@ -55,6 +57,14 @@ const router = createBrowserRouter([
       {
         path: 'discover',
         element: <Discover />,
+      },
+      {
+        path: 'login',
+        element: <Login />,
+      },
+      {
+        path: 'otp-login',
+        element: <OtpLogin />,
       },
       {
         path: 'wishlist',

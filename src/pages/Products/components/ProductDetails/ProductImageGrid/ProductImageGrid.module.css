@@ -1,0 +1,22 @@
+.product-image-grid-container {
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.image-grid-col {
+  border: 1px solid var(--secondary-bg-color);
+}
+
+.image-grid-col:hover {
+  cursor: crosshair;
+  cursor: -webkit-image-set(
+      url('./../../../../../assets/icons/zoom-in-icon-1x.png') 1x,
+      url('./../../../../../assets/icons/zoom-in-icon-1x.png') 2x
+    ),
+    crosshair;
+}
+
+.product-image-aspect-ratio-box {
+}

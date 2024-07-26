@@ -19,9 +19,7 @@ const NavbarLinks = () => (
       <NavLink to="beauty-and-personal-care">Beauty</NavLink>
     </li>
     <li className={classes['nav-link']}>
-      <NavLink to="discover" className={classes['nav-link']}>
-        Discover
-      </NavLink>
+      <NavLink to="discover">Discover</NavLink>
     </li>
   </ul>
 );

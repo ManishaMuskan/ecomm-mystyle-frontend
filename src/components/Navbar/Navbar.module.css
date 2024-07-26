@@ -1,6 +1,7 @@
 .navbar {
   background-color: var(--primary-bg-color);
   border-bottom: 1px solid var(--primary-border-clr);
+  height: var(--height-header);
 }
 
 .container {
@@ -13,7 +14,7 @@
 }
 
 .navbar-brand {
-  flex: 0 0 4%;
+  flex: 0 0 5%;
 }
 
 .navbar-brand img {
@@ -23,7 +24,7 @@
 }
 
 .navbar-links {
-  flex: 0 0 45%;
+  flex: 0 0 50%;
 }
 
 .navbar-links-container {
@@ -47,7 +48,7 @@
 }
 
 .navbar-search {
-  flex: 0 0 35%; /*This is a shorthand property that sets flex-grow, flex-shrink, and flex-basis.*/
+  flex: 0 0 25%; /*NOTE: This is a shorthand property that sets flex-grow, flex-shrink, and flex-basis.*/
 }
 
 .navbar-actions {

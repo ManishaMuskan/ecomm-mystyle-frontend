@@ -1,6 +1,6 @@
 .details-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: var(--spacer-md);
 }
@@ -11,6 +11,7 @@
 
 .Product-specification {
   flex: 42%;
+  padding: 0 var(--spacer-md);
 }
 
 .product-brand {

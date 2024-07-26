@@ -1,0 +1,74 @@
+.verification-outer-container {
+  height: var(--main-content-div-full-height);
+  background: linear-gradient(to bottom right, #feedf6, #fcf0e2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verification-box {
+  width: 400px;
+  padding: 60px;
+  color: #282c3f;
+  background: var(--white);
+}
+
+.otp-top-image {
+  width: 90px;
+  height: 90px;
+}
+
+.mobile-otp-container h3 {
+  font-weight: 700;
+  padding: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.mobile-otp-container h4 {
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.7;
+  padding: 0;
+}
+
+.otp-box {
+  margin-top: 40px;
+}
+
+.otp-box input {
+  padding: 9px 0;
+  border: 1px solid #d4d5d9;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 16px 0 0;
+  width: 30px;
+  border-radius: 2px;
+  caret-color: #ff2459;
+}
+
+.otp-box input:focus {
+  border: 1px solid #696e79;
+}
+
+.resend-btn {
+  padding: 0;
+  border: none;
+  color: #ff3f6c;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #fff;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.bottom-link {
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.bottom-link span {
+  font-weight: 600;
+  color: #ff3f6c;
+}

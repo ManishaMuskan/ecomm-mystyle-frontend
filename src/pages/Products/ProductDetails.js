@@ -11,6 +11,7 @@ import SpriteIcon from '../../components/UI/SpriteIcon/SpriteIcon';
 import data from '../../seeds/product-men-shirt-denim.json';
 import classes from './ProductDetails.module.css';
 import RatingsAndReview from './components/ProductDetails/RatingsAndReview';
+import ProductImageGrid from './components/ProductDetails/ProductImageGrid/ProductImageGrid';
 
 const product = data.data;
 product.title = product.name.slice(product.brand.name.length + 1);
@@ -50,9 +51,9 @@ product.ratings = {
         userName: 'Rahul singh',
         reviewText: '',
         userRating: 4,
-        timestamp: '1716089282000',
-        upvotes: '1',
-        downvotes: '3',
+        timeStamp: 1716089282000,
+        upVotes: '1',
+        downVotes: '3',
         reviewImages: [
           {
             reviewId: '615af732-09fc-468c-b178-f8bb2d8f5b0c',
@@ -345,6 +346,9 @@ product.addresses = {
   },
   warningShown: false,
 };
+const productImagesInGrid = product.media.albums.filter(
+  (album) => album.name === 'default'
+);
 
 const discountPercentage = (mrp, sp) => Math.floor(((mrp - sp) / mrp) * 100);
 
@@ -359,7 +363,9 @@ const ProductDetails = () => {
     <div className={classes['product-details-container']}>
       <BreadCrumbs />
       <div className={classes['details-wrapper']}>
-        <div className={classes['product-images']}>image grid</div>
+        <div className={classes['product-images']}>
+          <ProductImageGrid images={productImagesInGrid[0].images} />
+        </div>
         <div className={classes['Product-specification']}>
           <h1 className={classes['product-brand']}>{product.brand.name}</h1>
           <p className={classes['product-title']}>{product.title}</p>

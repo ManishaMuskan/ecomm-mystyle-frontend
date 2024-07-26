@@ -85,7 +85,23 @@
 .view-all-reviews:active,
 .view-all-reviews:hover,
 .view-all-reviews:visited {
-  font-size: 14px;
+  margin-bottom: var(--spacer-md);
+  font-size: var(--font-size-md);
   font-weight: 600;
-  color: #ff3f6c;
+  color: var(--accent-pink-color-dark);
+}
+
+.seller-info p {
+  color: #282c3f;
+  padding: var(--spacer-xs) 0;
+  margin-bottom: calc(var(--spacer-12) / 2);
+}
+
+.product-code,
+.product-seller-name {
+  font-weight: 700;
+}
+
+.product-seller-name {
+  color: var(--accent-pink-color-dark);
 }

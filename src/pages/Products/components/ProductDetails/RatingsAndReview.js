@@ -7,7 +7,7 @@ const RatingsAndReview = ({ data, ratings }) => {
     <>
       <Ratings ratings={ratings} />
       <WhatCustomersSay questionAndAnswer={data} />
-      <CustomersReviews />
+      <CustomersReviews reviewInfo={ratings.reviewInfo} />
     </>
   );
 };
