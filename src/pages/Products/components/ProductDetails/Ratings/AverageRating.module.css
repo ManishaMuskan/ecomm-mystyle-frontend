@@ -1,0 +1,25 @@
+.average-rating-container {
+  padding-right: var(--spacer-lg);
+  border-right: 1.2px solid var(--primary-border-clr);
+}
+
+.average-rating span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: calc(var(--font-size-sm) * 4);
+  color: var(--secondary-txt-color);
+}
+
+.sprites-good-ratings-icon {
+  background-position: -194px -28px;
+  width: 24px;
+  height: 24px;
+  margin-left: var(--spacer-xs);
+}
+
+.verified-buyers-count {
+  margin-top: var(--spacer-12);
+  font-size: var(--font-size-md);
+  font-weight: 400;
+  color: var(--secondary-txt-color);
+}

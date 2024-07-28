@@ -1,9 +1,8 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import { useRouteError } from 'react-router-dom';
 
 const ErrorPage = () => {
   const error = useRouteError();
-  console.error(error);
+  console.log(error);
 
   return (
     <div id="error-page">

@@ -1,0 +1,32 @@
+.work-in-progress-container {
+  height: var(--main-content-div-full-height);
+  width: 100%;
+  background: linear-gradient(to bottom right, #feedf6, #fcf0e2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wip-box {
+  text-align: center;
+  width: 400px;
+  background-color: #fff;
+  color: #282c3f;
+  padding: var(--spacer-xl);
+}
+
+.wip-box h4 {
+  font-family: Assistant;
+  font-size: 20px;
+  font-weight: 700;
+  color: #282c3f;
+  text-transform: uppercase;
+  margin: var(--spacer-md) 0;
+}
+
+.wip-box p {
+  font-family: Assistant;
+  font-size: 14px;
+  text-align: left;
+  color: #696b79;
+}

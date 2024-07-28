@@ -1,0 +1,23 @@
+.detailed-rating-container {
+  margin: var(--spacer-md) 0;
+}
+
+.ratings-container {
+  display: flex;
+  align-items: center;
+  margin: var(--spacer-md) 0;
+}
+
+.index-header {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 7px;
+  color: var(--secondary-txt-color);
+}
+
+.sprites-product-ratings-icon {
+  background-position: -276px -60px;
+  width: 21px;
+  height: 22px;
+  margin-left: var(--spacer-xs);
+}

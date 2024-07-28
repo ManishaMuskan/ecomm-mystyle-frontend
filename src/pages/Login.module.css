@@ -1,0 +1,119 @@
+.login-signup-container {
+  height: var(--main-content-div-full-height);
+  width: 100%;
+  background: linear-gradient(to bottom right, #feedf6, #fcf0e2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-with-mobile-number-box,
+.login-with-password-box {
+  width: 400px;
+  background-color: var(--white);
+  text-align: center;
+  padding: var(--spacer-lg);
+}
+
+.login-with-mobile-number-box h4 {
+  font-family: Assistant;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.login-with-mobile-number-box h4 small {
+  font-size: 16px;
+  font-weight: 400;
+  color: #535766;
+}
+
+.login-input-group {
+  margin-bottom: var(--spacer-lg);
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: var(--spacer-sm);
+}
+
+.login-input-group .form-group input {
+  border: 1px solid #d4d5d9;
+  font-size: 14px;
+  padding: 11px 12px;
+  line-height: 16px;
+  height: auto;
+  color: #282c3f;
+  padding-left: 62px;
+  caret-color: #ff3f6c;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  background-image: none;
+  outline: 0;
+  overflow: visible;
+}
+
+.form-group input:focus {
+  transition: 0.4s;
+  border: 1px solid #282c3f;
+}
+
+.form-group input:focus ~ .placeholder-alternative {
+  transition: 0.2s;
+  top: 10px;
+  background-color: #fff;
+  padding: 0 2px;
+  color: #282c3f;
+}
+
+.form-group
+  input:focus
+  ~ .placeholder-alternative
+  span.mobile-number-placeholder,
+.hide {
+  display: none;
+}
+
+.form-group
+  input:focus
+  ~ .placeholder-alternative
+  span.mobile-number-separator {
+  padding-right: 8px;
+}
+
+.placeholder-alternative {
+  color: #94969f;
+  top: 10px;
+  left: 12px;
+  font-size: 14px;
+  position: absolute;
+  pointer-events: none;
+}
+
+.placeholder-alternative span.mobile-number-separator {
+  padding: 0 10px;
+}
+
+.placeholder-alternative .mobile-number-placeholder span {
+  color: var(--accent-red-color);
+}
+
+.error-container {
+  text-align: left;
+  margin-top: 4px;
+  font-size: var(--font-size-xs);
+  color: #ff5722;
+}
+
+.submit {
+  cursor: pointer;
+  background-color: #ff3f6c;
+  text-align: center;
+  padding: 12px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}

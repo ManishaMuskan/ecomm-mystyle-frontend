@@ -1,87 +1,106 @@
 .navbar {
-  background-color: #ffffff;
-  border-bottom: 1px solid #e0e0e0;
-  padding: 10px 0;
+  background-color: var(--primary-bg-color);
+  border-bottom: 1px solid var(--primary-border-clr);
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 95%;
-  margin: 0 auto;
-  padding: 0 20px;
+  max-width: 93%;
+  margin: var(--spacer-0) auto;
+  padding: var(--spacer-sm) var(--spacer-md);
+  height: var(--height-header);
 }
 
 .navbar-brand {
   flex: 0 0 5%;
 }
 
-.navbar-brand img {
+.navbar-logo {
+  width: 60px;
   height: 60px;
+  display: block;
 }
 
 .navbar-links {
-  flex: 0 0 55%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
+  flex: 0 0 50%;
 }
 
-.navbar-nav {
-  list-style: none;
+.navbar-links-container {
   display: flex;
-}
-
-.nav-item {
-  margin-right: 15px;
 }
 
 .nav-link {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: var(--font-size-md);
   font-weight: 700;
-  letter-spacing: 0.3px;
-  color: #282c3f;
-  padding: 0 17px;
+  letter-spacing: var(--letter-spacing-sm);
+  color: var(--secondary-txt-color);
+  padding: 0 var(--spacer-md);
   border-bottom: none;
 }
 
+.nav-link a {
+  color: var(--secondary-txt-color);
+}
+
+.navbar-search {
+  flex: 0 0 25%; /*NOTE: This is a shorthand property that sets flex-grow, flex-shrink, and flex-basis.*/
+}
+
 .navbar-actions {
-  flex: 0 0 10%;
+  flex: 0 0 13%;
+}
+
+.navbar-actions-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navbar-action {
   text-decoration: none;
-  color: #333333;
+  color: var(--primary-txt-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40px;
-  padding: 15px;
+  box-sizing: content-box;
 }
 
 .navbar-action-label {
-  color: #000;
-  font-size: 12px;
+  color: var(--secondary-txt-color);
+  font-size: var(--font-size-sm);
   font-weight: 700;
-  padding-top: 10px;
+  padding-top: var(--spacer-sm);
   line-height: 6px;
-}
-
-.myntraweb-sprite {
-  background: url(./../../assets/imgs/MyntraWebSprite_27_01_2021.png);
-  background-size: 1404px 105px;
 }
 
 .sprites-headerBag {
   width: 16px;
   height: 16px;
   background-position: -344px -58px;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart-items-badge {
+  position: absolute;
+  left: 13px;
+  top: -8px;
+  width: 18px;
+  height: 18px;
+  border-radius: var(--border-radius-circle);
+  background-color: var(--accent-pink-color);
+  color: var(--white);
+  font-size: var(--font-size-sm);
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
 }

@@ -1,0 +1,85 @@
+.contact-us-container {
+  width: 80%;
+  margin: 15px auto;
+}
+
+.contact-us-top {
+  display: flex;
+  padding-bottom: 15px;
+  border-bottom: solid 0.5px #eaeaec;
+}
+
+.contact-us-left {
+  flex: 0 0 30%;
+}
+
+.contact-us-left h4 {
+  font-family: Assistant;
+  font-size: 20px;
+  font-weight: 700;
+  color: #282c3f;
+  text-transform: uppercase;
+}
+
+.contact-us-left p {
+  font-family: Assistant;
+  font-size: 14px;
+  text-align: left;
+  color: #696b79;
+}
+
+.contact-us-right {
+  flex: 0 0 70%;
+  display: flex;
+  border: solid 0.5px #eaeaec;
+  padding: 10px 16px;
+  justify-content: space-between;
+}
+
+.order-options-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.my-font-bag-icon:before {
+  font-family: 'MyStyle_Font' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #94969f;
+  font-size: 36px;
+  content: '\e904';
+}
+
+.order-options h5 {
+  font-family: Assistant;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left;
+  color: #3e4152;
+  text-transform: uppercase;
+}
+
+.order-options p {
+  font-family: Assistant;
+  font-size: 11px;
+  text-align: left;
+  color: #94969f;
+}
+
+.order-button {
+  font-family: Assistant;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  color: #14cda8;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: solid 1px #14cda8;
+  float: left;
+  background: white;
+}

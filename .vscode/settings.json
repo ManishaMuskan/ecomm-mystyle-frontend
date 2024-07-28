@@ -1,11 +1,23 @@
 {
-    "editor.formatOnSave": true,
-    "cSpell.words": [
-        "ecomm",
-        "fontawesome",
-        "fortawesome",
-        "mystyle"
-    ],
-    "editor.detectIndentation": false,
-    "editor.tabSize": 2
+  "editor.formatOnSave": true,
+  "cSpell.words": [
+    "apos",
+    "colours",
+    "Creds",
+    "ecomm",
+    "FLOWOFEXECUTION",
+    "fontawesome",
+    "fortawesome",
+    "imgs",
+    "lsaquo",
+    "mojari",
+    "mystyle",
+    "rsaquo",
+    "signup",
+    "svgs",
+    "wishlisted",
+    "xxxs"
+  ],
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2
 }

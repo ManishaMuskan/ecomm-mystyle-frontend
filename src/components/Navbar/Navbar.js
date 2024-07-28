@@ -8,10 +8,18 @@ const Navbar = () => {
   return (
     <nav className={classes.navbar}>
       <div className={classes.container}>
-        <NavbarBrand />
-        <NavbarLinks />
-        <SearchBar />
-        <NavbarActions />
+        <div className={classes['navbar-brand']}>
+          <NavbarBrand />
+        </div>
+        <div className={classes['navbar-links']}>
+          <NavbarLinks />
+        </div>
+        <div className={classes['navbar-search']}>
+          <SearchBar />
+        </div>
+        <div className={classes['navbar-actions']}>
+          <NavbarActions />
+        </div>
       </div>
     </nav>
   );

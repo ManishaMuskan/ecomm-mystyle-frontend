@@ -1,0 +1,249 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f5f6;
+  --tertiary-bg-color: #f4f4f5;
+  --footer-bg-color: #fafbfc;
+  --translucent-bg-white: hsla(0, 0%, 100%, 0.8);
+
+  --primary-txt-color: #3e4152;
+  --primary-txt-color-light: #696e79;
+  --primary-txt-color-lighter: #94969f;
+
+  --secondary-txt-color: #282c3f; /*used in headings*/
+  --secondary-txt-color-light: #535766; /*used in footer headings*/
+  --secondary-txt-color-lighter: #878b94;
+  --secondary-txt-color-lightest: #a9abb3;
+
+  --tertiary-txt-color: #535665;
+
+  --accent-blue-txt-color: #526cd0;
+  --accent-blue-color: #0097d7;
+  --accent-pink-color-dark: #ff3e6c;
+  --accent-pink-color: #f16565;
+  --accent-pink-color-lighter: #ff905a;
+  --accent-grey-color-lighter: #7e818c;
+  --accent-green-color: #03a685;
+  --accent-tomato-color: #ff5722;
+  --accent-red-color: rgb(255, 87, 34);
+
+  --primary-border-clr: #eaeaec;
+  --secondary-border-clr: #d4d5d9;
+  --tertiary-border-clr: #e9e9ed;
+  --quaternary-border-clr: #edebef;
+  --custom-input-border-clr: #c3c2c9;
+  --quinary-border-clr: #bfc0c6;
+
+  --border-radius-circle: 50%;
+  --border-radius-xs: 2px;
+  --border-radius-sm: 4px;
+  --border-radius-lg: 14px;
+
+  --font-size: 16px;
+  --font-size-11: 11px;
+  --font-size-15: 15px;
+  --font-size-xxxs: 4px;
+  --font-size-xxs: 5px;
+  --font-size-xs: 10px;
+  --font-size-sm: 12px;
+  --font-size-md: 14px;
+  --font-size-lg: 18px;
+  --font-size-2xs: calc(var(--font-size-xs) * 2);
+  --font-size-2sm: calc(var(--font-size-sm) * 2);
+  --font-size-xl: 25px;
+  --font-size-xxl: 30px;
+
+  --letter-spacing-sm: 0.3px;
+  --letter-spacing-lg: 2.4px;
+
+  --margin-center: 0 auto;
+
+  --spacer-0: 0px;
+  --spacer-xxs: 3px;
+  --spacer-xs: 5px;
+  --spacer-sm: 10px;
+  --spacer-12: 12px;
+  --spacer-md: 20px;
+  --spacer-lg: 32px;
+  --spacer-xl: 50px; /* 8(1), 22(1), 12(3), 15(2), 18(3) */
+
+  --z-index-header: 9;
+  --z-index-1: 1;
+  --z-index-2: 2;
+  --z-index-carousel-indicators-product-slider-preview: 3;
+
+  --box-shadow-product-sort-select: 0 8px 10px 0 rgba(0, 0, 0, 0.08);
+  --box-shadow-thumbnail-preview: 0 2px 16px 4px rgba(40, 44, 63, 0.07);
+  --box-shadow-checked-radio-button: inset 0 0 0 3px var(--white);
+
+  --transform-origin-top-left: 0% 0;
+  --transform-origin-top-right: 100% 0%;
+  --transform-origin-bottom-left: 0% 100%;
+  --transform-origin-bottom-right: 100% 100%;
+
+  --height-header: 85px;
+  --main-content-div-full-height: calc(100vh - var(--height-header));
+}
+
+@font-face {
+  font-family: 'Assistant';
+  font-display: swap;
+  font-weight: 400;
+  src: url('./assets/fonts/Assistant-Regular.eot');
+  src:
+    url('./assets/fonts/Assistant-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('./assets/fonts/Assistant-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Assistant-Regular.woff') format('woff'),
+    url('./assets/fonts/Assistant-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Assistant';
+  font-display: swap;
+  font-weight: 600;
+  src: url('./assets/fonts/Assistant-SemiBold.eot');
+  src:
+    url('./assets/fonts/Assistant-SemiBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('./assets/fonts/Assistant-SemiBold.woff2') format('woff2'),
+    url('./assets/fonts/Assistant-SemiBold.woff') format('woff'),
+    url('./assets/fonts/Assistant-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Assistant';
+  font-display: swap;
+  font-weight: 700;
+  src: url('./assets/fonts/Assistant-Bold.eot');
+  src:
+    url('./assets/fonts/Assistant-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/Assistant-Bold.woff2') format('woff2'),
+    url('./assets/fonts/Assistant-Bold.woff') format('woff'),
+    url('./assets/fonts/Assistant-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MyStyle_Font';
+  src: url('./assets/fonts/MyStyle_Font.eot?q39ikz');
+  src:
+    url('./assets/fonts/MyStyle_Font.eot?q39ikz#iefix')
+      format('embedded-opentype'),
+    url('./assets/fonts/MyStyle_Font.ttf?q39ikz') format('truetype'),
+    url('./assets/fonts/MyStyle_Font.woff?q39ikz') format('woff'),
+    url('./assets/fonts/MyStyle_Font.svg?q39ikz#MyStyle_Font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: var(--spacer-0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  width: 100%;
+  box-sizing: border-box;
+  color: #424553;
+}
+
+body * {
+  font-family: Assistant, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+hr {
+  border-color: var(--primary-border-clr);
+  border-style: solid;
+}
+
+section {
+  padding: var(--spacer-0) var(--spacer-md) var(--spacer-md) var(--spacer-md);
+}
+
+section h2 {
+  margin-bottom: var(--spacer-sm);
+}
+
+ul {
+  margin: var(--spacer-0);
+  padding: var(--spacer-0);
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: var(--spacer-0);
+}
+
+[type='button'],
+[type='reset'],
+[type='submit'],
+button {
+  cursor: pointer;
+}
+
+[disabled] {
+  cursor: default;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  outline: 0;
+}
