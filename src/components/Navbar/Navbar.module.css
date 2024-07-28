@@ -1,26 +1,26 @@
 .navbar {
   background-color: var(--primary-bg-color);
   border-bottom: 1px solid var(--primary-border-clr);
-  height: var(--height-header);
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 95%;
+  max-width: 93%;
   margin: var(--spacer-0) auto;
   padding: var(--spacer-sm) var(--spacer-md);
+  height: var(--height-header);
 }
 
 .navbar-brand {
   flex: 0 0 5%;
 }
 
-.navbar-brand img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+.navbar-logo {
+  width: 60px;
+  height: 60px;
+  display: block;
 }
 
 .navbar-links {

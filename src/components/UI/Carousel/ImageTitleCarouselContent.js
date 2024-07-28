@@ -1,11 +1,7 @@
 import ImageBox from '../ImageBox/ImageBox';
 import classes from './Carousel.module.css';
 
-const ImageTitleCarouselContent = ({
-  items,
-  currentSlide,
-  aspectRatioBoxClassName,
-}) => {
+const ImageTitleCarouselContent = ({ items, currentSlide, className }) => {
   return items.map((item, index) => (
     <div
       key={item.title || index}
@@ -13,7 +9,7 @@ const ImageTitleCarouselContent = ({
       <ImageBox
         imageSrc={item.imageSrc}
         imageAltTitle={item.title}
-        aspectRatioBoxClassName={aspectRatioBoxClassName}
+        className={className}
       />
       {item.title && (
         <div className={classes['card-overlay']}>

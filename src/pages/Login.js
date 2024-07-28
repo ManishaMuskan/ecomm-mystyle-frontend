@@ -27,7 +27,7 @@ const Login = () => {
   return (
     // TODO: if already logged in, send it to home page
     <div className={classes['login-signup-container']}>
-      <div className={classes['login-box']}>
+      <div className={classes['login-with-mobile-number-box']}>
         <h4>
           Login <small>or</small> Signup
         </h4>

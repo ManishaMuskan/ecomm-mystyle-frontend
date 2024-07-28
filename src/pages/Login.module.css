@@ -7,14 +7,15 @@
   justify-content: center;
 }
 
-.login-box {
+.login-with-mobile-number-box,
+.login-with-password-box {
   width: 400px;
   background-color: var(--white);
   text-align: center;
   padding: var(--spacer-lg);
 }
 
-.login-box h4 {
+.login-with-mobile-number-box h4 {
   font-family: Assistant;
   font-size: 20px;
   font-weight: 700;
@@ -22,7 +23,7 @@
   text-align: left;
 }
 
-.login-box h4 small {
+.login-with-mobile-number-box h4 small {
   font-size: 16px;
   font-weight: 400;
   color: #535766;

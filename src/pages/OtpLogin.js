@@ -1,4 +1,5 @@
 import { useReducer, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import classes from './OtpLogin.module.css';
 import ImageBox from '../components/UI/ImageBox/ImageBox';
 import mobileVerificationImg from '../assets/imgs/mobile-verification.jpg';
@@ -131,7 +132,10 @@ const OtpLogin = () => {
           </div>
         </div>
         <div className={classes['bottom-link']}>
-          Log in using <span> Password </span>
+          Log in using{' '}
+          <Link to="/login/password">
+            <span> Password </span>
+          </Link>
         </div>
         <div className={classes['bottom-link']}>
           Having trouble logging in? <span> Get help </span>

@@ -9,7 +9,7 @@ const Carousel = ({
   showActionButtons = true,
   pauseAutoPlayOnHover = true,
   slideTimeOut = 2500,
-  aspectRatioBoxClassName,
+  className,
   indicatorsClassName,
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -46,7 +46,7 @@ const Carousel = ({
         <ImageTitleCarouselContent
           items={items}
           currentSlide={currentSlide}
-          aspectRatioBoxClassName={aspectRatioBoxClassName}
+          className={className}
         />
         {showActionButtons && (
           <div className={classes['carousel-slide-actions']}>

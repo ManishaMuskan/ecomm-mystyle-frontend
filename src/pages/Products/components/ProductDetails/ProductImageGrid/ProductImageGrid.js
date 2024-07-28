@@ -9,7 +9,7 @@ const ProductImageGrid = ({ images }) => {
           <ImageBox
             imageSrc={image.imageURL}
             imageAltTitle={image.title}
-            aspectRatioBoxClassName={classes['product-image-aspect-ratio-box']}
+            className={classes['product-image-aspect-ratio-box']}
           />
         </div>
       ))}

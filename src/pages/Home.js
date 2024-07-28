@@ -204,9 +204,7 @@ const HomePage = () => {
       <section className={classes['home-special-offers']}>
         <Carousel
           items={bannerImgs}
-          aspectRatioBoxClassName={
-            classes['home-special-offers-aspect-ratio-box']
-          }
+          className={classes['home-special-offers-aspect-ratio-box']}
         />
       </section>
 
