@@ -20,6 +20,7 @@ import LoginWithPassword from './pages/LoginWithPassword';
 import ForgotPassword from './pages/ForgotPassword';
 import ContactUs from './pages/ContactUs';
 import WorkInProgress from './pages/WorkInProgress';
+import AuthContextProvider from './store/auth/AuthContextProvider';
 
 const router = createBrowserRouter([
   {
@@ -112,7 +113,11 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <AuthContextProvider>
+      <RouterProvider router={router} />
+    </AuthContextProvider>
+  );
 };
 
 export default App;

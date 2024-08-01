@@ -62,6 +62,7 @@
       {
         "endOfLine": "auto"
       }
-    ]
+    ],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }]
   }
 }

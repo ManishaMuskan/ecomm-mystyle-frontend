@@ -1,25 +1,22 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SpriteIcon from '../components/UI/SpriteIcon/SpriteIcon';
 import classes from './Wishlist.module.css';
+import useAuthContext from '../hooks/useAuthContext';
 
 const Wishlist = () => {
-  const [isLoggedIn] = useState();
-
-  // const handleLogIn = () => {
-  //   setIsLoggedIn(true);
-  // };
+  const { loggedIn } = useAuthContext();
 
   return (
     <div className={classes['wishlist-container']}>
-      {!isLoggedIn && (
+      {!loggedIn && (
         <div className={classes['is-not-logged-in-box']}>
           <h4>Please Log in</h4>
           <p>Login to view items in your wishlist</p>
           <SpriteIcon className={classes['wishlist-icon']} />
           <div>
             <Link
-              // to="/login?referer=https://www.mystyle.co.in/wishlist"
+              // TOLOOKINTO: to="/login?referer=https://www.mystyle.co.in/wishlist"
               to="/login"
               className="wishlistLogin-button">
               LOGIN
@@ -27,6 +24,7 @@ const Wishlist = () => {
           </div>
         </div>
       )}
+      {loggedIn && <p>Wishlisted Products list</p>}
     </div>
   );
 };
