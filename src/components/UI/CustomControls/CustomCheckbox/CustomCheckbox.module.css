@@ -1,4 +1,4 @@
-.custom-multi-checkbox-label {
+.custom-checkbox-label {
   position: relative;
   display: block;
   width: 95%;
@@ -8,14 +8,16 @@
   text-overflow: ellipsis;
   min-height: 17px;
   color: #282c3f;
+  font-size: 14px;
 }
 
-.custom-multi-checkbox-label input {
+.custom-checkbox-label input {
   margin: 0 16px 0 0;
   visibility: hidden;
 }
 
-.custom-multi-checkbox-indicator {
+.custom-checkbox-indicator,
+.custom-checkbox-indicator.no-selected {
   position: absolute;
   top: 0;
   left: 0;
@@ -26,7 +28,8 @@
   border-radius: 2px;
 }
 
-.custom-multi-checkbox-indicator:after {
+.custom-checkbox-indicator:after,
+.custom-checkbox-indicator.all-selected:after {
   content: '';
   position: absolute;
   top: 4px;
@@ -41,7 +44,15 @@
   transform: rotate(-45deg);
 }
 
-.custom-multi-checkbox-label input:checked ~ .custom-multi-checkbox-indicator {
+.custom-checkbox-label input:checked ~ .custom-checkbox-indicator {
   border: none;
   background: #ff3f6c;
+}
+
+.custom-checkbox-label
+  input:checked
+  ~ .custom-checkbox-indicator.some-selected:after {
+  height: 0px;
+  top: 7px;
+  transform: rotate(0deg);
 }

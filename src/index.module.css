@@ -67,6 +67,7 @@
   --spacer-xs: 5px;
   --spacer-sm: 10px;
   --spacer-12: 12px;
+  --spacer-16: 16px;
   --spacer-md: 20px;
   --spacer-lg: 32px;
   --spacer-xl: 50px; /* 8(1), 22(1), 12(3), 15(2), 18(3) */
@@ -87,6 +88,7 @@
 
   --height-header: 85px;
   --main-content-div-full-height: calc(100vh - var(--height-header));
+  --img-aspect-ratio: 520 / 400;
 }
 
 @font-face {
@@ -232,6 +234,8 @@ h6 {
 [type='submit'],
 button {
   cursor: pointer;
+  background: transparent;
+  border: 0;
 }
 
 [disabled] {

@@ -33,7 +33,7 @@ const LoginWithPassword = () => {
         <form className={classes['form-container']}>
           <div className={classes['form-group']}>
             <input
-              name="MobileOrEmail"
+              name="mobileOrEmail"
               type="text"
               className={classes['form-control']}
               value={loginCreds.mobileOrEmail}

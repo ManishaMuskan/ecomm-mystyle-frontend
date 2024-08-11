@@ -1,0 +1,28 @@
+.product-price {
+  font-size: var(--font-size-md);
+  line-height: 15px;
+  color: var(--secondary-txt-color);
+  white-space: nowrap;
+  padding: var(--spacer-xs) 0;
+}
+
+.product-discounted-price {
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  color: var(--secondary-txt-color);
+}
+
+.product-strike {
+  text-decoration: line-through;
+  color: var(--accent-grey-color-lighter);
+  font-weight: 400;
+  margin-left: var(--spacer-xs);
+  font-size: var(--font-size-sm);
+}
+
+.product-discount-percentage {
+  color: var(--accent-pink-color-lighter);
+  font-weight: 400;
+  font-size: var(--font-size-sm);
+  margin-left: var(--spacer-xs);
+}

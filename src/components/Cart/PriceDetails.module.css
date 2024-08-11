@@ -1,0 +1,47 @@
+.price-details-container {
+}
+
+.price-details-container h4 {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 24px 0 16px;
+  color: #535766;
+}
+
+.order-price-breakup-summary {
+  font-size: 14px;
+}
+
+.price-details-base-row,
+.price-details-base-total {
+  margin-bottom: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.discounted-price {
+  color: #03a685;
+}
+
+.price-details-base-total {
+  font-weight: 700;
+  font-size: 15px;
+  padding-top: 16px;
+  border-top: 1px solid #eaeaec;
+  color: #3e4152;
+}
+
+.place-order-btn {
+  font-size: 14px;
+  padding: 10px 16px;
+  width: 100%;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-radius: 2px;
+  border-width: 0px;
+  background-color: rgb(255, 63, 108);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}

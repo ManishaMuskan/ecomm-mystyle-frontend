@@ -69,6 +69,15 @@
   justify-content: center;
   align-items: center;
   box-sizing: content-box;
+  position: relative;
+}
+
+.navbar-action-profile {
+}
+
+.profile-user-actions {
+  position: absolute;
+  top: 30px;
 }
 
 .navbar-action-label {

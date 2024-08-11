@@ -1,7 +1,7 @@
 .base-aspect-ratio-box {
   position: relative;
   width: 100%;
-  padding-top: calc(100% * (520 / 400));
+  padding-top: calc(100% * var(--img-aspect-ratio));
   box-sizing: border-box;
   overflow: hidden;
 }

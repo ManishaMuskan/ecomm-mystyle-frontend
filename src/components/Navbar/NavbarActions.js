@@ -4,13 +4,16 @@ import { NavLink } from 'react-router-dom';
 import SpriteIcon from '../UI/SpriteIcon/SpriteIcon';
 import classes from './Navbar.module.css';
 
-const NavbarActions = ({ link }) => {
+const NavbarActions = () => {
   return (
     <div className={classes['navbar-actions-container']}>
-      <a href={link} className={classes['navbar-action']}>
-        <FontAwesomeIcon icon={faUser} />
-        <span className={classes['navbar-action-label']}>Profile</span>
-      </a>
+      <div className={classes['navbar-action']}>
+        <div className={classes['navbar-action-profile']}>
+          <FontAwesomeIcon icon={faUser} />
+          <span className={classes['navbar-action-label']}>Profile</span>
+        </div>
+        <div className={classes['profile-user-actions']}>Hello Manisha</div>
+      </div>
 
       <NavLink to="wishlist" className={classes['navbar-action']}>
         <FontAwesomeIcon icon={faHeart} />

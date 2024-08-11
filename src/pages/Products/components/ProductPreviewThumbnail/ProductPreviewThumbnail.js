@@ -4,6 +4,7 @@ import classes from './ProductPreviewThumbnail.module.css';
 import Carousel from '../../../../components/UI/Carousel/Carousel';
 import ImageBox from '../../../../components/UI/ImageBox/ImageBox';
 import SpriteIcon from '../../../../components/UI/SpriteIcon/SpriteIcon';
+import PriceBox from '../../../../components/PriceBox/PriceBox';
 
 const ProductPreviewThumbnail = ({ product, link }) => {
   const [currentActiveProduct, setCurrentActiveProduct] = useState(false);
@@ -64,17 +65,7 @@ const ProductPreviewThumbnail = ({ product, link }) => {
           Shirt special
         </h4>
         <h4 className={classes['product-sizes']}>Sizes : S</h4>
-        <div className={classes['product-price']}>
-          <span>
-            <span className={classes['product-discounted-price']}>
-              Rs. 1899
-            </span>
-            <span className={classes['product-strike']}> Rs. 9999</span>
-          </span>
-          <span className={classes['product-discount-percentage']}>
-            (81% OFF)
-          </span>
-        </div>
+        <PriceBox />
       </div>
       <div className={classes['product-actions']}>
         <button type="button" className={classes['product-wishlist-btn']}>
