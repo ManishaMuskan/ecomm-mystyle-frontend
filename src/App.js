@@ -1,24 +1,27 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.module.css';
+import CheckoutAddress from './components/Cart/CheckoutAddress';
+import CheckoutBag from './components/Cart/CheckoutBag';
+import CheckoutPayment from './components/Cart/CheckoutPayment';
 import BeautyAndPersonalCare from './pages/BeautyAndPersonalCare';
 import Cart from './pages/Cart';
+import ContactUs from './pages/ContactUs';
+import Discover from './pages/Discover';
 import ErrorPage from './pages/ErrorPage';
+import ForgotPassword from './pages/ForgotPassword';
 import Home from './pages/Home';
 import HomeDecor from './pages/HomeDecor';
 import KidsShop from './pages/KidsShop';
+import Login from './pages/Login';
+import LoginWithPassword from './pages/LoginWithPassword';
 import MenShop from './pages/MenShop';
+import OtpLogin from './pages/OtpLogin';
+import ProductDetails from './pages/Products/ProductDetails';
 import Products from './pages/Products/Products';
 import RootLayout from './pages/RootLayout';
 import ShopRootLayout from './pages/ShopRootLayout';
 import Wishlist from './pages/Wishlist';
 import WomenShop from './pages/WomenShop';
-import Discover from './pages/Discover';
-import ProductDetails from './pages/Products/ProductDetails';
-import Login from './pages/Login';
-import OtpLogin from './pages/OtpLogin';
-import LoginWithPassword from './pages/LoginWithPassword';
-import ForgotPassword from './pages/ForgotPassword';
-import ContactUs from './pages/ContactUs';
 import WorkInProgress from './pages/WorkInProgress';
 import AuthContextProvider from './store/auth/AuthContextProvider';
 
@@ -109,7 +112,15 @@ const router = createBrowserRouter([
       },
     ],
   },
-  { path: '/cart', element: <Cart /> },
+  {
+    path: '/checkout',
+    element: <Cart />,
+    children: [
+      { path: 'bag', element: <CheckoutBag />, index: true },
+      { path: 'address', element: <CheckoutAddress /> },
+      { path: 'payment', element: <CheckoutPayment /> },
+    ],
+  },
 ]);
 
 const App = () => {

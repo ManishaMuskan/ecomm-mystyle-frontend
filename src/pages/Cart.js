@@ -1,8 +1,6 @@
-import CartAddressChange from '../components/Cart/CartAddressChange';
+import { Outlet } from 'react-router-dom';
 import CartHeader from '../components/Cart/CartHeader';
-import CartItemList from '../components/Cart/CartItemList';
 import EmptyCart from '../components/Cart/EmptyCart';
-import PriceDetails from '../components/Cart/PriceDetails';
 import useAuthContext from '../hooks/useAuthContext';
 import classes from './Cart.module.css';
 
@@ -18,16 +16,8 @@ const CartPage = () => {
       {!loggedIn && <EmptyCart />}
 
       {loggedIn && (
-        <div className={classes['cart-items-in-bag-container']}>
-          <div className={classes['cart-items-in-bag-box']}>
-            <div className={classes['cart-left']}>
-              <CartAddressChange />
-              <CartItemList />
-            </div>
-            <div className={classes['cart-right']}>
-              <PriceDetails />
-            </div>
-          </div>
+        <div className={classes['cart-content-container']}>
+          <Outlet />
         </div>
       )}
     </>

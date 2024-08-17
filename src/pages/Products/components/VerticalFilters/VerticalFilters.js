@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import classes from './VerticalFilters.module.css';
-import CustomRadio from '../../../../components/UI/CustomControls/CustomRadio/CustomRadio';
-import CustomMultiCheckbox from '../../../../components/UI/CustomControls/CustomCheckbox/CustomCheckbox'; // NOTE: default export can be imported by another name
+import CustomRadio from '../../../../components/UI/CustomFormAndControls/CustomRadio/CustomRadio';
+import CustomMultiCheckbox from '../../../../components/UI/CustomFormAndControls/CustomCheckbox/CustomCheckbox'; // NOTE: default export can be imported by another name
 
 const VerticalFilters = ({ vFilters }) => {
   const [filters, setFilters] = useState(vFilters);

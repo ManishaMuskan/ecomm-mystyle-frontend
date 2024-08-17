@@ -21,7 +21,7 @@ const NavbarActions = () => {
       </NavLink>
 
       <NavLink
-        to="cart"
+        to="checkout/bag"
         className={`${classes['navbar-action']} ${classes.cart}`}>
         {/* Included just to get an idea about how image sprites work */}
         <SpriteIcon className={classes['sprites-headerBag']} />

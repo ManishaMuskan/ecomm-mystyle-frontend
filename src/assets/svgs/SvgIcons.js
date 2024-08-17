@@ -599,11 +599,11 @@ export const SvgRightGreenTick = ({ className }) => (
     className={`${className}`}
     style={{
       fill: '#03a685',
-      'margin-right': '6px',
-      'margin-left': '5px',
+      marginRight: '6px',
+      marginLeft: '5px',
       height: '10px',
       width: '12px',
-      'vertical-align': 'middle',
+      verticalAlign: 'middle',
     }}>
     <path
       fillRule="evenodd"
@@ -635,10 +635,10 @@ export const SvgDropdownArrow = ({ className }) => (
     viewBox="0 0 6 3"
     className={`${className}`}
     style={{
-      'font-size': '16px',
+      fontSize: '16px',
       color: '#282c3f',
       cursor: 'pointer',
-      'margin-left': '5px',
+      marginLeft: '5px',
       position: 'relative',
       top: '-2px',
     }}>

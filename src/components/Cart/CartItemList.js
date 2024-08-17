@@ -1,25 +1,16 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import CustomCheckbox, {
   CheckboxKind,
-} from '../UI/CustomControls/CustomCheckbox/CustomCheckbox';
-import classes from './CartItemList.module.css';
+} from '../UI/CustomFormAndControls/CustomCheckbox/CustomCheckbox';
 import CartItem from './CartItem';
-
-const generateUniqueKey = () => `${Date.now()}-${Math.random()}`;
+import classes from './CartItemList.module.css';
 
 const CartItemList = () => {
-  const [keys, setKeys] = useState([]);
   const [checked, setChecked] = useState(1);
 
   const handleCheckboxChange = (newCheckedValue) => {
     setChecked(newCheckedValue);
   };
-
-  useEffect(() => {
-    // Generate keys once when the component mounts
-    const initialKeys = Array.from({ length: 5 }).map(generateUniqueKey);
-    setKeys(initialKeys);
-  }, []);
 
   return (
     <div className={classes['item-list-container']}>
@@ -38,7 +29,7 @@ const CartItemList = () => {
         </div>
       </div>
       <div className={classes['cart-items-container']}>
-        {keys.map((key, index) => (
+        {Array.from([0, 1, 2, 3, 4]).map((key, index) => (
           <CartItem key={key} item={index} />
         ))}
       </div>

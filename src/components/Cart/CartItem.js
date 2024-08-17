@@ -5,11 +5,11 @@ import {
   SvgReturnOrderIcon,
   SvgRightGreenTick,
 } from '../../assets/svgs/SvgIcons';
-import CustomCheckbox from '../UI/CustomControls/CustomCheckbox/CustomCheckbox';
+import CustomCheckbox from '../UI/CustomFormAndControls/CustomCheckbox/CustomCheckbox';
 import ImageBox from '../UI/ImageBox/ImageBox';
 import classes from './CartItem.module.css';
 import PriceBox from '../PriceBox/PriceBox';
-import CustomDropdown from '../UI/CustomControls/CustomDropdown/CustomDropdown';
+import CustomDropdown from '../UI/CustomFormAndControls/CustomDropdown/CustomDropdown';
 
 const item = {
   title: 'product title',
