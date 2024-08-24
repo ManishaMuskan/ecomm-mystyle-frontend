@@ -3,19 +3,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink } from 'react-router-dom';
 import SpriteIcon from '../UI/SpriteIcon/SpriteIcon';
 import classes from './Navbar.module.css';
+import ProfileUserActions from './ProfileUserActions';
 
 const NavbarActions = () => {
   return (
     <div className={classes['navbar-actions-container']}>
-      <div className={classes['navbar-action']}>
-        <div className={classes['navbar-action-profile']}>
+      <div className={classes['navbar-action-profile-box']}>
+        <div className={`${classes['navbar-action']}`}>
           <FontAwesomeIcon icon={faUser} />
           <span className={classes['navbar-action-label']}>Profile</span>
         </div>
-        <div className={classes['profile-user-actions']}>Hello Manisha</div>
+        <ProfileUserActions />
       </div>
 
-      <NavLink to="wishlist" className={classes['navbar-action']}>
+      <NavLink to="/wishlist" className={classes['navbar-action']}>
         <FontAwesomeIcon icon={faHeart} />
         <span className={classes['navbar-action-label']}>Wishlist</span>
       </NavLink>

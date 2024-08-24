@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.module.css';
 import CheckoutAddress from './components/Cart/CheckoutAddress';
 import CheckoutBag from './components/Cart/CheckoutBag';
-import CheckoutPayment from './components/Cart/CheckoutPayment';
+import CheckoutPayment from './components/Cart/CheckoutPayment/CheckoutPayment';
 import BeautyAndPersonalCare from './pages/BeautyAndPersonalCare';
 import Cart from './pages/Cart';
 import ContactUs from './pages/ContactUs';
@@ -32,6 +32,31 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { element: <Home />, index: true },
+      {
+        path: 'my',
+        children: [
+          {
+            path: 'orders',
+            element: <WorkInProgress />,
+          },
+          {
+            path: 'saved-upi',
+            element: <WorkInProgress />,
+          },
+          {
+            path: 'saved-cards',
+            element: <WorkInProgress />,
+          },
+          {
+            path: 'saved-addresses',
+            element: <WorkInProgress />,
+          },
+          {
+            path: 'edit-profile',
+            element: <WorkInProgress />,
+          },
+        ],
+      },
       {
         path: 'shop',
         element: <ShopRootLayout />,
@@ -67,6 +92,10 @@ const router = createBrowserRouter([
         element: <Discover />,
       },
       {
+        path: 'wishlist',
+        element: <Wishlist />,
+      },
+      {
         path: 'login',
         element: <Login />,
       },
@@ -86,14 +115,6 @@ const router = createBrowserRouter([
         path: '/contact-us',
         element: <ContactUs />,
       },
-      {
-        path: 'wishlist',
-        element: <Wishlist />,
-      },
-      // {
-      //   path: 'cart',
-      //   element: <Cart />,
-      // },
       {
         path: 'product-details',
         element: <ProductDetails />,

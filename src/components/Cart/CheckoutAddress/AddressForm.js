@@ -3,6 +3,7 @@ import CustomForm from '../../UI/CustomFormAndControls/CustomFormGroupInput/Cust
 import CustomFormGroupInput from '../../UI/CustomFormAndControls/CustomFormGroupInput/CustomFormGroupInput';
 import classes from './AddressForm.module.css';
 import FormHeader from '../../UI/CustomFormAndControls/FormHeader';
+import CustomCheckbox from '../../UI/CustomFormAndControls/CustomCheckbox/CustomCheckbox';
 
 const AddressForm = forwardRef(({ initialValues = {}, onSubmit }, ref) => {
   const [addressData, setAddressData] = useState(initialValues);
@@ -11,6 +12,9 @@ const AddressForm = forwardRef(({ initialValues = {}, onSubmit }, ref) => {
     const { name, value } = event.target;
     setAddressData((prev) => ({ ...prev, [name]: value }));
   };
+
+  const handleDefaultAddress = (checkboxValue) =>
+    setAddressData((prev) => ({ ...prev, isDefaultAddress: checkboxValue }));
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -91,6 +95,14 @@ const AddressForm = forwardRef(({ initialValues = {}, onSubmit }, ref) => {
         placeholder="State"
         required
       />
+
+      <div>
+        <CustomCheckbox
+          label="Make it a default Address"
+          checked={addressData.isDefaultAddress}
+          handleChange={handleDefaultAddress}
+        />
+      </div>
     </CustomForm>
   );
 });
