@@ -4,7 +4,16 @@ import { forwardRef } from 'react';
 
 const Input = forwardRef(
   (
-    { name, type, value, onChange, maxLength, minlength, autoComplete },
+    {
+      name,
+      type,
+      value,
+      onChange,
+      onKeyDown,
+      maxLength,
+      minlength,
+      autoComplete,
+    },
     ref
   ) => {
     return (
@@ -13,6 +22,7 @@ const Input = forwardRef(
         type={type}
         value={value}
         onChange={onChange}
+        onKeyDown={onKeyDown}
         maxLength={maxLength}
         minLength={minlength}
         autoComplete={autoComplete}

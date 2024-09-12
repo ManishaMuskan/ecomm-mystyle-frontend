@@ -7,7 +7,7 @@ import useAuthContext from '../hooks/useAuthContext';
 import classes from './OtpLogin.module.css';
 
 const OtpLogin = ({ numberOfOtpDigits = 4 }) => {
-  const { login } = useAuthContext();
+  const { verifyMobileOtp } = useAuthContext();
   const initialState = {};
 
   // creating Array of input references
@@ -19,7 +19,7 @@ const OtpLogin = ({ numberOfOtpDigits = 4 }) => {
     [numberOfOtpDigits]
   );
 
-  function reducer(state, action) {
+  function otpReducer(state, action) {
     // action.type can be "otp0", "otp1", "otp2", "otp3"
     switch (action.type) {
       case action.type: {
@@ -38,44 +38,61 @@ const OtpLogin = ({ numberOfOtpDigits = 4 }) => {
     initialState[`otp${i}`] = '';
   }
 
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [otpState, dispatch] = useReducer(otpReducer, initialState);
 
   const handleChange = (e, index) => {
-    const { value } = e.target;
+    const { value: currentDigit } = e.target;
+    const lastIndex = numberOfOtpDigits - 1;
 
     // do not accept if it's not digit
-    if (/^\d*$/.test(value)) {
+    if (/^\d*$/.test(currentDigit)) {
       dispatch({
         type: `otp${index}`,
-        otpValue: value,
+        otpValue: currentDigit,
       });
 
       // focus on the next input
-      if (value && index < numberOfOtpDigits - 1) {
+      if (currentDigit && index < lastIndex) {
         inputRefs[index + 1].current.focus();
       }
 
-      // if all values are filled and last input is filled, try login
       if (
-        value &&
-        index === numberOfOtpDigits - 1 &&
-        !Object.values(state)
-          .slice(0, numberOfOtpDigits - 1) // since last state is not updated until this codes run because of asynchronous call
-          .includes('')
+        currentDigit &&
+        index === lastIndex &&
+        Object.values(otpState).includes('')
       ) {
-        login(
-          `${Object.values(state)
-            .join('')
-            .slice(0, numberOfOtpDigits - 1)
-            .concat(value)}`
-        );
+        inputRefs[0].current.focus();
+      }
+
+      // Check if all OTP inputs are filled, then trigger login
+      const allFilledOtp = {
+        ...otpState,
+        [`otp${index}`]: currentDigit, // since last state is not updated until this codes run because of asynchronous call
+      };
+
+      const allValuesFilled = !Object.values(allFilledOtp).includes('');
+
+      if (allValuesFilled) {
+        // Join the OTP and trigger the verification process
+        const otp = Object.values(allFilledOtp).join('');
+        verifyMobileOtp(otp);
       }
     }
   };
 
   const handleKeyDown = (e, index) => {
-    if (e.key === 'Backspace' && !state[`otp${index}`] && index > 0) {
-      inputRefs[index - 1].current.focus();
+    if (e.key === 'Backspace') {
+      e.preventDefault();
+      const currentDigit = otpState[`otp${index}`];
+
+      // If the current input is empty, move to the previous input and clear its value
+      if (!currentDigit && index > 0) {
+        inputRefs[index - 1].current.focus();
+        dispatch({
+          type: `otp${index - 1}`,
+          otpValue: '', // Clear the previous digit
+        });
+      }
     }
   };
 
@@ -98,28 +115,31 @@ const OtpLogin = ({ numberOfOtpDigits = 4 }) => {
           <div className={classes['otp-box']}>
             {Array.from({ length: numberOfOtpDigits }).map((_, index) => (
               <Input
-                key={Object.keys(state)[index]}
+                key={Object.keys(otpState)[index]}
                 ref={inputRefs[index]}
                 type="text"
                 maxLength="1"
-                value={state[`otp${index}`]}
+                value={otpState[`otp${index}`]}
                 onChange={(e) => handleChange(e, index)}
                 onKeyDown={(e) => handleKeyDown(e, index)}
               />
             ))}
-            <button type="button" className={classes['resend-btn']}>
-              RESEND OTP
-            </button>
+          </div>
+          <button type="button" className={classes['resend-btn']}>
+            RESEND OTP
+          </button>
+          <div className={classes['resend-time']}>
+            <span> Resend OTP in: </span> 00:10{' '}
           </div>
         </div>
         <div className={classes['bottom-link']}>
-          Log in using{' '}
+          Log in using
           <Link to="/login/password">
             <span> Password </span>
           </Link>
         </div>
         <div className={classes['bottom-link']}>
-          Having trouble logging in? <span> Get help </span>
+          Having trouble logging in? <Link to="/contact-us"> Get help </Link>
         </div>
       </div>
     </div>

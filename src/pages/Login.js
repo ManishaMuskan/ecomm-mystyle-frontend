@@ -1,18 +1,18 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import classes from './Login.module.css';
+import useAuthContext from '../hooks/useAuthContext';
 
 const Login = () => {
-  const [mobileNumberInput, setMobileNumberInput] = useState('');
+  const [mobileNumber, setMobileNumber] = useState('');
   const [isMobileNumberValid, setIsMobileNumberValid] = useState(true);
+
+  const { mobileSignupSignin } = useAuthContext();
   const navigate = useNavigate();
 
   const handleMobileNumberChange = (e) => {
-    setMobileNumberInput(e.target.value);
+    setMobileNumber(e.target.value);
     const regex = /(0|91)?[6-9][0-9]{9}/;
-
-    // Return true if the mobile_number
-    // matched the ReGex
     if (regex.test(e.target.value) === true) {
       setIsMobileNumberValid(true);
     } else {
@@ -20,7 +20,8 @@ const Login = () => {
     }
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
+    await mobileSignupSignin(mobileNumber);
     navigate('/otp-login');
   };
 
@@ -39,9 +40,10 @@ const Login = () => {
               onChange={handleMobileNumberChange}
             />
             <span className={classes['placeholder-alternative']}>
-              +91 <span className={classes['mobile-number-separator']}>|</span>
+              <span className={classes['country-code']}>+91</span>
+              <span className={classes['mobile-number-separator']}>|</span>
               <span
-                className={`${classes['mobile-number-placeholder']} ${mobileNumberInput ? classes.hide : ''}`}>
+                className={`${classes['mobile-number-placeholder']} ${mobileNumber ? classes.hide : ''}`}>
                 Mobile number<span>*</span>
               </span>
             </span>
@@ -52,13 +54,17 @@ const Login = () => {
             </div>
           )}
         </div>
-        {/* <div className="midLinks">
-          By continuing, I agree to the <a href="/termsofuse">Terms of Use</a>{' '}
-          &amp; <a href="/privacypolicy">Privacy Policy</a>
-        </div> */}
+        <div className={classes['mid-links']}>
+          By continuing, I agree to the
+          <Link to="/terms-and-conditions"> Terms of Use</Link> &amp;
+          <Link to="/privacy-policy"> Privacy Policy</Link>
+        </div>
         <button type="button" className={classes.submit} onClick={handleSubmit}>
           CONTINUE
         </button>
+        <div className={classes['get-help']}>
+          Have trouble logging in? <Link to="/contact-us">Get help</Link>
+        </div>
       </div>
     </div>
   );

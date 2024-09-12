@@ -89,10 +89,17 @@ const LoginWithPassword = () => {
           </div>
         </form>
         <div className={classes['auth-page-links']}>
-          Forgot your password?
-          <Link to="/forgot" className={classes['auth-page-link']}>
-            Reset here
-          </Link>
+          <div>
+            Forgot your password?
+            <Link to="/forgot" className={classes['auth-page-link']}>
+              Reset here
+            </Link>
+          </div>
+          <div>
+            <Link to="/" className={classes['auth-page-link']}>
+              Sign up with email
+            </Link>
+          </div>
         </div>
         <div className={classes['auth-page-links']}>
           Have trouble logging in?

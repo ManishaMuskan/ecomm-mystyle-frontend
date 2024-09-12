@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import classes from './ContactUs.module.css';
 
 const ContactUs = () => {
@@ -16,16 +17,16 @@ const ContactUs = () => {
               <p>Manage your purchases</p>
             </div>
           </div>
-          <button type="button" className={classes['order-button']}>
+          <Link to="/orders" className={classes['order-button']}>
             ORDERS
-          </button>
+          </Link>
         </div>
       </div>
       <h4>Customer Support</h4>
-      <p>support@mystyle.co.in</p>
+      <p>support@mystylo.in</p>
       <p>
         <span>Phone: </span>
-        <span>8956856576</span>
+        <span>8585856576</span>
       </p>
     </div>
   );

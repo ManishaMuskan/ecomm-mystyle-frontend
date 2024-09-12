@@ -14,7 +14,7 @@ const CashOnDeliveryDetails = () => {
     captchaRef.current.reset();
 
     await axios
-      .post('http://localhost:2000/post', { token })
+      .post('http://localhost:2000/verify/me', { token })
       .then((res) => console.log(res))
       .catch((error) => {
         console.log(error);

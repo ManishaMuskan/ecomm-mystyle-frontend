@@ -96,6 +96,10 @@ const router = createBrowserRouter([
         element: <Wishlist />,
       },
       {
+        path: 'orders',
+        element: <WorkInProgress />,
+      },
+      {
         path: 'login',
         element: <Login />,
       },

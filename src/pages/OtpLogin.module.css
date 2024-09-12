@@ -8,7 +8,7 @@
 
 .verification-box {
   width: 400px;
-  padding: 60px;
+  padding: 30px 60px;
   color: #282c3f;
   background: var(--white);
 }
@@ -62,13 +62,25 @@
   cursor: pointer;
 }
 
+.resend-time {
+  color: #282c3f;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.resend-time span {
+  opacity: 0.5;
+  font-weight: 400;
+}
+
 .bottom-link {
   cursor: pointer;
   margin-top: 30px;
   font-size: 12px;
 }
 
-.bottom-link span {
-  font-weight: 600;
+.bottom-link a {
   color: #ff3f6c;
+  font-weight: 700;
 }

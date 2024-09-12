@@ -170,7 +170,7 @@
 .cart-items-badge {
   position: absolute;
   left: 13px;
-  top: -8px;
+  top: 5px;
   width: 18px;
   height: 18px;
   border-radius: var(--border-radius-circle);

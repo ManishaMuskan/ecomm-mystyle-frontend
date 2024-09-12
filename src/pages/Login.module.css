@@ -1,3 +1,9 @@
+body {
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #424553;
+}
+
 .login-signup-container {
   height: var(--main-content-div-full-height);
   width: 100%;
@@ -11,7 +17,6 @@
 .login-with-password-box {
   width: 400px;
   background-color: var(--white);
-  text-align: center;
   padding: var(--spacer-lg);
 }
 
@@ -30,7 +35,7 @@
 }
 
 .login-input-group {
-  margin-bottom: var(--spacer-lg);
+  margin-bottom: var(--spacer-md);
 }
 
 .form-group {
@@ -107,6 +112,17 @@
   color: #ff5722;
 }
 
+.mid-links {
+  margin: 0 0 var(--spacer-md);
+  color: rgba(40, 44, 63, 0.8);
+}
+
+.mid-links a {
+  cursor: pointer;
+  color: #ff3c6f;
+  font-weight: 700;
+}
+
 .submit {
   cursor: pointer;
   background-color: #ff3f6c;
@@ -116,4 +132,16 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
+  width: 100%;
+}
+
+.get-help {
+  margin-top: 30px;
+}
+
+.get-help a,
+.get-help span {
+  cursor: pointer;
+  color: #ff3f6c;
+  font-weight: 700;
 }
