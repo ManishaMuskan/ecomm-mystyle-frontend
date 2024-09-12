@@ -1,4 +1,4 @@
-import { createRef, useMemo, useReducer, useEffect } from 'react';
+import { createRef, useMemo, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import mobileVerificationImg from '../assets/imgs/mobile-verification.jpg';
 import Input from '../components/CustomForm/Input';
@@ -8,7 +8,6 @@ import classes from './OtpLogin.module.css';
 
 const OtpLogin = ({ numberOfOtpDigits = 4 }) => {
   const { verifyMobileOtp } = useAuthContext();
-  const initialState = {};
 
   // creating Array of input references
   const inputRefs = useMemo(
@@ -19,80 +18,49 @@ const OtpLogin = ({ numberOfOtpDigits = 4 }) => {
     [numberOfOtpDigits]
   );
 
-  function otpReducer(state, action) {
-    // action.type can be "otp0", "otp1", "otp2", "otp3"
-    switch (action.type) {
-      case action.type: {
-        return {
-          ...state,
-          [action.type]: action.otpValue,
-        };
-      }
-      default:
-        return state;
-    }
-  }
-
-  // Initialize state based on numberOfOtpDigits
-  for (let i = 0; i < numberOfOtpDigits; i++) {
-    initialState[`otp${i}`] = '';
-  }
-
-  const [otpState, dispatch] = useReducer(otpReducer, initialState);
+  const [otp, setOtp] = useState(Array(numberOfOtpDigits).fill(''));
 
   const handleChange = (e, index) => {
     const { value: currentDigit } = e.target;
     const lastIndex = numberOfOtpDigits - 1;
 
-    // do not accept if it's not digit
+    // Only accept digit inputs
     if (/^\d*$/.test(currentDigit)) {
-      dispatch({
-        type: `otp${index}`,
-        otpValue: currentDigit,
-      });
+      const newOtp = [...otp];
+      newOtp[index] = currentDigit;
+      setOtp(newOtp);
 
-      // focus on the next input
+      // Move to the next input
       if (currentDigit && index < lastIndex) {
         inputRefs[index + 1].current.focus();
       }
 
-      if (
-        currentDigit &&
-        index === lastIndex &&
-        Object.values(otpState).includes('')
-      ) {
+      // if cursor in last input and other inputs are not filled, move to first input
+      if (currentDigit && index === lastIndex && newOtp.includes('')) {
         inputRefs[0].current.focus();
       }
 
-      // Check if all OTP inputs are filled, then trigger login
-      const allFilledOtp = {
-        ...otpState,
-        [`otp${index}`]: currentDigit, // since last state is not updated until this codes run because of asynchronous call
-      };
-
-      const allValuesFilled = !Object.values(allFilledOtp).includes('');
-
-      if (allValuesFilled) {
-        // Join the OTP and trigger the verification process
-        const otp = Object.values(allFilledOtp).join('');
-        verifyMobileOtp(otp);
+      // If all inputs are filled, trigger verification
+      if (
+        newOtp.join('').length === numberOfOtpDigits &&
+        !newOtp.includes('')
+      ) {
+        verifyMobileOtp(newOtp.join(''));
       }
     }
   };
 
   const handleKeyDown = (e, index) => {
     if (e.key === 'Backspace') {
-      e.preventDefault();
-      const currentDigit = otpState[`otp${index}`];
+      const newOtp = [...otp];
 
-      // If the current input is empty, move to the previous input and clear its value
-      if (!currentDigit && index > 0) {
+      // If the current input is empty, move to the previous input
+      if (!newOtp[index] && index > 0) {
         inputRefs[index - 1].current.focus();
-        dispatch({
-          type: `otp${index - 1}`,
-          otpValue: '', // Clear the previous digit
-        });
       }
+
+      newOtp[index] = '';
+      setOtp(newOtp);
     }
   };
 
@@ -115,11 +83,11 @@ const OtpLogin = ({ numberOfOtpDigits = 4 }) => {
           <div className={classes['otp-box']}>
             {Array.from({ length: numberOfOtpDigits }).map((_, index) => (
               <Input
-                key={Object.keys(otpState)[index]}
+                key={`otp-${index + 1}`}
                 ref={inputRefs[index]}
                 type="text"
                 maxLength="1"
-                value={otpState[`otp${index}`]}
+                value={otp[index]}
                 onChange={(e) => handleChange(e, index)}
                 onKeyDown={(e) => handleKeyDown(e, index)}
               />
