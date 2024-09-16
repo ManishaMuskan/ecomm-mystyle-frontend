@@ -1,13 +1,16 @@
-import { createRef, useMemo, useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { createRef, useEffect, useMemo, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import mobileVerificationImg from '../assets/imgs/mobile-verification.jpg';
 import Input from '../components/CustomForm/Input';
 import ImageBox from '../components/UI/ImageBox/ImageBox';
+import { NUMBER_OF_OTP_DIGITS } from '../config/appConstants';
 import useAuthContext from '../hooks/useAuthContext';
 import classes from './OtpLogin.module.css';
+import useToastContext from '../hooks/useToastContext';
 
-const OtpLogin = ({ numberOfOtpDigits = 4 }) => {
+const OtpLogin = ({ numberOfOtpDigits = NUMBER_OF_OTP_DIGITS }) => {
   const { verifyMobileOtp } = useAuthContext();
+  const navigate = useNavigate();
 
   // creating Array of input references
   const inputRefs = useMemo(
@@ -19,34 +22,43 @@ const OtpLogin = ({ numberOfOtpDigits = 4 }) => {
   );
 
   const [otp, setOtp] = useState(Array(numberOfOtpDigits).fill(''));
+  const { addToast } = useToastContext();
 
-  const handleChange = (e, index) => {
-    const { value: currentDigit } = e.target;
-    const lastIndex = numberOfOtpDigits - 1;
+  const handleChange = async (e, index) => {
+    try {
+      const { value: currentDigit } = e.target;
+      const lastIndex = numberOfOtpDigits - 1;
 
-    // Only accept digit inputs
-    if (/^\d*$/.test(currentDigit)) {
-      const newOtp = [...otp];
-      newOtp[index] = currentDigit;
-      setOtp(newOtp);
+      // Only accept digit inputs
+      if (/^\d*$/.test(currentDigit)) {
+        const newOtp = [...otp];
+        newOtp[index] = currentDigit;
+        setOtp(newOtp);
 
-      // Move to the next input
-      if (currentDigit && index < lastIndex) {
-        inputRefs[index + 1].current.focus();
+        // Move to the next input
+        if (currentDigit && index < lastIndex) {
+          inputRefs[index + 1].current.focus();
+        }
+
+        // if cursor in last input and other inputs are not filled, move to first input
+        if (currentDigit && index === lastIndex && newOtp.includes('')) {
+          inputRefs[0].current.focus();
+        }
+
+        // If all inputs are filled, trigger verification
+        if (
+          newOtp.join('').length === numberOfOtpDigits &&
+          !newOtp.includes('')
+        ) {
+          await verifyMobileOtp(newOtp.join(''));
+          // if (data) {
+          //   navigate('/');
+          // }
+        }
       }
-
-      // if cursor in last input and other inputs are not filled, move to first input
-      if (currentDigit && index === lastIndex && newOtp.includes('')) {
-        inputRefs[0].current.focus();
-      }
-
-      // If all inputs are filled, trigger verification
-      if (
-        newOtp.join('').length === numberOfOtpDigits &&
-        !newOtp.includes('')
-      ) {
-        verifyMobileOtp(newOtp.join(''));
-      }
+    } catch (error) {
+      addToast(error.message);
+      navigate('/otp-login');
     }
   };
 
@@ -69,6 +81,7 @@ const OtpLogin = ({ numberOfOtpDigits = 4 }) => {
   }, [inputRefs]);
 
   return (
+    // <ErrorBoundary>
     <div className={classes['verification-outer-container']}>
       <div className={classes['verification-box']}>
         <div className={classes['otp-top-image']}>
@@ -93,9 +106,11 @@ const OtpLogin = ({ numberOfOtpDigits = 4 }) => {
               />
             ))}
           </div>
+
           <button type="button" className={classes['resend-btn']}>
             RESEND OTP
           </button>
+
           <div className={classes['resend-time']}>
             <span> Resend OTP in: </span> 00:10{' '}
           </div>
@@ -111,6 +126,8 @@ const OtpLogin = ({ numberOfOtpDigits = 4 }) => {
         </div>
       </div>
     </div>
+    // </ErrorBoundary>
+
     // TODO: remove footer from login and otp-login page
   );
 };

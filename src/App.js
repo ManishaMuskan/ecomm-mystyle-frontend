@@ -1,8 +1,11 @@
+import { useEffect, useState } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.module.css';
 import CheckoutAddress from './components/Cart/CheckoutAddress';
 import CheckoutBag from './components/Cart/CheckoutBag';
 import CheckoutPayment from './components/Cart/CheckoutPayment/CheckoutPayment';
+import Toast from './components/UI/Toast/Toast';
+import ToastStack from './components/UI/Toast/ToastStack';
 import BeautyAndPersonalCare from './pages/BeautyAndPersonalCare';
 import Cart from './pages/Cart';
 import ContactUs from './pages/ContactUs';
@@ -24,6 +27,7 @@ import Wishlist from './pages/Wishlist';
 import WomenShop from './pages/WomenShop';
 import WorkInProgress from './pages/WorkInProgress';
 import AuthContextProvider from './store/auth/AuthContextProvider';
+import { ToastContextProvider } from './store/ui/ToastProvider';
 
 const router = createBrowserRouter([
   {
@@ -149,10 +153,51 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
+  const [globalErrorMessage, setGlobalErrorMessage] = useState();
+  // Handle global errors and unhandled promise rejections
+  useEffect(() => {
+    window.onerror = function globalError(
+      message,
+      source,
+      lineno,
+      colno,
+      error
+    ) {
+      setGlobalErrorMessage(message || 'An unexpected error occurred');
+      console.error('Global Error Caught:', {
+        message,
+        source,
+        lineno,
+        colno,
+        error,
+      });
+    };
+
+    window.onunhandledrejection = function globalUnhandledRejection(event) {
+      setGlobalErrorMessage(event.reason?.message || 'Something went wrong!');
+      console.error('Unhandled Promise Rejection:', event.reason);
+    };
+
+    return () => {
+      window.onerror = null;
+      window.onunhandledrejection = null;
+    };
+  }, []);
+
   return (
-    <AuthContextProvider>
-      <RouterProvider router={router} />
-    </AuthContextProvider>
+    <ToastContextProvider>
+      <AuthContextProvider>
+        <RouterProvider router={router} />
+        <ToastStack />
+        {globalErrorMessage && (
+          // toasts from toastProvider is not accessible as it can only be accessed in component inside ToastContextProvider
+          <Toast
+            message={globalErrorMessage}
+            onClose={setGlobalErrorMessage('')}
+          />
+        )}
+      </AuthContextProvider>
+    </ToastContextProvider>
   );
 };
 

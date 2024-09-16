@@ -1,42 +1,31 @@
 import axios from 'axios';
+// import handleAsyncError from '../AsyncErrorHandler';
+import axiosInstance from '../config/axiosConfig';
 
 const API_AUTH_URL = `${process.env.REACT_APP_API_BASE_URL}/auth`;
 
 const mobileSignupSignin = async (mobile) => {
   try {
-    const response = await axios({
-      method: 'post',
-      url: `${API_AUTH_URL}/mobile`,
-      data: {
-        mobile,
-      },
+    const response = await axiosInstance.post(`${API_AUTH_URL}/mobile`, {
+      mobile,
     });
 
     return response.data;
   } catch (error) {
-    console.log(error);
-    throw new Error(error.message || 'Something went wrong!');
+    throw new Error(error.message);
   }
 };
 
-const verifyMobileOtp = async (otp, mobileVerificationToken) => {
+const verifyMobileOtp = async (otp) => {
   try {
-    const response = await axios({
-      method: 'post',
-      url: `${API_AUTH_URL}/verify-otp`,
-      data: {
-        otp,
-      },
-      headers: {
-        Authorization: `Bearer ${mobileVerificationToken}`,
-        'Content-Type': 'application/json',
-      },
-    });
-
+    const response = await axiosInstance.post(
+      `${API_AUTH_URL}/verify-otp`,
+      { otp },
+      { authType: 'mobile-token' }
+    );
     return response.data;
   } catch (error) {
-    console.log(error);
-    throw new Error(error.message || 'Something went wrong!');
+    throw new Error(error.message);
   }
 };
 

@@ -56,37 +56,51 @@ const AuthContextProvider = ({ children }) => {
   };
 
   const handleMobileOtpVerification = async (otp) => {
-    dispatch({ type: 'LOADING' });
-    const mobileVerificationToken = localStorage.getItem(
-      'mobileVerificationToken'
-    );
-    const { token, profile } = await authService.verifyMobileOtp(
-      otp,
-      mobileVerificationToken
-    );
-    localStorage.setItem('authToken', token);
-    localStorage.setItem('profile', JSON.stringify(profile));
-    localStorage.removeItem('mobileVerificationToken');
-    dispatch({ type: 'OTP_VERIFIED_AND_LOGGED_IN', authToken: token });
+    try {
+      dispatch({ type: 'LOADING' });
+      const mobileVerificationToken = localStorage.getItem(
+        'mobileVerificationToken'
+      );
+      const result = await authService.verifyMobileOtp(
+        otp,
+        mobileVerificationToken
+      );
+      localStorage.setItem('authToken', result.token);
+      localStorage.setItem('profile', JSON.stringify(result.profile));
+      localStorage.removeItem('mobileVerificationToken');
+      dispatch({ type: 'OTP_VERIFIED_AND_LOGGED_IN', authToken: result.token });
+      return result;
+    } catch (error) {
+      throw new Error(error.message);
+    }
   };
 
   const handleLogout = () => {
     dispatch({ type: 'LOGOUT' });
   };
 
-  const authContext = useMemo(
+  const authContextValue = useMemo(
     () => ({
       loggedIn: authState.loggedIn,
       authToken: authState.authToken,
+      loading: authState.loading,
+      loaded: authState.loaded,
       mobileSignupSignin: handleMobileSignupSignin,
       verifyMobileOtp: handleMobileOtpVerification,
       logout: handleLogout,
     }),
-    [authState.loggedIn, authState.authToken]
+    [
+      authState.loggedIn,
+      authState.authToken,
+      authState.loading,
+      authState.loaded,
+    ]
   );
 
   return (
-    <AuthContext.Provider value={authContext}>{children}</AuthContext.Provider>
+    <AuthContext.Provider value={authContextValue}>
+      {children}
+    </AuthContext.Provider>
   );
 };
 
