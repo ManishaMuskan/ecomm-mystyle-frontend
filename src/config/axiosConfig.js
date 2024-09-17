@@ -1,5 +1,10 @@
 import axios from 'axios';
-import { AXIOS_REQUEST_TIMEOUT } from './appConstants';
+import {
+  AXIOS_REQUEST_TIMEOUT,
+  ServerError,
+  ClientErrorType,
+  TokenType,
+} from './appConstants';
 import errorMessages from './errorResponseConstants';
 
 class CustomError extends Error {
@@ -9,27 +14,34 @@ class CustomError extends Error {
   }
 }
 
-const getToken = (authType) => {
+const getToken = (requiredAuthType) => {
   let token;
-  switch (authType) {
-    case 'mobile-token': {
+  switch (requiredAuthType) {
+    case TokenType.MOBILE_VERIFICATION: {
       token = localStorage.getItem('mobileVerificationToken');
       break;
     }
-    case 'email-token': {
+    case TokenType.EMAIL_VERIFICATION: {
       token = localStorage.getItem('emailVerificationToken');
       break;
     }
-    case 'auth-token': {
+    case TokenType.AUTH: {
       token = localStorage.getItem('authToken');
       break;
     }
-    case 'no-auth':
+    case TokenType.NONE:
       token = '';
       break;
     default:
       token = '';
       break;
+  }
+
+  // if token required and token not found, don't send request and throw error
+  if (requiredAuthType && requiredAuthType !== TokenType.NONE && !token) {
+    throw new CustomError(errorMessages.TOKEN_MISSING, {
+      errorType: ClientErrorType.TOKEN_MISSING,
+    });
   }
 
   return token;
@@ -45,7 +57,8 @@ const axiosInstance = axios.create({
 axiosInstance.interceptors.request.use(
   (config) => {
     const modifiedConfig = { ...config };
-    const token = getToken(modifiedConfig.authType);
+
+    const token = getToken(modifiedConfig.requiredAuthType);
 
     if (token) {
       modifiedConfig.headers.Authorization = `Bearer ${token}`;
@@ -59,7 +72,10 @@ axiosInstance.interceptors.request.use(
 );
 
 axiosInstance.interceptors.response.use(
-  (response) => response, // If successful, just return the response
+  (response) => {
+    // console.log(response);
+    return response;
+  }, // If successful, just return the response
   (error) => {
     if (error.response) {
       // TODO: Log to sentry for production server
@@ -70,14 +86,17 @@ axiosInstance.interceptors.response.use(
       );
 
       if (
-        error.response?.data?.message === 'jwt expired' ||
-        error.response?.data?.message === 'jwt malformed'
+        error.response?.data?.message === ServerError.JWT_EXPIRED ||
+        error.response?.data?.message === ServerError.JWT_MALFORMED
       ) {
-        throw new CustomError('Invalid or Expired token, login again!');
+        // just to show a user friendly error message to
+        throw new CustomError(errorMessages.TOKEN_INVALID, {
+          errorType: ClientErrorType.TOKEN_INVALID,
+        });
       }
 
       throw new CustomError(
-        error.response?.data?.message || 'Something went wrong! Try later.',
+        error.response?.data?.message || errorMessages.SOMETHING_WRONG,
         error.response?.data
       );
     } else if (error.request) {
@@ -90,8 +109,15 @@ axiosInstance.interceptors.response.use(
     } else {
       // Something happened in setting up the request that triggered an Error
       console.error('Error:', error.message);
-      console.error('\nRequest config:', error.config);
-      throw new CustomError(errorMessages.UNEXPECTED_ERROR);
+
+      let errorMessage = errorMessages.UNEXPECTED_ERROR;
+      let errorType;
+      if (Object.values(ClientErrorType).includes(error.data?.errorType)) {
+        errorMessage = error.message;
+        errorType = error.data?.errorType;
+      }
+
+      throw new CustomError(errorMessage, { errorType });
     }
   }
 );

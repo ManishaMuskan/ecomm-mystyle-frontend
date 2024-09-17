@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import classes from './Login.module.css';
-import useAuthContext from '../hooks/useAuthContext';
 import FormInputError from '../components/UI/CustomFormAndControls/FormInputError';
+import useAuthContext from '../hooks/useAuthContext';
+import useToastContext from '../hooks/useToastContext';
+import classes from './Login.module.css';
+import LoadingSpinner from '../components/UI/LoadingSpinner/LoadingSpinner';
 
 const Login = () => {
   const [mobileNumber, setMobileNumber] = useState('');
@@ -10,12 +12,15 @@ const Login = () => {
   const [touched, setTouched] = useState(false);
   const { mobileSignupSignin } = useAuthContext();
   const navigate = useNavigate();
+  const { addToast } = useToastContext();
+  const [loading, setLoading] = useState(false);
 
   const validateMobileNumber = (mobile) => {
     const regex = /^(0|91)?[6-9][0-9]{9}$/;
     let errorMessage = null;
 
-    if (!mobile || !regex.test(mobile)) {
+    // !mobile ||
+    if (!regex.test(mobile)) {
       errorMessage = 'Please enter a valid mobile number (10 digits)';
     }
 
@@ -38,65 +43,81 @@ const Login = () => {
     validateMobileNumber(mobileNumber); // Validate when the user leaves the input field
   };
 
-  const handleSubmit = async () => {
+  const handleOtpRequest = async () => {
+    setLoading(true); // Start loading state
+    try {
+      await mobileSignupSignin(mobileNumber);
+      localStorage.setItem('mobileNumber', mobileNumber);
+      navigate('/otp-login', { state: { mobile: mobileNumber } });
+    } catch (error) {
+      addToast(error.message); // Handle the error by showing a toast
+    } finally {
+      setLoading(false); // Always stop loading state
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     setTouched(true); // Mark as touched on submit
     const isValid = validateMobileNumber(mobileNumber);
 
     if (!isValid) {
-      return false;
+      return;
     }
 
-    await mobileSignupSignin(mobileNumber);
-    return navigate('/otp-login');
+    await handleOtpRequest();
   };
 
   return (
     // TODO: if already logged in, send it to home page
     <div className={classes['login-signup-container']}>
-      <div className={classes['login-with-mobile-number-box']}>
-        <h4>
-          Login <small>or</small> Signup
-        </h4>
-        <form>
-          <div className={classes['login-input-group']}>
-            <div className={classes['form-group']}>
-              <input
-                minLength="10"
-                maxLength="10"
-                value={mobileNumber}
-                onChange={handleMobileNumberChange}
-                onBlur={handleBlur} // Handle blur event to mark as touched
-              />
-              <span className={classes['placeholder-alternative']}>
-                <span className={classes['country-code']}>+91</span>
-                <span className={classes['mobile-number-separator']}>|</span>
-                <span
-                  className={`${classes['mobile-number-placeholder']} ${mobileNumber ? classes.hide : ''}`}>
-                  Mobile number<span>*</span>
+      {loading && <LoadingSpinner className={classes['spinner-container']} />}
+      {!loading && (
+        <div className={classes['login-with-mobile-number-box']}>
+          <h4>
+            Login <small>or</small> Signup
+          </h4>
+          <form>
+            <div className={classes['login-input-group']}>
+              <div className={classes['form-group']}>
+                <input
+                  minLength="10"
+                  maxLength="10"
+                  value={mobileNumber}
+                  onChange={handleMobileNumberChange}
+                  onBlur={handleBlur} // Handle blur event to mark as touched
+                />
+                <span className={classes['placeholder-alternative']}>
+                  <span className={classes['country-code']}>+91</span>
+                  <span className={classes['mobile-number-separator']}>|</span>
+                  <span
+                    className={`${classes['mobile-number-placeholder']} ${mobileNumber ? classes.hide : ''}`}>
+                    Mobile number<span>*</span>
+                  </span>
                 </span>
-              </span>
+              </div>
+              {mobileValidationError && (
+                <FormInputError errorMessage={mobileValidationError} />
+              )}
             </div>
-            {mobileValidationError && (
-              <FormInputError errorMessage={mobileValidationError} />
-            )}
+            <div className={classes['mid-links']}>
+              By continuing, I agree to the
+              <Link to="/terms-and-conditions"> Terms of Use</Link> &amp;
+              <Link to="/privacy-policy"> Privacy Policy</Link>
+            </div>
+            <button
+              type="submit"
+              className={classes.submit}
+              onClick={handleSubmit}
+              disabled={mobileValidationError}>
+              CONTINUE
+            </button>
+          </form>
+          <div className={classes['get-help']}>
+            Have trouble logging in? <Link to="/contact-us">Get help</Link>
           </div>
-          <div className={classes['mid-links']}>
-            By continuing, I agree to the
-            <Link to="/terms-and-conditions"> Terms of Use</Link> &amp;
-            <Link to="/privacy-policy"> Privacy Policy</Link>
-          </div>
-          <button
-            type="submit"
-            className={classes.submit}
-            onClick={handleSubmit}
-            disabled={mobileValidationError}>
-            CONTINUE
-          </button>
-        </form>
-        <div className={classes['get-help']}>
-          Have trouble logging in? <Link to="/contact-us">Get help</Link>
         </div>
-      </div>
+      )}
     </div>
   );
 };

@@ -1,32 +1,59 @@
-import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
+import useAuthContext from '../../hooks/useAuthContext';
 import classes from './Navbar.module.css';
+import LoadingSpinner from '../UI/LoadingSpinner/LoadingSpinner';
+// import useToastContext from '../../hooks/useToastContext';
 
 const ProfileUserActions = () => {
+  const { logout } = useAuthContext();
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+  // const { addToast } = useToastContext();
+
+  const handleLogout = async () => {
+    setLoading(true);
+    try {
+      await logout();
+    } catch (error) {
+      // error occurred
+    } finally {
+      localStorage.clear();
+      navigate('/login');
+      setLoading(false);
+    }
+  };
+
   return (
-    <div className={classes['profile-user-actions']}>
-      <NavLink to="/my/profile" data-track="edit_profile">
-        <div className={classes['profile-user-info']}>
-          <p className={classes['user-name']}>
-            Hello <span>Manisha</span>
-          </p>
-          <p className={classes['user-email-or-mobile']}>799248090</p>
+    <>
+      {loading && <LoadingSpinner />}
+      <div className={classes['profile-user-actions']}>
+        <NavLink to="/my/profile" data-track="edit_profile">
+          <div className={classes['profile-user-info']}>
+            <p className={classes['user-name']}>
+              Hello <span>Manisha</span>
+            </p>
+            <p className={classes['user-email-or-mobile']}>799248090</p>
+          </div>
+        </NavLink>
+        <div className={classes['user-profile-links-box']}>
+          <NavLink to="/my/wishlist">Wishlist</NavLink>
+          <NavLink to="/my/orders">Orders</NavLink>
+          <NavLink to="/contact-us">Contact us</NavLink>
         </div>
-      </NavLink>
-      <div className={classes['user-profile-links-box']}>
-        <NavLink to="/my/wishlist">Wishlist</NavLink>
-        <NavLink to="/my/orders">Orders</NavLink>
-        <NavLink to="/contact-us">Contact us</NavLink>
+        <div className={classes['user-profile-links-box']}>
+          <NavLink to="/my/saved-upi">Saved UPIs</NavLink>
+          <NavLink to="/my/saved-cards">Saved Cards</NavLink>
+          <NavLink to="/my/saved-addresses">Saved Addresses</NavLink>
+        </div>
+        <div className={classes['user-profile-links-box']}>
+          <NavLink to="/my/edit-profile">Edit Profile</NavLink>
+          <button type="button" onClick={handleLogout}>
+            Logout
+          </button>
+        </div>
       </div>
-      <div className={classes['user-profile-links-box']}>
-        <NavLink to="/my/saved-upi">Saved UPIs</NavLink>
-        <NavLink to="/my/saved-cards">Saved Cards</NavLink>
-        <NavLink to="/my/saved-addresses">Saved Addresses</NavLink>
-      </div>
-      <div className={classes['user-profile-links-box']}>
-        <NavLink to="/my/edit-profile">Edit Profile</NavLink>
-        <NavLink to="/logout">Logout</NavLink>
-      </div>
-    </div>
+    </>
   );
 };
 

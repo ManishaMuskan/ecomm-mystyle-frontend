@@ -108,12 +108,12 @@ const router = createBrowserRouter([
         element: <Login />,
       },
       {
-        path: 'login/password',
-        element: <LoginWithPassword />,
-      },
-      {
         path: 'otp-login',
         element: <OtpLogin />,
+      },
+      {
+        path: 'login/password',
+        element: <LoginWithPassword />,
       },
       {
         path: '/forgot',

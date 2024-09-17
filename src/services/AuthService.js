@@ -1,42 +1,49 @@
-import axios from 'axios';
-// import handleAsyncError from '../AsyncErrorHandler';
+import { TokenType } from '../config/appConstants';
 import axiosInstance from '../config/axiosConfig';
 
 const API_AUTH_URL = `${process.env.REACT_APP_API_BASE_URL}/auth`;
 
 const mobileSignupSignin = async (mobile) => {
-  try {
-    const response = await axiosInstance.post(`${API_AUTH_URL}/mobile`, {
-      mobile,
-    });
+  // try {
+  const response = await axiosInstance.post(`${API_AUTH_URL}/mobile`, {
+    mobile,
+  });
 
-    return response.data;
-  } catch (error) {
-    throw new Error(error.message);
-  }
+  return response.data;
+  // } catch (error) {
+  //   console.log(error);
+  //   throw error; // throw error directly as it is already coming as new Error() which has message property, it can directly be consumed by provider using error.message
+  // }
 };
 
 const verifyMobileOtp = async (otp) => {
-  try {
-    const response = await axiosInstance.post(
-      `${API_AUTH_URL}/verify-otp`,
-      { otp },
-      { authType: 'mobile-token' }
-    );
-    return response.data;
-  } catch (error) {
-    throw new Error(error.message);
-  }
+  const response = await axiosInstance.post(
+    `${API_AUTH_URL}/verify-otp`,
+    { otp },
+    { requiredAuthType: TokenType.MOBILE_VERIFICATION }
+  );
+  return response.data;
 };
 
-const logout = () => {
-  return axios.post(`${API_AUTH_URL}/logout`);
+const resendOtp = async (mobile) => {
+  const response = await axiosInstance.get(`${API_AUTH_URL}/resend-otp`, {
+    requiredAuthType: TokenType.MOBILE_VERIFICATION,
+    params: { mobile },
+  });
+  return response.data;
+};
+
+const logout = async () => {
+  await axiosInstance.get(`${API_AUTH_URL}/logout`, {
+    requiredAuthType: TokenType.AUTH,
+  });
 };
 
 const authService = {
   mobileSignupSignin,
   verifyMobileOtp,
   logout,
+  resendOtp,
 };
 
 export default authService;
