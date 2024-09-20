@@ -119,7 +119,28 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-height: 10px;
+  /* line-height: 10px; */
+}
+
+.profile-user-info-title {
+  font-weight: 700;
+  height: 20px;
+}
+
+.login-signup-btn {
+  padding: 8px 20px;
+  margin: 20px 0 10px 0;
+  border: 1px solid #eaeaec;
+  border-radius: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ff3f6c;
+  font-weight: 700;
+}
+
+.login-signup-btn:hover {
+  border: 1px solid #ff3f6c;
 }
 
 .user-name,
@@ -141,12 +162,22 @@
   border-top: 1px solid #eaeaec;
 }
 
-.user-profile-links-box a {
+.user-profile-links-box a,
+.logout-btn {
   display: block;
   font-weight: 400;
   font-size: 14px;
   color: #3e4152;
   padding-top: 10px;
+}
+
+.logout-btn {
+  padding: 10px 0 0 0;
+}
+
+.user-profile-links-box a:hover,
+.logout-btn:hover {
+  font-weight: 700;
 }
 
 .navbar-action-label {

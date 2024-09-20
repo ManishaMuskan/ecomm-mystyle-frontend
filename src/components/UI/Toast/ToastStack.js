@@ -11,7 +11,6 @@ const ToastStack = () => {
       {toasts.map((toast, index) => (
         <Toast
           key={`${toast.id}-${toast.message}-${index + 1}`}
-          className={classes['toast-item']}
           message={toast.message}
           type={toast.type}
           onClose={() => removeToast(toast.id)}

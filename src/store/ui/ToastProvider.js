@@ -9,13 +9,13 @@ export const ToastContext = createContext({
 
 export const ToastContextProvider = ({ children }) => {
   const [toasts, setToasts] = useState([]);
-  console.log('toasts', toasts);
+  // console.log('toasts', toasts);
 
   const addToast = useCallback((message, type = 'error') => {
     setToasts((oldToasts) => [
       ...oldToasts,
       {
-        id: generateUID,
+        id: generateUID(),
         message,
         type,
       },
@@ -23,7 +23,11 @@ export const ToastContextProvider = ({ children }) => {
   }, []);
 
   const removeToast = useCallback((id) => {
-    setToasts((oldToasts) => oldToasts.filter((toast) => id !== toast.id));
+    setToasts((oldToasts) =>
+      oldToasts.filter((toast) => {
+        return id !== toast.id;
+      })
+    );
   }, []);
 
   // Memoize the context values
