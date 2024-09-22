@@ -1,4 +1,4 @@
-import { TokenType } from '../config/appConstants';
+import { TOKEN_TYPE } from '../config/appConstants';
 import axiosInstance from '../config/axiosConfig';
 
 const API_AUTH_URL = `${process.env.REACT_APP_API_BASE_URL}/auth`;
@@ -20,14 +20,14 @@ const verifyMobileOtp = async (otp) => {
   const response = await axiosInstance.post(
     `${API_AUTH_URL}/verify-otp`,
     { otp },
-    { requiredAuthType: TokenType.MOBILE_VERIFICATION }
+    { requiredAuthType: TOKEN_TYPE.MOBILE_VERIFICATION }
   );
   return response.data;
 };
 
 const resendOtp = async (mobile) => {
   const response = await axiosInstance.get(`${API_AUTH_URL}/resend-otp`, {
-    requiredAuthType: TokenType.MOBILE_VERIFICATION,
+    requiredAuthType: TOKEN_TYPE.MOBILE_VERIFICATION,
     params: { mobile },
   });
   return response.data;
@@ -35,7 +35,7 @@ const resendOtp = async (mobile) => {
 
 const logout = async () => {
   await axiosInstance.get(`${API_AUTH_URL}/logout`, {
-    requiredAuthType: TokenType.AUTH,
+    requiredAuthType: TOKEN_TYPE.AUTH,
   });
 };
 

@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import FormInputError from '../components/UI/CustomFormAndControls/FormInputError';
 import useAuthContext from '../hooks/useAuthContext';
 import useToastContext from '../hooks/useToastContext';
@@ -10,10 +10,16 @@ const Login = () => {
   const [mobileNumber, setMobileNumber] = useState('');
   const [mobileValidationError, setMobileValidationError] = useState(null);
   const [touched, setTouched] = useState(false);
-  const { mobileSignupSignin } = useAuthContext();
-  const navigate = useNavigate();
-  const { addToast } = useToastContext();
   const [loading, setLoading] = useState(false);
+
+  const { loggedIn, mobileSignupSignin } = useAuthContext();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { addToast } = useToastContext();
+
+  // Extracting the 'redirect' query parameter from the URL
+  const searchParams = new URLSearchParams(location.search);
+  const redirect = searchParams.get('redirect') || '';
 
   const validateMobileNumber = (mobile) => {
     const regex = /^(0|91)?[6-9][0-9]{9}$/;
@@ -48,7 +54,11 @@ const Login = () => {
     try {
       await mobileSignupSignin(mobileNumber);
       localStorage.setItem('mobileNumber', mobileNumber);
-      navigate('/otp-login', { state: { mobile: mobileNumber } });
+
+      navigate(redirect ? `/otp-login?redirect=${redirect}` : '/otp-login', {
+        state: { mobile: mobileNumber },
+        replace: true,
+      });
     } catch (error) {
       addToast(error.message); // Handle the error by showing a toast
     } finally {
@@ -67,6 +77,12 @@ const Login = () => {
 
     await handleOtpRequest();
   };
+
+  useEffect(() => {
+    if (loggedIn) {
+      navigate('/'); // Replace '/dashboard' with the desired redirect route
+    }
+  }, [loggedIn, navigate]);
 
   return (
     // TODO: if already logged in, send it to home page

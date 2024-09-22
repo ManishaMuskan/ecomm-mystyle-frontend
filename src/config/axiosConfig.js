@@ -1,9 +1,9 @@
 import axios from 'axios';
 import {
   AXIOS_REQUEST_TIMEOUT,
-  ServerError,
-  ClientErrorType,
-  TokenType,
+  SERVER_ERROR,
+  CLIENT_CUSTOM_ERROR_TYPE,
+  TOKEN_TYPE,
 } from './appConstants';
 import errorMessages from './errorResponseConstants';
 
@@ -17,19 +17,19 @@ class CustomError extends Error {
 const getToken = (requiredAuthType) => {
   let token;
   switch (requiredAuthType) {
-    case TokenType.MOBILE_VERIFICATION: {
+    case TOKEN_TYPE.MOBILE_VERIFICATION: {
       token = localStorage.getItem('mobileVerificationToken');
       break;
     }
-    case TokenType.EMAIL_VERIFICATION: {
+    case TOKEN_TYPE.EMAIL_VERIFICATION: {
       token = localStorage.getItem('emailVerificationToken');
       break;
     }
-    case TokenType.AUTH: {
+    case TOKEN_TYPE.AUTH: {
       token = localStorage.getItem('authToken');
       break;
     }
-    case TokenType.NONE:
+    case TOKEN_TYPE.NONE:
       token = '';
       break;
     default:
@@ -38,9 +38,9 @@ const getToken = (requiredAuthType) => {
   }
 
   // if token required and token not found, don't send request and throw error
-  if (requiredAuthType && requiredAuthType !== TokenType.NONE && !token) {
+  if (requiredAuthType && requiredAuthType !== TOKEN_TYPE.NONE && !token) {
     throw new CustomError(errorMessages.TOKEN_MISSING, {
-      errorType: ClientErrorType.TOKEN_MISSING,
+      errorType: CLIENT_CUSTOM_ERROR_TYPE.TOKEN_MISSING,
     });
   }
 
@@ -86,12 +86,12 @@ axiosInstance.interceptors.response.use(
       );
 
       if (
-        error.response?.data?.message === ServerError.JWT_EXPIRED ||
-        error.response?.data?.message === ServerError.JWT_MALFORMED
+        error.response?.data?.message === SERVER_ERROR.JWT_EXPIRED ||
+        error.response?.data?.message === SERVER_ERROR.JWT_MALFORMED
       ) {
         // just to show a user friendly error message to
         throw new CustomError(errorMessages.TOKEN_INVALID, {
-          errorType: ClientErrorType.TOKEN_INVALID,
+          errorType: CLIENT_CUSTOM_ERROR_TYPE.TOKEN_INVALID,
         });
       }
 
@@ -112,7 +112,9 @@ axiosInstance.interceptors.response.use(
 
       let errorMessage = errorMessages.UNEXPECTED_ERROR;
       let errorType;
-      if (Object.values(ClientErrorType).includes(error.data?.errorType)) {
+      if (
+        Object.values(CLIENT_CUSTOM_ERROR_TYPE).includes(error.data?.errorType)
+      ) {
         errorMessage = error.message;
         errorType = error.data?.errorType;
       }

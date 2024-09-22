@@ -1,6 +1,8 @@
 /* eslint-disable import/prefer-default-export */
-export const generateUID = () => {
-  return Math.floor(Math.random() * Date.now()).toString(16); // Generates a unique URT
+export const generateUID = (timestamp) => {
+  return Math.floor(
+    Math.random() * (timestamp || Date.now()) * Math.random()
+  ).toString(16); // Generates a unique URT
 };
 
 export const formatTime = (seconds) => {

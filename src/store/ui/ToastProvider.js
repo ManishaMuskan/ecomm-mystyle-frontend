@@ -9,13 +9,12 @@ export const ToastContext = createContext({
 
 export const ToastContextProvider = ({ children }) => {
   const [toasts, setToasts] = useState([]);
-  // console.log('toasts', toasts);
 
   const addToast = useCallback((message, type = 'error') => {
     setToasts((oldToasts) => [
       ...oldToasts,
       {
-        id: generateUID(),
+        id: generateUID(Date.now()),
         message,
         type,
       },

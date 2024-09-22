@@ -4,10 +4,15 @@ import { formatTime } from '../../utils/helpers';
 import useToastContext from '../../hooks/useToastContext';
 import LoadingSpinner from '../UI/LoadingSpinner/LoadingSpinner';
 import useAuthContext from '../../hooks/useAuthContext';
+import { DEFAULT_RESEND_OTP_TIMER_DURATION } from '../../config/appConstants';
 
-const ResendOtp = ({ timerSeconds = 10, triggerTimer, mobile }) => {
+const ResendOtp = ({
+  timerDuration = DEFAULT_RESEND_OTP_TIMER_DURATION,
+  triggerTimer,
+  mobile,
+}) => {
   const [isTimerActivated, setIsTimerActivated] = useState(false);
-  const [remainingTime, setRemainingTime] = useState(timerSeconds);
+  const [remainingTime, setRemainingTime] = useState(timerDuration);
   const [loading, setLoading] = useState();
   const { resendOtp } = useAuthContext();
   const { addToast } = useToastContext();
@@ -20,8 +25,8 @@ const ResendOtp = ({ timerSeconds = 10, triggerTimer, mobile }) => {
   };
 
   const resetTimer = useCallback(() => {
-    setRemainingTime(timerSeconds);
-  }, [timerSeconds]);
+    setRemainingTime(timerDuration);
+  }, [timerDuration]);
 
   const activateTimer = () => {
     setIsTimerActivated(true);
@@ -34,7 +39,7 @@ const ResendOtp = ({ timerSeconds = 10, triggerTimer, mobile }) => {
   const startTimer = useCallback(() => {
     activateTimer();
     clearTimer();
-    let seconds = timerSeconds;
+    let seconds = timerDuration;
     timer.current = setInterval(() => {
       seconds -= 1;
       if (seconds === 0) {
@@ -45,7 +50,7 @@ const ResendOtp = ({ timerSeconds = 10, triggerTimer, mobile }) => {
         setRemainingTime(seconds);
       }
     }, 1000);
-  }, [resetTimer, timerSeconds]);
+  }, [resetTimer, timerDuration]);
 
   const handleClick = async () => {
     setLoading(true);

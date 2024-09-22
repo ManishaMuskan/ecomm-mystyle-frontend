@@ -3,23 +3,32 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import mobileVerificationImg from '../assets/imgs/mobile-verification.jpg';
 import Input from '../components/CustomForm/Input';
 import ImageBox from '../components/UI/ImageBox/ImageBox';
-import { ClientErrorType, NUMBER_OF_OTP_DIGITS } from '../config/appConstants';
+import {
+  CLIENT_CUSTOM_ERROR_TYPE,
+  NUMBER_OF_OTP_DIGITS,
+} from '../config/appConstants';
 import useAuthContext from '../hooks/useAuthContext';
 import classes from './OtpLogin.module.css';
 import useToastContext from '../hooks/useToastContext';
 import LoadingSpinner from '../components/UI/LoadingSpinner/LoadingSpinner';
 import ResendOtp from '../components/ResendOtp/ResendOtp';
-// import errorMessages from '../config/errorResponseConstants';
 
 const OtpLogin = ({ numberOfOtpDigits = NUMBER_OF_OTP_DIGITS }) => {
   const [loading, setLoading] = useState();
   const [otp, setOtp] = useState(Array(numberOfOtpDigits).fill(''));
-  const [triggerTimer, setTriggerTimer] = useState(true);
+  const [triggerTimer, setTriggerTimer] = useState();
+  const { loggedIn, verifyMobileOtp } = useAuthContext();
+  const { addToast } = useToastContext();
 
   const navigate = useNavigate();
   const location = useLocation();
-  const { verifyMobileOtp } = useAuthContext();
-  const { addToast } = useToastContext();
+
+  // Extracting the 'redirect' query parameter from the URL
+  const searchParams = new URLSearchParams(location.search);
+  const redirect = searchParams.get('redirect') || '/';
+
+  const { mobile } =
+    location.state || localStorage.getItem('mobileNumber') || '';
 
   // creating Array of input references
   const inputRefs = useMemo(
@@ -29,9 +38,6 @@ const OtpLogin = ({ numberOfOtpDigits = NUMBER_OF_OTP_DIGITS }) => {
         .map(() => createRef()),
     [numberOfOtpDigits]
   );
-  const { mobile } =
-    location.state || localStorage.getItem('mobileNumber') || '';
-  const { referer } = location.search;
 
   const initializeOtp = () => {
     return Array(numberOfOtpDigits).fill('');
@@ -41,7 +47,7 @@ const OtpLogin = ({ numberOfOtpDigits = NUMBER_OF_OTP_DIGITS }) => {
     setLoading(true);
     try {
       await verifyMobileOtp(otpStr);
-      navigate(referer || '/');
+      navigate(redirect);
     } catch (error) {
       addToast(error.message);
 
@@ -49,16 +55,14 @@ const OtpLogin = ({ numberOfOtpDigits = NUMBER_OF_OTP_DIGITS }) => {
       setOtp(initializeOtp);
       inputRefs[0].current.focus();
 
-      console.log(error.data?.errorType);
       if (
-        error.data?.errorType === ClientErrorType.TOKEN_INVALID ||
-        error.data?.errorType === ClientErrorType.TOKEN_MISSING
+        error.data?.errorType === CLIENT_CUSTOM_ERROR_TYPE.TOKEN_INVALID ||
+        error.data?.errorType === CLIENT_CUSTOM_ERROR_TYPE.TOKEN_MISSING
       ) {
-        navigate('/login');
+        navigate('/login', { replace: true });
       }
     } finally {
       setLoading(false);
-      setTriggerTimer(false);
     }
   };
 
@@ -109,8 +113,17 @@ const OtpLogin = ({ numberOfOtpDigits = NUMBER_OF_OTP_DIGITS }) => {
   };
 
   useEffect(() => {
+    if (loggedIn) {
+      navigate('/');
+    }
+
     inputRefs[0].current.focus();
-  }, [inputRefs]);
+    setTriggerTimer(true);
+
+    return () => {
+      setTriggerTimer(false);
+    };
+  }, [inputRefs, loggedIn, navigate]);
 
   return (
     <div className={classes['verification-outer-container']}>

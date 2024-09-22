@@ -3,17 +3,18 @@ import useToastContext from '../../../hooks/useToastContext';
 import classes from './Toast.module.css';
 
 const ToastStack = () => {
-  const { toasts, removeToast } = useToastContext();
-  console.log('------toasts-----', toasts);
+  const { toasts } = useToastContext();
 
   return (
     <div className={classes['toast-container']}>
-      {toasts.map((toast, index) => (
+      {toasts.map((toast) => (
         <Toast
-          key={`${toast.id}-${toast.message}-${index + 1}`}
+          key={toast.id}
+          id={toast.id}
           message={toast.message}
           type={toast.type}
-          onClose={() => removeToast(toast.id)}
+          onClose={toast.onClose}
+          autoClose={toast.autoClose}
         />
       ))}
     </div>

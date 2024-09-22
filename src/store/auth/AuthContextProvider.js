@@ -4,7 +4,7 @@ import AuthContext from './AuthContext';
 
 const defaultAuthState = {
   loggedIn: false,
-  authToken: null,
+  authUser: null,
 };
 
 const authReducer = (state, action) => {
@@ -13,14 +13,14 @@ const authReducer = (state, action) => {
       return {
         ...state,
         loggedIn: true,
-        authToken: action.authToken,
+        authUser: action.authUser,
       };
     }
     case 'LOGOUT': {
       return {
         ...state,
-        authToken: null,
         loggedIn: false,
+        authUser: null,
       };
     }
     default:
@@ -43,10 +43,12 @@ const AuthContextProvider = ({ children }) => {
 
   const handleMobileOtpVerification = async (otp) => {
     const result = await authService.verifyMobileOtp(otp);
+
     localStorage.setItem('authToken', result.token);
     localStorage.setItem('profile', JSON.stringify(result.profile));
     localStorage.removeItem('mobileVerificationToken');
-    dispatch({ type: 'OTP_VERIFIED_AND_LOGGED_IN', authToken: result.token });
+
+    dispatch({ type: 'OTP_VERIFIED_AND_LOGGED_IN', authUser: result.profile });
     return result;
   };
 
@@ -64,14 +66,17 @@ const AuthContextProvider = ({ children }) => {
   const authContextValue = useMemo(
     () => ({
       loggedIn: authState.loggedIn,
-      authToken: authState.authToken,
+      authUser: authState.authUser,
       mobileSignupSignin: handleMobileSignupSignin,
       verifyMobileOtp: handleMobileOtpVerification,
       logout: handleLogout,
       resendOtp: handleResendOtp,
     }),
-    [authState.loggedIn, authState.authToken]
+    [authState.loggedIn, authState.authUser]
   );
+
+  // TODO: check user authentication when page loads or reloads to persist the login status -
+  // useEffect(() => {/getUser or /me/profile}) by using auth-token stored in local-storage
 
   return (
     <AuthContext.Provider value={authContextValue}>

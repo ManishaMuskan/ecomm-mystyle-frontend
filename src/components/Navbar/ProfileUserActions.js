@@ -6,10 +6,9 @@ import LoadingSpinner from '../UI/LoadingSpinner/LoadingSpinner';
 // import useToastContext from '../../hooks/useToastContext';
 
 const ProfileUserActions = () => {
-  const { loggedIn, logout } = useAuthContext();
+  const { authUser, logout } = useAuthContext();
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-  // const { addToast } = useToastContext();
 
   const handleLogout = async () => {
     setLoading(true);
@@ -28,7 +27,7 @@ const ProfileUserActions = () => {
     <>
       {loading && <LoadingSpinner />}
       <div className={classes['profile-user-actions']}>
-        {!loggedIn && (
+        {!authUser && (
           <div>
             <p
               className={`${classes['profile-user-info']} ${classes['profile-user-info-title']}`}>
@@ -46,13 +45,16 @@ const ProfileUserActions = () => {
             </div>
           </div>
         )}
-        {loggedIn && (
+        {authUser && (
           <NavLink to="/my/profile" data-track="edit_profile">
             <div className={classes['profile-user-info']}>
               <p className={classes['user-name']}>
-                Hello <span>Manisha</span>
+                Hello
+                <span>{authUser.name}</span>
               </p>
-              <p className={classes['user-email-or-mobile']}>799248090</p>
+              <p className={classes['user-email-or-mobile']}>
+                {authUser.mobile || authUser.email}
+              </p>
             </div>
           </NavLink>
         )}
@@ -66,7 +68,7 @@ const ProfileUserActions = () => {
           <NavLink to="/my/saved-cards">Saved Cards</NavLink>
           <NavLink to="/my/saved-addresses">Saved Addresses</NavLink>
         </div>
-        {loggedIn && (
+        {authUser && (
           <div className={classes['user-profile-links-box']}>
             <NavLink to="/my/edit-profile">Edit Profile</NavLink>
             <button
