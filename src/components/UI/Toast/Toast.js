@@ -35,7 +35,6 @@ const Toast = ({
 
     let autoCloseTimeout;
     if (autoClose !== false) {
-      // TODO: handle autoClose after duration
       autoCloseTimeout = setTimeout(() => {
         handleRemoveToast();
       }, autoClose);

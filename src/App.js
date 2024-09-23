@@ -6,6 +6,7 @@ import router from './routes/Routes';
 import AuthContextProvider from './store/auth/AuthContextProvider';
 import { ToastContextProvider } from './store/ui/ToastProvider';
 import useToastContext from './hooks/useToastContext';
+import ErrorBoundaryWrapper from './ErrorBoundary';
 
 const App = () => {
   const { addToast } = useToastContext(); // Extract addToast function from context
@@ -43,12 +44,14 @@ const App = () => {
   }, [addToast]);
 
   return (
-    <ToastContextProvider>
-      <AuthContextProvider>
-        <RouterProvider router={router} />
-        <ToastStack />
-      </AuthContextProvider>
-    </ToastContextProvider>
+    <ErrorBoundaryWrapper>
+      <ToastContextProvider>
+        <AuthContextProvider>
+          <RouterProvider router={router} />
+          <ToastStack />
+        </AuthContextProvider>
+      </ToastContextProvider>
+    </ErrorBoundaryWrapper>
   );
 };
 

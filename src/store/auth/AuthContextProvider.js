@@ -49,13 +49,11 @@ const AuthContextProvider = ({ children }) => {
     localStorage.removeItem('mobileVerificationToken');
 
     dispatch({ type: 'OTP_VERIFIED_AND_LOGGED_IN', authUser: result.profile });
-    return result;
   };
 
   const handleResendOtp = async (mobile) => {
     const result = await authService.resendOtp(mobile);
     localStorage.setItem('mobileVerificationToken', result.token);
-    return result;
   };
 
   const handleLogout = async () => {

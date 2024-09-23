@@ -4,9 +4,9 @@ import classes from './Toast.module.css';
 
 const ToastStack = () => {
   const { toasts } = useToastContext();
-
   return (
     <div className={classes['toast-container']}>
+      {/* {toasts.map((toast) => ( */}
       {toasts.map((toast) => (
         <Toast
           key={toast.id}
