@@ -1,8 +1,8 @@
 import axios from 'axios';
 import {
   AXIOS_REQUEST_TIMEOUT,
-  SERVER_ERROR,
   CLIENT_CUSTOM_ERROR_TYPE,
+  SERVER_ERROR,
   TOKEN_TYPE,
 } from './appConstants';
 import errorMessages from './errorResponseConstants';
@@ -47,6 +47,26 @@ const getToken = (requiredAuthType) => {
   return token;
 };
 
+const handleLogout = async () => {
+  const API_AUTH_LOGOUT_URL = `${process.env.REACT_APP_API_BASE_URL}/auth/logout`;
+  const authToken = getToken(TOKEN_TYPE.AUTH);
+
+  if (authToken) {
+    try {
+      await axios.get(API_AUTH_LOGOUT_URL, {
+        headers: {
+          Authorization: `Bearer ${authToken}`,
+        },
+      });
+    } catch (error) {
+      console.error('Error removing token from server:', error);
+    }
+  }
+
+  localStorage.clear();
+  window.location.href = '/login';
+};
+
 const axiosInstance = axios.create({
   timeout: AXIOS_REQUEST_TIMEOUT,
   headers: {
@@ -57,13 +77,10 @@ const axiosInstance = axios.create({
 axiosInstance.interceptors.request.use(
   (config) => {
     const modifiedConfig = { ...config };
-
     const token = getToken(modifiedConfig.requiredAuthType);
-
     if (token) {
       modifiedConfig.headers.Authorization = `Bearer ${token}`;
     }
-
     return modifiedConfig;
   },
   (error) => {
@@ -73,7 +90,6 @@ axiosInstance.interceptors.request.use(
 
 axiosInstance.interceptors.response.use(
   (response) => {
-    // console.log(response);
     return response;
   }, // If successful, just return the response
   (error) => {
@@ -89,10 +105,9 @@ axiosInstance.interceptors.response.use(
         error.response?.data?.message === SERVER_ERROR.JWT_EXPIRED ||
         error.response?.data?.message === SERVER_ERROR.JWT_MALFORMED
       ) {
-        // just to show a user friendly error message to
-        throw new CustomError(errorMessages.TOKEN_INVALID, {
-          errorType: CLIENT_CUSTOM_ERROR_TYPE.TOKEN_INVALID,
-        });
+        // Clear token from both server-client and navigate to login
+        handleLogout();
+        return Promise.reject(error); // Reject the promise to prevent further processing
       }
 
       throw new CustomError(

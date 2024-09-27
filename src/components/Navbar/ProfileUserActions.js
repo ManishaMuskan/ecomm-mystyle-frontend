@@ -1,14 +1,15 @@
 import { useState } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import useAuthContext from '../../hooks/useAuthContext';
-import classes from './Navbar.module.css';
 import LoadingSpinner from '../UI/LoadingSpinner/LoadingSpinner';
+import classes from './Navbar.module.css';
 // import useToastContext from '../../hooks/useToastContext';
 
 const ProfileUserActions = () => {
   const { authUser, logout } = useAuthContext();
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const redirectUrl = window.location.pathname;
 
   const handleLogout = async () => {
     setLoading(true);
@@ -17,7 +18,6 @@ const ProfileUserActions = () => {
     } catch (error) {
       // error occurred
     } finally {
-      localStorage.clear();
       navigate('/login');
       setLoading(false);
     }
@@ -37,11 +37,11 @@ const ProfileUserActions = () => {
               To access account and manage orders
             </p>
             <div>
-              <NavLink to="/login">
+              <Link to={`/login?redirect=${redirectUrl}`}>
                 <button type="button" className={classes['login-signup-btn']}>
                   login / Signup
                 </button>
-              </NavLink>
+              </Link>
             </div>
           </div>
         )}

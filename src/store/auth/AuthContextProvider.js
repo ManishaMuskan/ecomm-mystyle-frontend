@@ -1,5 +1,6 @@
-import { useMemo, useReducer } from 'react';
+import { useEffect, useMemo, useReducer } from 'react';
 import authService from '../../services/AuthService';
+import authUserService from '../../services/AuthUserService';
 import AuthContext from './AuthContext';
 
 const defaultAuthState = {
@@ -9,13 +10,15 @@ const defaultAuthState = {
 
 const authReducer = (state, action) => {
   switch (action.type) {
-    case 'OTP_VERIFIED_AND_LOGGED_IN': {
+    case 'OTP_VERIFIED_AND_LOGGED_IN':
+    case 'ACCESSED_PUBLIC_PROFILe': {
       return {
         ...state,
         loggedIn: true,
         authUser: action.authUser,
       };
     }
+
     case 'LOGOUT': {
       return {
         ...state,
@@ -23,6 +26,7 @@ const authReducer = (state, action) => {
         authUser: null,
       };
     }
+
     default:
       return state;
   }
@@ -31,10 +35,12 @@ const authReducer = (state, action) => {
 const AuthContextProvider = ({ children }) => {
   const [authState, dispatch] = useReducer(authReducer, defaultAuthState);
 
-  const handleMobileSignupSignin = async (mobile) => {
+  const handleMobileSignupSignin = async (mobileNumber) => {
     // try {
-    const { token } = await authService.mobileSignupSignin(mobile);
+    const { token } = await authService.mobileSignupSignin(mobileNumber);
     localStorage.setItem('mobileVerificationToken', token);
+    localStorage.setItem('mobileNumber', mobileNumber);
+
     // } catch (error) {
     //   console.log('error---', error);
     //   throw error;
@@ -43,12 +49,11 @@ const AuthContextProvider = ({ children }) => {
 
   const handleMobileOtpVerification = async (otp) => {
     const result = await authService.verifyMobileOtp(otp);
+    dispatch({ type: 'OTP_VERIFIED_AND_LOGGED_IN', authUser: result.profile });
 
     localStorage.setItem('authToken', result.token);
     localStorage.setItem('profile', JSON.stringify(result.profile));
     localStorage.removeItem('mobileVerificationToken');
-
-    dispatch({ type: 'OTP_VERIFIED_AND_LOGGED_IN', authUser: result.profile });
   };
 
   const handleResendOtp = async (mobile) => {
@@ -57,8 +62,9 @@ const AuthContextProvider = ({ children }) => {
   };
 
   const handleLogout = async () => {
-    dispatch({ type: 'LOGOUT' });
     await authService.logout();
+    dispatch({ type: 'LOGOUT' });
+    localStorage.clear();
   };
 
   const authContextValue = useMemo(
@@ -73,8 +79,28 @@ const AuthContextProvider = ({ children }) => {
     [authState.loggedIn, authState.authUser]
   );
 
-  // TODO: check user authentication when page loads or reloads to persist the login status -
-  // useEffect(() => {/getUser or /me/profile}) by using auth-token stored in local-storage
+  useEffect(() => {
+    // check user authentication when page loads or reloads to persist the login status
+    const checkAuth = async () => {
+      const authToken = localStorage.getItem('authToken');
+
+      if (!authToken) {
+        return; // No token [indicating not logged in], exit early
+      }
+
+      // Check if authUser is already set to prevent calling API again
+      if (!authState.authUser) {
+        const authUser = await authUserService.getUserPublicProfile();
+        localStorage.setItem('profile', JSON.stringify(authUser.profile));
+        dispatch({
+          type: 'ACCESSED_PUBLIC_PROFILe',
+          authUser: authUser.profile,
+        });
+      }
+    };
+
+    checkAuth();
+  }, [authState.authUser]);
 
   return (
     <AuthContext.Provider value={authContextValue}>

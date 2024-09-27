@@ -53,8 +53,6 @@ const Login = () => {
     setLoading(true); // Start loading state
     try {
       await mobileSignupSignin(mobileNumber);
-      localStorage.setItem('mobileNumber', mobileNumber);
-
       navigate(redirect ? `/otp-login?redirect=${redirect}` : '/otp-login', {
         state: { mobile: mobileNumber },
         replace: true,
