@@ -8,7 +8,7 @@
 
 .verification-box {
   width: 400px;
-  padding: 60px;
+  padding: 30px 60px;
   color: #282c3f;
   background: var(--white);
 }
@@ -51,24 +51,17 @@
   border: 1px solid #696e79;
 }
 
-.resend-btn {
-  padding: 0;
-  border: none;
-  color: #ff3f6c;
-  font-size: 12px;
-  font-weight: 700;
-  background-color: #fff;
-  margin-top: 30px;
-  cursor: pointer;
-}
-
 .bottom-link {
   cursor: pointer;
   margin-top: 30px;
   font-size: 12px;
 }
 
-.bottom-link span {
-  font-weight: 600;
+.bottom-link a {
   color: #ff3f6c;
+  font-weight: 700;
+}
+
+.spinner-container {
+  position: fixed;
 }

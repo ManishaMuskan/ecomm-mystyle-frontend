@@ -1,0 +1,19 @@
+.cart-items-in-bag-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: stretch;
+  width: 100%; /*NOTE: it ensures the flex container takes up the full width of its parent.*/
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cart-left {
+  flex: 1 1 55%;
+  padding: var(--spacer-md);
+  border-right: 1px solid #eaeaec;
+}
+
+.cart-right {
+  flex: 1 1 45%;
+  padding: var(--spacer-md);
+}

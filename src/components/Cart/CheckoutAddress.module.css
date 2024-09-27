@@ -1,0 +1,82 @@
+.checkout-address-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: stretch;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0px auto;
+  gap: 15px;
+}
+
+.checkout-address-left-side {
+  flex: 1 1 65%;
+  padding: 0 10px;
+}
+
+.checkout-address-right-side {
+  flex: 1 1 35%;
+  border-left: 1px solid #eaeaec;
+  padding: 0 10px;
+}
+
+.address-header-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0px 12px;
+  height: 45px;
+}
+
+.header-title {
+  font-weight: 700;
+  color: #282c3f;
+  font-size: 18px;
+  margin: 12px 0;
+  text-transform: capitalize;
+}
+
+.add-address-btn {
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid #282c3f;
+  margin: 7px 0 6px;
+  padding: 8px 16px 7px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: #424553;
+}
+
+.default-address {
+}
+
+.address-default-title,
+.address-other-title {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 12px 0 16px;
+  color: #535766;
+  text-transform: uppercase;
+}
+
+.address-other-title {
+  margin: 24px 0 16px;
+}
+
+.other-addresses {
+}
+
+.add-address-text-btn {
+  box-shadow: 0 0 4px rgba(40, 44, 63, 0.08);
+  height: 72px;
+  padding: 27px 0 26px 19px;
+  margin: 25px 0;
+  vertical-align: top;
+  border-radius: 4px;
+  border: 1px dashed #d4d5d9;
+}
+
+.add-address-text-btn button {
+  font-weight: 700;
+  font-size: 16px;
+  color: #ff3f6c;
+  cursor: pointer;
+}

@@ -1,0 +1,54 @@
+.address-change-container {
+  padding: var(--spacer-16);
+  margin-bottom: 8px;
+  background-color: #fff6f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #eaeaec;
+}
+
+.delivery-address {
+  flex: 1 1 65%;
+  overflow: hidden;
+  max-width: 450px;
+}
+
+.delivery-address p {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.delivery-address p:first-child .recipient-name,
+.delivery-address p:first-child .pin-code {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.delivery-address p:first-child .recipient-name {
+  text-transform: capitalize;
+}
+
+.delivery-address p:nth-child(2) {
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 4px;
+  text-transform: capitalize;
+}
+
+.change-address-btn {
+  flex: 1 1 15%;
+  font-weight: 700;
+  color: #ff3f6c;
+  margin-left: 4px;
+  position: relative;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border: 1px solid #ff3f6c;
+  border-radius: 4px;
+  background: transparent;
+}

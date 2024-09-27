@@ -33,7 +33,7 @@ const LoginWithPassword = () => {
         <form className={classes['form-container']}>
           <div className={classes['form-group']}>
             <input
-              name="MobileOrEmail"
+              name="mobileOrEmail"
               type="text"
               className={classes['form-control']}
               value={loginCreds.mobileOrEmail}
@@ -89,10 +89,17 @@ const LoginWithPassword = () => {
           </div>
         </form>
         <div className={classes['auth-page-links']}>
-          Forgot your password?
-          <Link to="/forgot" className={classes['auth-page-link']}>
-            Reset here
-          </Link>
+          <div>
+            Forgot your password?
+            <Link to="/forgot" className={classes['auth-page-link']}>
+              Reset here
+            </Link>
+          </div>
+          <div>
+            <Link to="/" className={classes['auth-page-link']}>
+              Sign up with email
+            </Link>
+          </div>
         </div>
         <div className={classes['auth-page-links']}>
           Have trouble logging in?

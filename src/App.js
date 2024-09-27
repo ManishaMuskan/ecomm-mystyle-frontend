@@ -1,118 +1,58 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { useEffect } from 'react';
+import { RouterProvider } from 'react-router-dom';
 import './App.module.css';
-import BeautyAndPersonalCare from './pages/BeautyAndPersonalCare';
-import Cart from './pages/Cart';
-import ErrorPage from './pages/ErrorPage';
-import Home from './pages/Home';
-import HomeDecor from './pages/HomeDecor';
-import KidsShop from './pages/KidsShop';
-import MenShop from './pages/MenShop';
-import Products from './pages/Products/Products';
-import RootLayout from './pages/RootLayout';
-import ShopRootLayout from './pages/ShopRootLayout';
-import Wishlist from './pages/Wishlist';
-import WomenShop from './pages/WomenShop';
-import Discover from './pages/Discover';
-import ProductDetails from './pages/Products/ProductDetails';
-import Login from './pages/Login';
-import OtpLogin from './pages/OtpLogin';
-import LoginWithPassword from './pages/LoginWithPassword';
-import ForgotPassword from './pages/ForgotPassword';
-import ContactUs from './pages/ContactUs';
-import WorkInProgress from './pages/WorkInProgress';
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <RootLayout />,
-    errorElement: <ErrorPage />,
-    children: [
-      { element: <Home />, index: true },
-      {
-        path: 'shop',
-        element: <ShopRootLayout />,
-        children: [
-          {
-            index: true,
-            element: <Products />,
-          },
-          {
-            path: 'men',
-            element: <MenShop />,
-          },
-          {
-            path: 'women',
-            element: <WomenShop />,
-          },
-          {
-            path: 'kids',
-            element: <KidsShop />,
-          },
-        ],
-      },
-      {
-        path: 'beauty-and-personal-care',
-        element: <BeautyAndPersonalCare />,
-      },
-      {
-        path: 'home-decor',
-        element: <HomeDecor />,
-      },
-      {
-        path: 'discover',
-        element: <Discover />,
-      },
-      {
-        path: 'login',
-        element: <Login />,
-      },
-      {
-        path: 'login/password',
-        element: <LoginWithPassword />,
-      },
-      {
-        path: 'otp-login',
-        element: <OtpLogin />,
-      },
-      {
-        path: '/forgot',
-        element: <ForgotPassword />,
-      },
-      {
-        path: '/contact-us',
-        element: <ContactUs />,
-      },
-      {
-        path: 'wishlist',
-        element: <Wishlist />,
-      },
-      // {
-      //   path: 'cart',
-      //   element: <Cart />,
-      // },
-      {
-        path: 'product-details',
-        element: <ProductDetails />,
-      },
-      {
-        path: 'faqs',
-        element: <WorkInProgress />,
-      },
-      {
-        path: 'terms-and-conditions',
-        element: <WorkInProgress />,
-      },
-      {
-        path: 'privacy-policy',
-        element: <WorkInProgress />,
-      },
-    ],
-  },
-  { path: '/cart', element: <Cart /> },
-]);
+import ToastStack from './components/UI/Toast/ToastStack';
+import router from './routes/Routes';
+import AuthContextProvider from './store/auth/AuthContextProvider';
+import { ToastContextProvider } from './store/ui/ToastProvider';
+import useToastContext from './hooks/useToastContext';
+import ErrorBoundaryWrapper from './ErrorBoundary';
 
 const App = () => {
-  return <RouterProvider router={router} />;
+  const { addToast } = useToastContext(); // Extract addToast function from context
+
+  // Handle global errors and unhandled promise rejections
+  useEffect(() => {
+    window.onerror = function globalError(
+      message,
+      source,
+      lineno,
+      colno,
+      error
+    ) {
+      const errorMessage = message || 'An unexpected error occurred';
+      addToast({ message: errorMessage });
+      console.error('Global Error Caught:', {
+        message,
+        source,
+        lineno,
+        colno,
+        error,
+      });
+    };
+
+    window.onunhandledrejection = function globalUnhandledRejection(event) {
+      const errorMessage = event.reason?.message || 'Something went wrong!';
+      addToast({ message: errorMessage });
+      console.error('Unhandled Promise Rejection:', event.reason);
+    };
+
+    return () => {
+      window.onerror = null;
+      window.onunhandledrejection = null;
+    };
+  }, [addToast]);
+
+  return (
+    <ErrorBoundaryWrapper>
+      <ToastContextProvider>
+        <AuthContextProvider>
+          <RouterProvider router={router} />
+          <ToastStack />
+        </AuthContextProvider>
+      </ToastContextProvider>
+    </ErrorBoundaryWrapper>
+  );
 };
 
 export default App;

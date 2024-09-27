@@ -1,0 +1,55 @@
+.address-item-container {
+  border: 1px solid #eaeaec;
+  margin-bottom: 8px;
+  vertical-align: top;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(40, 44, 63, 0.2);
+  padding: 19px 16px 20px 48px;
+}
+
+.address-select-radio {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.delivery-address-actions button {
+  color: #282c3f;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid #282c3f;
+  border-radius: 4px;
+  padding: 6.5px 16px;
+  margin-right: 10px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 14px;
+  color: #282c3f;
+  text-transform: capitalize;
+  word-break: break-all;
+  margin-bottom: 12px;
+}
+
+.address-field,
+.mobile {
+  word-break: break-all;
+  font-size: 13px;
+  line-height: 1.42857143;
+}
+
+.mobile {
+  margin: 12px 0;
+}
+
+.mobile span:nth-child(2) {
+  margin-left: 2px;
+  font-weight: 700;
+}

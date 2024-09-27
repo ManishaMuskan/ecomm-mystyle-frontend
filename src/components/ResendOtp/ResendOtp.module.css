@@ -1,0 +1,24 @@
+.resend-otp-box {
+  margin-top: 30px;
+}
+
+.resend-btn {
+  padding: 0;
+  border: none;
+  color: #ff3f6c;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.resend-time {
+  color: #282c3f;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.resend-time span {
+  opacity: 0.5;
+  font-weight: 400;
+}

@@ -1,0 +1,345 @@
+/* .spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  border: 0.2em solid rgba(0, 0, 0, 0.1);
+  border-top: 0.2em solid var(--accent-blue-color);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+/* ------------------ test --------------------- */
+.loader-animation-container {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 115;
+}
+
+.loader-animation-container .spinner-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  margin-left: -25px;
+  z-index: 6;
+  text-align: center;
+}
+
+.mystylo-spinner {
+  animation: 2s linear infinite mystylo-svg-animation;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  will-change: transform;
+}
+
+@keyframes mystylo-svg-animation {
+  0% {
+    transform: rotateZ(0);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.circle {
+  animation: 1.4s ease-in-out infinite both mystylo-circle-animation;
+  display: block;
+  fill: transparent;
+  stroke: #ff3e6c;
+  stroke-linecap: round;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 280;
+  stroke-width: 8px;
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+
+@keyframes mystylo-circle-animation {
+  0%,
+  25% {
+    stroke-dashoffset: 280;
+    transform: rotate(0);
+  }
+
+  50%,
+  75% {
+    stroke-dashoffset: 75;
+    transform: rotate(45deg);
+  }
+
+  100% {
+    stroke-dashoffset: 280;
+    transform: rotate(360deg);
+  }
+}
+
+.ripple-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple-container .ripple {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ripple-container .ripple .span {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  border-radius: 100%;
+  position: absolute;
+  opacity: 0.75;
+  background-color: #e53860;
+  -webkit-animation: rippleAnimation 0.5s;
+  animation: rippleAnimation 0.5s;
+}
+
+@-webkit-keyframes rippleAnimation {
+  0% {
+    opacity: 0.75;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }
+}
+
+@keyframes rippleAnimation {
+  0% {
+    opacity: 0.75;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }
+}
+
+.pdp-loading-skeleton {
+  background-color: #fff;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+}
+
+.pdp-loading-skeleton .img-sk {
+  height: 65vh;
+}
+
+.pdp-loading-skeleton .product-title-sk {
+  height: 12px;
+  width: 240px;
+  margin-bottom: 5px;
+}
+
+.pdp-loading-skeleton .product-info-container {
+  margin-top: 20px !important;
+  padding-left: 16px !important;
+}
+
+.pdp-loading-skeleton .pdp-price-info-sk {
+  height: 12px;
+  width: 160px;
+}
+
+.pdp-loading-skeleton .description-sk {
+  height: 12px;
+  width: 80px;
+  margin-top: 5px;
+}
+
+.search-loading-skeleton {
+  background-color: #fff;
+  padding-bottom: 16px;
+  display: inline-block;
+  width: 50%;
+}
+
+.search-loading-skeleton .img-sk {
+  margin: 0 2px 0 4px;
+  height: 255px;
+}
+
+.search-loading-skeleton .product-info-container-sk {
+  margin: 12px 2px 0 4px;
+}
+
+.search-loading-skeleton .product-title-sk {
+  height: 12px;
+  margin-bottom: 4px;
+}
+
+.search-loading-skeleton .pdp-price-info-sk {
+  height: 12px;
+  width: 120px;
+}
+
+.search-loading-skeleton .description-sk {
+  height: 12px;
+  margin-top: 4px;
+  width: 60px;
+}
+
+.home-loading-skeleton {
+  background-color: #fff;
+}
+
+.home-loading-skeleton .img {
+  margin-top: 16px;
+}
+
+.home-loading-skeleton .feed-card-container {
+  overflow: hidden;
+  margin: 4px;
+  white-space: nowrap;
+  background-color: #fff;
+}
+
+.home-loading-skeleton .feed-card-container .feed-card {
+  margin: 4px;
+  width: 100px;
+  display: inline-block;
+}
+
+.home-loading-skeleton .feed-card-container .feed-card .img-sk {
+  height: 66px;
+  border-radius: 4px;
+}
+
+.SIS-loading-skeleton {
+  background-color: #fff;
+  height: 100vh;
+}
+
+.SIS-loading-skeleton .img {
+  margin-top: 16px;
+}
+
+.SIS-loading-skeleton .feed-card-container .feed-card {
+  margin: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.SIS-loading-skeleton .feed-card-container .feed-card .des {
+  height: 14px;
+  width: 126px;
+}
+
+.SIS-loading-skeleton .feed-card-container .feed-card .checkBox {
+  height: 14px;
+  width: 14px;
+  margin-left: auto;
+}
+
+.searchBox-loading-skeleton {
+  background-color: #fff;
+  padding-bottom: 16px;
+  display: inline-block;
+  white-space: nowrap;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.searchBox-loading-skeleton .f-card-title {
+  margin: 25px 13px 13px;
+  width: 152px;
+  height: 13px;
+}
+
+.searchBox-loading-skeleton .list-container {
+  margin-left: 9px;
+}
+
+.searchBox-loading-skeleton .list-container .search-loading-skeleton {
+  width: 122px;
+}
+
+.searchBox-loading-skeleton .list-container .search-loading-skeleton .img-sk {
+  margin: 0 6px 0 0;
+  height: 162px;
+}
+
+.searchBox-loading-skeleton
+  .list-container
+  .search-loading-skeleton
+  .product-info-container-sk {
+  margin: 12px 6px 0;
+}
+
+.searchBox-loading-skeleton
+  .list-container
+  .search-loading-skeleton
+  .product-title-sk {
+  width: 105px;
+  height: 9px;
+  margin-bottom: 4px;
+}
+
+.searchBox-loading-skeleton
+  .list-container
+  .search-loading-skeleton
+  .pdp-price-info-sk {
+  height: 9px;
+  width: 66px;
+}
+
+.searchBox-loading-skeleton
+  .list-container
+  .search-loading-skeleton
+  .description-sk {
+  height: 9px;
+  margin-top: 4px;
+  width: 46px;
+}
+
+.searchBox-loading-skeleton .recent-scroller {
+  display: inline-block;
+  margin: 5px 19px 16px;
+  width: 54px;
+}
+
+.searchBox-loading-skeleton .recent-scroller .img-sk {
+  height: 54px;
+  border-radius: 50%;
+  margin-bottom: 3px;
+}
+
+.searchBox-loading-skeleton .recent-scroller .reent-search-name {
+  height: 12px;
+  margin: 5px auto auto;
+}

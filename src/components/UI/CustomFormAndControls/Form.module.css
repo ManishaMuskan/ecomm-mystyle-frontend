@@ -1,0 +1,25 @@
+.error-container {
+  margin-top: 4px;
+  font-size: var(--font-size-xs);
+  color: #ff5722;
+  overflow: hidden;
+  transform: translateY(-10px);
+  opacity: 0;
+  animation: slideDown 0.3s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

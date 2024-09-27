@@ -26,6 +26,7 @@
   --accent-pink-color-dark: #ff3e6c;
   --accent-pink-color: #f16565;
   --accent-pink-color-lighter: #ff905a;
+  --accent-pink-color-disabled: #f97594;
   --accent-grey-color-lighter: #7e818c;
   --accent-green-color: #03a685;
   --accent-tomato-color: #ff5722;
@@ -67,6 +68,7 @@
   --spacer-xs: 5px;
   --spacer-sm: 10px;
   --spacer-12: 12px;
+  --spacer-16: 16px;
   --spacer-md: 20px;
   --spacer-lg: 32px;
   --spacer-xl: 50px; /* 8(1), 22(1), 12(3), 15(2), 18(3) */
@@ -87,6 +89,7 @@
 
   --height-header: 85px;
   --main-content-div-full-height: calc(100vh - var(--height-header));
+  --img-aspect-ratio: 520 / 400;
 }
 
 @font-face {
@@ -215,6 +218,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--secondary-txt-color);
 }
 
 p,
@@ -232,6 +236,8 @@ h6 {
 [type='submit'],
 button {
   cursor: pointer;
+  background: transparent;
+  border: 0;
 }
 
 [disabled] {
